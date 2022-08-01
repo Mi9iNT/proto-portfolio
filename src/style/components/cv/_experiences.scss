@@ -1,0 +1,119 @@
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+.table_xp {
+        border-bottom: ridge 0.4rem $color-3;
+    }
+    .grid_title_exp{
+        color: $white;
+        position: relative;
+        top: 2rem;
+        left: -7rem;
+        text-align: center;
+    }
+    .cursus_exp{
+        overflow: auto;
+        top: 0rem;
+        height: 30rem;
+        position: relative;
+    }
+    .grid_item_exp {
+        display: block;
+        line-height: 2rem;
+        position: relative;
+        top: 4rem;
+    }
+    .grid_mission_exp {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .infos_xp{
+        position: relative;
+        top: 2rem;
+        display: flex;
+        justify-content:space-around ;
+        margin-bottom: 8rem;
+    }
+    .grid_date_exp{
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+        text-align: left;
+    }
+    .grid_location_exp{
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+        text-align: left;
+    }
+}
+@media #{$BREAKPOINT-TABLET} {
+    .grid_title_exp{
+        left: 0rem;
+    }
+    .missions_exp{
+        margin: 2rem;
+        list-style-type: none;
+    }
+}
+@media #{$BREAKPOINT-DESK} {
+
+.table_xp{
+    width: 100%;
+    border-bottom: ridge 0.4rem $color-3;
+}
+.cursus_exp {
+        overflow: auto;
+        height: 20rem;
+        top: 14rem;
+        color: $color-2;
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: $transparent-3;
+    }
+    .grid_title_exp {
+        color: $white;
+        position: relative;
+        top: 2rem;
+        left: 0rem;
+        text-align: center;
+    }
+
+    .grid_item_exp {
+        display: block;
+        line-height: 2rem;
+        position: relative;
+        top: 4rem;
+    }
+
+    .grid_mission_exp {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .infos_xp {
+        position: relative;
+        top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 8rem;
+    }
+
+    .grid_date_exp {
+        position: relative;
+        top: 0rem;
+        text-align: left;
+    }
+
+    .grid_location_exp {
+        position: relative;
+        top: 0rem;
+        text-align: left;
+    }
+
+}

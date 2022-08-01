@@ -1,0 +1,31 @@
+// Général
+@import "./settings";
+
+// Composants
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/rs";
+@import "./components/onglets";
+
+@import "./components/sliders/slidevideos";
+@import "./components/sliders/sliderjams";
+
+@import "./components/cv/experiences";
+@import "./components/cv/formationsexperiences";
+@import "./components/cv/interests";
+@import "./components/cv/profil";
+@import "./components/cv/skill";
+@import "./components/cv/skills";
+@import "./components/cv/user";
+
+
+// Pages
+@import "./pages/home";
+@import "./pages/curriculumvitae";
+@import "./pages/contact";
+@import "./pages/galerie";
+@import "./pages/jams";
+@import "./pages/videos";
+@import "./pages/mentionslegales";
+
+@import "./pages/notfound";

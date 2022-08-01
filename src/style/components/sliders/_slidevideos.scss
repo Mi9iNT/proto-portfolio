@@ -1,0 +1,29 @@
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
+@media #{$BREAKPOINT-DESK} {
+    .ContSlideYt{
+        height: 40rem;
+        width: 90rem;
+        position: relative;
+        top: 5rem;
+        margin: 0 auto;
+    }
+    .carousel .slide{
+        height: 40rem;
+    }
+    .carousel .slide iframe{
+        height: 50rem;
+        width: 100rem;
+    }
+    .image:nth-child(2){
+        display: none;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .image:nth-child(2){
+            display: none;
+        }
+}

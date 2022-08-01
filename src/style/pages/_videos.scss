@@ -1,0 +1,32 @@
+.text_videos{
+    color: $white;
+    position: relative;
+    top: 10rem;
+    text-align: center;
+}
+.Video{
+    position: relative;
+    top: 20rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 100px) and (max-width: 600px) {
+    .text_videos {
+        width: 20rem;
+        text-align: center;
+        position: relative;
+        align-content: center;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 601px) and (max-width: 1100px) {
+    .text_videos {
+        width: 30rem;
+        text-align: center;
+        position: relative;
+        align-content: center;
+        margin: 0 auto;
+    }
+}

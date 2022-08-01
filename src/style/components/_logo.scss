@@ -1,0 +1,45 @@
+.logo-container {
+    position: fixed;
+    top: 0.5rem;
+    left: -0.6rem;
+    background-color: $transparent-1;
+    width: 11.5rem;
+    height: 10.1rem;
+    cursor: pointer;
+    border-radius: 100% 100% 100% 50%/0% 100% 130% 80%;
+    border-top: 0.4rem groove #50BBFD;
+    border-left: 0.8rem groove #50BBFD;
+    border-right: 0.2rem groove #50BBFD;
+    -webkit-box-shadow: 0px 50px 50px -5px #50BBFD;
+    box-shadow: 0px 20px 50px 5px #50BBFD;
+    z-index: 997;
+}
+
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 0.8rem;
+    width: 8rem;
+    z-index: 1000;
+}
+.logo:hover {
+    width: 8.2rem;
+    transition: all .2s ease-in-out;
+}
+@media (min-width: 100px) and (max-width: 600px) {
+    .logo-container {
+        width: 9rem;
+        height: 8.1rem;
+    }
+
+    .logo {
+        position: fixed;
+        top: 2rem;
+        left: 0.8rem;
+        width: 6rem;
+    }
+    .logo:hover {
+        width: 6.2rem;
+        transition: all .2s ease-in-out;
+    }
+}

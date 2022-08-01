@@ -1,0 +1,35 @@
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
+@media #{$BREAKPOINT-MOBILE-LAND} {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        background-color: $transparent-2;
+    }
+    .sidebar {
+        padding: 1.5rem;
+        background-color: transparent-2;
+        color: $white;
+        text-align: center;
+        padding: 1.5rem;
+        height: 130%;
+    }
+   
+}
+@media #{$BREAKPOINT-DESK} {
+   .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+   }
+   .sidebar{
+    padding: 1.5rem;
+    background-color: $transparent-2;
+    padding: 1.5rem;
+    height: 100%;
+   }
+   .mainCv{
+    background-color: $transparent-3;
+   }
+}

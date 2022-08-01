@@ -1,0 +1,146 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#firstSection {
+    height: 50rem;
+    margin-left: 2rem;
+    position: relative;
+    top: 40rem;
+    
+}
+
+#nextSection {
+    position: relative;
+    top: -5.3rem;
+    height: 0rem;
+    background: $transparent-1;
+}
+
+
+.title {
+    text-align: center;
+    position: relative;
+    top: -20rem;
+    font-size: 8rem;
+}
+
+h1 {
+    color: $color-3;
+}
+
+h2 {
+    color: $color-3;
+}
+
+h3 {
+    color: $white;
+}
+
+.sectionTitle {
+    height: auto;
+    position: relative;
+    top: 0rem;
+}
+
+.TitleHome1 {
+    position: relative;
+    top: -8rem;
+    left: 0rem;
+    font-size: 2rem;
+}
+
+.TitleHome2 {
+    position: relative;
+    top: -2rem;
+    left: 0rem;
+}
+.container{
+    left: 0rem;
+}
+#portrait {
+    width: 15rem !important;
+    height: auto;
+    border-radius: 100%;
+}
+@media  (min-width: 100px) and (max-width: 600px) {
+    body {
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    .title {
+        font-size: 2rem;
+        left: 0rem;
+        top: -28rem;
+        margin: 0 auto;
+    }
+    #firstSection{
+        margin: 0 auto;
+    }
+    #nextSection{
+        top: -30rem;
+    }
+    .TitleHome1 {
+        left: 0rem;
+        width: 18rem;
+        font-size: 1rem;
+        line-height: 2rem;
+        top: 8rem;
+        margin: 0 auto;
+    }
+
+    .TitleHome2 {
+        left: 0rem;
+        top: 12rem;
+        font-size: 0.85rem;
+        margin: 0 auto;
+    }
+    .container {
+        left: 2.5rem;
+        top: 10rem;
+        width: 22rem;
+    }
+    .portrait {
+        width: 15rem;
+        height: auto;
+        border-radius: 100%;
+    }
+    
+}
+@media (min-width: 601px) and (max-width: 1100px) {
+    body {
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    .title {
+            font-size: 4rem;
+            margin: 0 auto;
+            top: -20rem;
+        }
+        .TitleHome1 {
+            margin: 0 auto;
+            width: 20rem;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            top: -16rem;
+        }
+
+        .TitleHome2 {
+            margin: 0 auto;
+            top: -10rem;
+            font-size: 1.3rem;
+        }
+        .container {
+            left: 8rem;
+            top: -10rem;
+            width: 50rem;
+
+        }
+}
