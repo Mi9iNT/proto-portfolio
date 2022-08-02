@@ -1,32 +1,49 @@
-.text_videos{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.text_videos {
     color: $white;
     position: relative;
     top: 10rem;
     text-align: center;
 }
-.Video{
+
+.Video {
     position: relative;
     top: 20rem;
     margin-bottom: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 @media (min-width: 100px) and (max-width: 600px) {
     .text_videos {
-        width: 20rem;
-        text-align: center;
-        position: relative;
-        align-content: center;
-        margin: 0 auto;
-    }
+            width: 20rem;
+            text-align: center;
+            position: relative;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            margin: 0 auto;
+        }
 }
 @media (min-width: 601px) and (max-width: 1100px) {
     .text_videos {
-        width: 30rem;
-        text-align: center;
-        position: relative;
-        align-content: center;
-        margin: 0 auto;
-    }
+            width: 30rem;
+            text-align: center;
+            position: relative;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            margin: 0 auto;
+        }
 }

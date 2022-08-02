@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .logo-container {
     position: fixed;
     top: 0.5rem;
@@ -22,12 +29,15 @@
     width: 8rem;
     z-index: 1000;
 }
+
 .logo:hover {
     width: 8.2rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 @media (min-width: 100px) and (max-width: 600px) {
-    .logo-container {
+.logo-container {
         width: 9rem;
         height: 8.1rem;
     }
@@ -38,8 +48,11 @@
         left: 0.8rem;
         width: 6rem;
     }
+
     .logo:hover {
         width: 6.2rem;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
 }

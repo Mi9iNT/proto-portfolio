@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .Gallery {
     background-color: black;
     -webkit-column-count: 3;
@@ -9,7 +16,8 @@
     padding: 0 12px;
 
 }
-.GalerieTitle{
+
+.GalerieTitle {
     position: relative;
     top: 1rem;
     left: 90%;
@@ -21,60 +29,65 @@
 
 .gallery .illu {
     -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
     transition: all 350ms ease;
     cursor: pointer;
     margin-bottom: 12px;
 }
 
 .illu:hover {
+    -webkit-filter: contrast(120%) opacity(0.9);
     filter: contrast(120%) opacity(0.9);
 }
-.ContentGalerie{
+
+.ContentGalerie {
     position: relative;
     top: 5rem;
 }
 
 @media screen and (max-width: 991px) {
     .GalerieTitle {
-        position: relative;
-        top: 1rem;
-        left: 0%;
-    }
-    .ContentGalerie {
-        position: relative;
-        top: 5rem;
-        left: 3rem;
-    }
-    .Gallery {
-        background-color: black;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-        -webkit-column-width: 33%;
-        -moz-column-width: 33%;
-        column-width: 33%;
-        padding: 0 12px;
-    }
-
-    .illu {
-        width: 22rem;
-    }
+            position: relative;
+            top: 1rem;
+            left: 0%;
+        }
+    
+        .ContentGalerie {
+            position: relative;
+            top: 5rem;
+            left: 3rem;
+        }
+    
+        .Gallery {
+            background-color: black;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-width: 33%;
+            -moz-column-width: 33%;
+            column-width: 33%;
+            padding: 0 12px;
+        }
+    
+        .illu {
+            width: 22rem;
+        }
 }
 
 @media screen and (max-width: 480px) {
     .Gallery {
-        background-color: black;
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-        -webkit-column-width: 33%;
-        -moz-column-width: 33%;
-        column-width: 33%;
-    }
-
-    .illu {
-        width: 22rem;
-    }
+            background-color: black;
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            -webkit-column-width: 33%;
+            -moz-column-width: 33%;
+            column-width: 33%;
+        }
+    
+        .illu {
+            width: 22rem;
+        }
 }
 
 /**Model**/
@@ -85,13 +98,25 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.441);
+    -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out;
     transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
     visibility: hidden;
     opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
@@ -100,6 +125,8 @@
 .model.open {
     visibility: visible;
     opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
@@ -110,6 +137,7 @@
     max-height: 100%;
     display: block;
     line-height: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px 0px 20px;
     margin: 0 auto;

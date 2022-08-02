@@ -4,9 +4,11 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-a{
+
+a {
     border: none;
 }
+
 .MenuBottom {
     background-color: #a4cbf2;
     height: 80%;
@@ -283,186 +285,188 @@ a{
 
 @media (min-width: 100px) and (max-width: 600px) {
     .MenuBottom {
-        background-color: #a4cbf2;
-        top: 10.6rem;
-        left: -2rem;
-        width: 15%;
-        height: 74%;
-        position: fixed;
-        cursor: pointer;
-    }
-
-    .MenuBottom:hover {
-        -webkit-transform: translateX(2rem);
-        -ms-transform: translateX(2rem);
-        transform: translateX(2rem);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
-
-    .MenuBottom:active {
-        -webkit-transform: translateX(2rem);
-        -ms-transform: translateX(2rem);
-        transform: translateX(2rem);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
-
-    .icoMenuBottom {
-        width: 2rem;
-        position: relative;
-        top: 0rem;
-        left: -0.5rem;
-    }
-
-    .burger-menu,
-    .burger-menu.open {
-        left: 1rem;
-        bottom: 4.8rem;
-        z-index: 9999;
-        background: #a4cbf2;
-        background-position: 50% 50%;
-        padding: 3.5px;
-        border-radius: 100%;
-        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .ImgBg {
-        position: relative;
-        bottom: 4rem;
-        left: 22rem;
-    }
-
-    .icoMenuBottom:hover {
-        -webkit-transform: scale(1.1) translateY(-0.2rem);
-        -ms-transform: scale(1.1) translateY(-0.2rem);
-        transform: scale(1.1) translateY(-0.2rem);
-        -webkit-transition: 0.8 ease-in-out;
-        -o-transition: 0.8 ease-in-out;
-        transition: 0.8 ease-in-out;
-    }
-
-    .active .icoMenuBottom {
-        position: relative;
-        width: 2.6rem;
-        left: 0.5rem;
-        height: 2.6rem;
-        background-color: #50bbfd;
-        border-radius: 100%;
-        padding: 0.35rem;
-        border: 0.2rem solid #a4cbf2;
-        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        z-index: 1007;
-    }
-
-    .links-circle {
-        position: relative;
-        top: 0rem;
-    }
-
-    .burger-menu,
-    .burger-menu.open {
-        display: inline-block;
-        cursor: pointer;
-        position: relative;
-        height: 2rem;
-        width: 2rem;
-        left: 0.5rem;
-        top: -22rem;
-        z-index: 9999;
-        background-position: 50% 50%;
-        padding: 3.5px;
-        border-radius: 100%;
-        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .IllusImg {
-        position: relative;
-        left: -20rem;
-        top: 3rem;
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .MusiImg {
-        position: relative;
-        left: -20rem;
-        top: 6rem;
-        width: 5.2rem;
-        height: 5.2rem;
-    }
-
-    .FilmImg {
-        position: relative;
-        left: -20rem;
-        top: 10rem;
-        width: 5.4rem;
-        height: 5.4rem;
-    }
-
-   
-    .MentioImg {
-        position: relative;
-        left: -20rem;
-        top: 14rem;
-        width: 5.8rem;
-        height: 5.8rem;
-    }
+            background-color: #a4cbf2;
+            top: 10.6rem;
+            left: -2rem;
+            width: 15%;
+            height: 74%;
+            position: fixed;
+            cursor: pointer;
+        }
+    
+        .MenuBottom:hover {
+            -webkit-transform: translateX(2rem);
+            -ms-transform: translateX(2rem);
+            transform: translateX(2rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .MenuBottom:active {
+            -webkit-transform: translateX(2rem);
+            -ms-transform: translateX(2rem);
+            transform: translateX(2rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .icoMenuBottom {
+            width: 2rem;
+            position: relative;
+            top: 0rem;
+            left: -0.5rem;
+        }
+    
+        .burger-menu,
+        .burger-menu.open {
+            left: 1rem;
+            bottom: 4.8rem;
+            z-index: 9999;
+            background: #a4cbf2;
+            background-position: 50% 50%;
+            padding: 3.5px;
+            border-radius: 100%;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+    
+        .ImgBg {
+            position: relative;
+            bottom: 4rem;
+            left: 22rem;
+        }
+    
+        .icoMenuBottom:hover {
+            -webkit-transform: scale(1.1) translateY(-0.2rem);
+            -ms-transform: scale(1.1) translateY(-0.2rem);
+            transform: scale(1.1) translateY(-0.2rem);
+            -webkit-transition: 0.8 ease-in-out;
+            -o-transition: 0.8 ease-in-out;
+            transition: 0.8 ease-in-out;
+        }
+    
+        .active .icoMenuBottom {
+            position: relative;
+            width: 2.6rem;
+            left: 0.5rem;
+            height: 2.6rem;
+            background-color: #50bbfd;
+            border-radius: 100%;
+            padding: 0.35rem;
+            border: 0.2rem solid #a4cbf2;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            z-index: 1007;
+        }
+    
+        .links-circle {
+            position: relative;
+            top: 0rem;
+        }
+    
+        .burger-menu,
+        .burger-menu.open {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            height: 2rem;
+            width: 2rem;
+            left: 0.5rem;
+            top: -22rem;
+            z-index: 9999;
+            background-position: 50% 50%;
+            padding: 3.5px;
+            border-radius: 100%;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+    
+        .IllusImg {
+            position: relative;
+            left: -20rem;
+            top: 3rem;
+            width: 5rem;
+            height: 5rem;
+        }
+    
+        .MusiImg {
+            position: relative;
+            left: -20rem;
+            top: 6rem;
+            width: 5.2rem;
+            height: 5.2rem;
+        }
+    
+        .FilmImg {
+            position: relative;
+            left: -20rem;
+            top: 10rem;
+            width: 5.4rem;
+            height: 5.4rem;
+        }
+    
+    
+        .MentioImg {
+            position: relative;
+            left: -20rem;
+            top: 14rem;
+            width: 5.8rem;
+            height: 5.8rem;
+        }
 }
 
 @media (min-width: 601px) and (max-width: 1100px) {
     .MenuBottom {
-        background-color: #a4cbf2;
-        top: 10.6rem;
-        left: -4rem;
-        width: 15%;
-        height: 74%;
-        position: fixed;
-        cursor: pointer;
-    }
-    .MenuBottom:hover {
-        -webkit-transform: translateX(4rem);
-        -ms-transform: translateX(4rem);
-        transform: translateX(4rem);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
-    .IllusImg {
-        position: relative;
-        left: -20rem;
-        top: 3rem;
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .MusiImg {
-        position: relative;
-        left: -20rem;
-        top: 6rem;
-        width: 5.2rem;
-        height: 5.2rem;
-    }
-
-    .FilmImg {
-        position: relative;
-        left: -20rem;
-        top: 10rem;
-        width: 5.4rem;
-        height: 5.4rem;
-    }
-
-
-    .MentioImg {
-        position: relative;
-        left: -20rem;
-        top: 14rem;
-        width: 5.8rem;
-        height: 5.8rem;
-    }
+            background-color: #a4cbf2;
+            top: 10.6rem;
+            left: -4rem;
+            width: 15%;
+            height: 74%;
+            position: fixed;
+            cursor: pointer;
+        }
+    
+        .MenuBottom:hover {
+            -webkit-transform: translateX(4rem);
+            -ms-transform: translateX(4rem);
+            transform: translateX(4rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .IllusImg {
+            position: relative;
+            left: -20rem;
+            top: 3rem;
+            width: 5rem;
+            height: 5rem;
+        }
+    
+        .MusiImg {
+            position: relative;
+            left: -20rem;
+            top: 6rem;
+            width: 5.2rem;
+            height: 5.2rem;
+        }
+    
+        .FilmImg {
+            position: relative;
+            left: -20rem;
+            top: 10rem;
+            width: 5.4rem;
+            height: 5.4rem;
+        }
+    
+    
+        .MentioImg {
+            position: relative;
+            left: -20rem;
+            top: 14rem;
+            width: 5.8rem;
+            height: 5.8rem;
+        }
 }

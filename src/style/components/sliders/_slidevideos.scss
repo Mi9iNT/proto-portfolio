@@ -1,23 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 @media #{$BREAKPOINT-DESK} {
-    .ContSlideYt{
+.ContSlideYt {
         height: 40rem;
         width: 90rem;
         position: relative;
         top: 5rem;
         margin: 0 auto;
     }
-    .carousel .slide{
+
+    .carousel .slide {
         height: 40rem;
     }
-    .carousel .slide iframe{
+
+    .carousel .slide iframe {
         height: 50rem;
         width: 100rem;
     }
-    .image:nth-child(2){
+
+    .image:nth-child(2) {
         display: none;
     }
 }

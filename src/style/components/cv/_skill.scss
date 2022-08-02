@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
@@ -5,48 +12,56 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 
 @media #{$BREAKPOINT-MOBILE-LAND} {
     .skill-title {
-        text-align: center;
-        color: $color-1;
-        display: inline;
-    }
-    .skillImg{
-        width: 2rem;
-        position: relative;
-        left: 5rem;
-    }
-    .skills{
-        height: 20rem;
-    }
-    .skill{
-        display: block;
-    }
-    .skills-wallet{
-        margin: 1rem;
-    }
-    .skill-wallet{
-        color: $white;
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
+            text-align: center;
+            color: $color-1;
+            display: inline;
+        }
+    
+        .skillImg {
+            width: 2rem;
+            position: relative;
+            left: 5rem;
+        }
+    
+        .skills {
+            height: 20rem;
+        }
+    
+        .skill {
+            display: block;
+        }
+    
+        .skills-wallet {
+            margin: 1rem;
+        }
+    
+        .skill-wallet {
+            color: $white;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
 }
 @media #{$BREAKPOINT-DESK} {
     .skill-title {
-        text-align: center;
-        color: $color-2;
-        width: 10rem;
-        color: $color-2;
-    }
-    .skillImg {
-        width: 2rem;
-    }
-    .skill{
-        top: 1rem;
-    }
-
-    .skills {
-        height: 20rem;
-    }
-    .skill-wallet{
-        top: 2rem;
-    }
+            text-align: center;
+            color: $color-2;
+            width: 10rem;
+            color: $color-2;
+        }
+    
+        .skillImg {
+            width: 2rem;
+        }
+    
+        .skill {
+            top: 1rem;
+        }
+    
+        .skills {
+            height: 20rem;
+        }
+    
+        .skill-wallet {
+            top: 2rem;
+        }
 }

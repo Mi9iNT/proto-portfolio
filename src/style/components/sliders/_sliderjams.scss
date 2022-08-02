@@ -1,21 +1,39 @@
-.selected{
-   margin: 0 auto;
-   display: flex;
-   align-items: center;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.selected {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.overlay__text{
+
+.overlay__text {
     position: relative;
     top: 2rem;
     left: 0rem;
 }
-.control-dots{
+
+.control-dots {
     position: relative;
     top: 23rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
-.overlay__title{
+
+.overlay__title {
     position: relative;
     top: 2rem;
-    
+
 }

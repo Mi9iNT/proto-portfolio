@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
@@ -7,44 +14,59 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 .table_xp {
         border-bottom: ridge 0.4rem $color-3;
     }
-    .grid_title_exp{
+
+    .grid_title_exp {
         color: $white;
         position: relative;
         top: 2rem;
         left: -7rem;
         text-align: center;
     }
-    .cursus_exp{
+
+    .cursus_exp {
         overflow: auto;
         top: 0rem;
         height: 30rem;
         position: relative;
     }
+
     .grid_item_exp {
         display: block;
         line-height: 2rem;
         position: relative;
         top: 4rem;
     }
+
     .grid_mission_exp {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
-        
+
     }
-    .infos_xp{
+
+    .infos_xp {
         position: relative;
         top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content:space-around ;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
         margin-bottom: 8rem;
     }
-    .grid_date_exp{
+
+    .grid_date_exp {
         position: relative;
         top: 0rem;
         left: 0rem;
         text-align: left;
     }
-    .grid_location_exp{
+
+    .grid_location_exp {
         position: relative;
         top: 0rem;
         left: 0rem;
@@ -52,21 +74,25 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
     }
 }
 @media #{$BREAKPOINT-TABLET} {
-    .grid_title_exp{
+.grid_title_exp {
         left: 0rem;
     }
-    .missions_exp{
+
+    .missions_exp {
         margin: 2rem;
         list-style-type: none;
+      list-style-type: none;
     }
 }
+
 @media #{$BREAKPOINT-DESK} {
 
-.table_xp{
-    width: 100%;
-    border-bottom: ridge 0.4rem $color-3;
-}
-.cursus_exp {
+.table_xp {
+        width: 100%;
+        border-bottom: ridge 0.4rem $color-3;
+    }
+
+    .cursus_exp {
         overflow: auto;
         height: 20rem;
         top: 14rem;
@@ -75,6 +101,7 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
         font-size: 1.5rem;
         background-color: $transparent-3;
     }
+
     .grid_title_exp {
         color: $white;
         position: relative;
@@ -91,7 +118,12 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
     }
 
     .grid_mission_exp {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
     }
@@ -99,7 +131,10 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
     .infos_xp {
         position: relative;
         top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         margin-bottom: 8rem;
     }

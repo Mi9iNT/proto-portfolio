@@ -1,42 +1,63 @@
-h1{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+h1 {
     margin: 1rem;
 }
-.Pcontact{
-    
+
+.Pcontact {
+
     position: relative;
     top: 10rem;
     color: $white;
     text-align: center;
 }
-.Pcontact2{
+
+.Pcontact2 {
     position: relative;
     top: 10rem;
     text-align: center;
     color: $white;
 }
+
 .Pcontact2:hover {
     color: red;
     background: $transparent-1;
 }
-.contactForm{
+
+.contactForm {
     position: relative;
     left: 0rem;
     top: 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 auto;
-    .putForm{
+
+    .putForm {
         margin-top: 1rem;
         width: 20rem;
         height: 2rem;
     }
-    .msgForm{
+
+    .msgForm {
         margin-top: 2rem;
         height: 5rem;
         width: 20rem;
     }
-    .sendForm{
+
+    .sendForm {
         position: relative;
         top: 4rem;
         padding: 1.2em 2em;
@@ -51,37 +72,105 @@ h1{
         margin: 0 Auto;
         outline: none;
         cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
         transition: .2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
         box-shadow: -6px -6px 14px $color-1,
             -6px -6px 10px $color-1,
             6px 6px 8px rgba(255, 255, 255, .075),
             6px 6px 10px rgba(0, 0, 0, .15);
     }
+
     .sendForm:hover {
-    background: $color-3;
-    color: $white;
-    font-size: 1.2rem;
-    font-weight: 900;
-    letter-spacing: .4rem;
-    box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    transition: 0.4 ease;
+        background: $color-3;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 900;
+        letter-spacing: .4rem;
+        -webkit-box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        -webkit-transition: 0.4 ease;
+        -o-transition: 0.4 ease;
+        transition: 0.4 ease;
     }
+
     .sendForm:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
         box-shadow: inset -2px -2px 6px $color-1,
             inset -2px -2px 4px $color-1,
             inset 2px 2px 2px rgba(255, 255, 255, .075),
             inset 2px 2px 4px rgba(0, 0, 0, .15);
     }
-    
+
 }
+
+.putForm::-webkit-input-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.putForm::-moz-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.putForm:-ms-input-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.putForm::-ms-input-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 .putForm::placeholder {
     color: $color-2;
     font-size: 1.2em;
     font-weight: 600;
 }
+
+.msgForm::-webkit-input-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.msgForm::-moz-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.msgForm:-ms-input-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.msgForm::-ms-input-placeholder {
+    color: $color-2;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 .msgForm::placeholder {
     color: $color-2;
     font-size: 1.2em;
@@ -89,46 +178,52 @@ h1{
 }
 
 @media (min-width: 100px) and (max-width: 600px) {
-    .Pcontact{
-        text-align: center;
-        margin: 0 auto;
-        width: 20rem !important;
-    }
-    .Pcontact2 {
-        width: 20rem;
-        position: relative;
-        top: 10rem;
-        text-align: center;
-        margin: 0 auto;
-        color: $white;
-    }
-    .contactForm {
-        position: relative;
-        top: 12rem;
-        left: 1rem;
-        margin: 0 auto;
-        justify-items: center;
-    }
-    .sendForm {
-        top: 10rem !important;
-    }
-    .MenuBottom {
-        left: -3rem;
-    }
-    .MenuBottom:hover {
-        left: -2rem !important; 
-    }
+    .Pcontact {
+            text-align: center;
+            margin: 0 auto;
+            width: 20rem !important;
+        }
+    
+        .Pcontact2 {
+            width: 20rem;
+            position: relative;
+            top: 10rem;
+            text-align: center;
+            margin: 0 auto;
+            color: $white;
+        }
+    
+        .contactForm {
+            position: relative;
+            top: 12rem;
+            left: 1rem;
+            margin: 0 auto;
+            justify-items: center;
+        }
+    
+        .sendForm {
+            top: 10rem !important;
+        }
+    
+        .MenuBottom {
+            left: -3rem;
+        }
+    
+        .MenuBottom:hover {
+            left: -2rem !important;
+        }
 }
 @media (min-width: 601px) and (max-width: 1100px) {
     .sendForm {
             top: 8rem !important;
-    }
-    .Pcontact2 {
-        width: 20rem;
-        position: relative;
-        top: 10rem;
-        text-align: center;
-        margin: 0 auto;
-        color: $white;
-    }
+        }
+    
+        .Pcontact2 {
+            width: 20rem;
+            position: relative;
+            top: 10rem;
+            text-align: center;
+            margin: 0 auto;
+            color: $white;
+        }
 }

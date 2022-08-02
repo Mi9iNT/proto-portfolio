@@ -1,72 +1,98 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 
 @media #{$BREAKPOINT-MOBILE-LAND} {
-    h2{
-        margin: 1rem;
-        text-align: center;
-    }
-    .titleExperiences{
-        top: -2rem;
-        position: relative;
-        margin: 1rem;
-    }
-    .titleFormations {
-        top: -8rem;
-        position: relative;
-        margin: 1rem;
-    }
-    .cursus{
-        overflow: auto;
-        height: 20rem;
-        top: -6rem;
-        position: relative;
-    }
-    .grid_item{
-        display: grid;
-        margin: 2rem 4rem;
-    }
-    .grid_title{
-        font-size: 1.2rem;
-        font-weight: 800;
-    }
-    .grid_date {
-        font-size: 1rem;
-        font-weight: 600;
-        text-align: center;
-    }
-    .grid_location {
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    .infos-formations{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        top: 1rem;
-        line-height: 3rem;
-        border-bottom: ridge 0.4rem $color-3;
-    }
+h2 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.titleExperiences {
+    top: -2rem;
+    position: relative;
+    margin: 1rem;
+}
+
+.titleFormations {
+    top: -8rem;
+    position: relative;
+    margin: 1rem;
+}
+
+.cursus {
+    overflow: auto;
+    height: 20rem;
+    top: -6rem;
+    position: relative;
+}
+
+.grid_item {
+    display: -ms-grid;
+    display: grid;
+    margin: 2rem 4rem;
+}
+
+.grid_title {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.grid_date {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.grid_location {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.infos-formations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    top: 1rem;
+    line-height: 3rem;
+    border-bottom: ridge 0.4rem $color-3;
+}
     
 }
 @media #{$BREAKPOINT-DESK} {
-    .titleFormations {
+.titleFormations {
         top: 6rem;
         position: relative;
     }
-    .titleExperiences{
+
+    .titleExperiences {
         position: relative;
         top: 12rem;
     }
+
     .cursus {
         top: 8rem;
         height: 20rem;
         background-color: $transparent-3;
     }
+
     .infos-formations {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         position: relative;
         top: 1rem;

@@ -1,13 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
-h3{
+
+h3 {
     text-align: center;
     color: $color-3;
 }
-p{
+
+p {
     text-align: center;
     color: $white;
 }
-.ContentMentions{
+
+.ContentMentions {
     position: relative;
     top: 10rem;
     background: $transparent-1;

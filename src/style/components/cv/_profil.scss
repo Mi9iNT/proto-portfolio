@@ -1,30 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 
 @media #{$BREAKPOINT-MOBILE-LAND} {
-    .pitch{
-        color: $color-2;
-        margin: 2rem;
-        font-style:oblique;
-        position: relative;
-        top: -14rem;
-        left: 0rem;
-    }
-    .ProfilTitle{
-        margin: 1rem;
-        position: relative;
-        text-align: center;
-        display: none ;
-    }
+    .pitch {
+            color: $color-2;
+            margin: 2rem;
+            font-style: oblique;
+            position: relative;
+            top: -14rem;
+            left: 0rem;
+        }
+    
+        .ProfilTitle {
+            margin: 1rem;
+            position: relative;
+            text-align: center;
+            display: none;
+        }
 }
 @media #{$BREAKPOINT-DESK} {
-    .ProfilTitle{
+.ProfilTitle {
         text-align: center !important;
         top: 3rem !important;
         display: block !important;
     }
+
     .pitch {
         color: $color-2;
         margin: 2rem !important;

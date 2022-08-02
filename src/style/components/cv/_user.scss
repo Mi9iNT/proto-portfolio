@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 800px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
@@ -16,73 +23,99 @@ a   {
 @media #{$BREAKPOINT-MOBILE-LAND} {
 
     .Avatar {
-        display: block;
-        width: 5rem;
-        margin: 0 auto;
-    }
-    .AvatarBlanc {
+            display: block;
+            width: 5rem;
+            margin: 0 auto;
+        }
+    
+        .AvatarBlanc {
             display: none;
-    }
-    .Avatar:hover {
-        transform: scale(1.2);
-        transition: 0.4s ease;
-    }
-    .btnBack {
-        position: relative;
-        top: 1rem;
-        width: 6rem;
-        height: 2rem;
-        margin: 0 auto;
-    }
-    .btnBack:hover {
-        transform: scale(1.2);
-        transition: 0.4s ease;
-    }
-    .btnDonwlad {
-        position: relative;
-        top: -6rem;
-        left: 6rem;
-        width: 2rem;
-        height: 2rem;
-    }
-    .btnDonwlad:hover {
-        transform: scale(1.2);
-        transition: 0.4s ease;
-    }
-    .user-name{
-        color: $white;
-        position: relative;
-        top: 2rem;
-    }
-    .user-profession{
-        color: $color-3;
-        position: relative;
-        top: 
-        2rem;
-    }
-    .user-infos{
-        display:block;
-        position: relative;
-        top: 3rem;
-    }
-    .Adresse,
-    .Telephone,
-    .AdresseMail {
-        width: 2rem;
-        margin: 1rem;
-    }
-    .AdresseBlanc,
-    .TelephoneBlanc,
-    .AdresseMailBlanc {
-        display: none;
-    }
-    .td-gauche{
-        margin: 15rem;
-    }
-    .td-droite {
-        text-align: left;
-    }
-    .td-droite:hover {
-        color: $color-3;
-    }
+        }
+    
+        .Avatar:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .btnBack {
+            position: relative;
+            top: 1rem;
+            width: 6rem;
+            height: 2rem;
+            margin: 0 auto;
+        }
+    
+        .btnBack:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .btnDonwlad {
+            position: relative;
+            top: -6rem;
+            left: 6rem;
+            width: 2rem;
+            height: 2rem;
+        }
+    
+        .btnDonwlad:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .user-name {
+            color: $white;
+            position: relative;
+            top: 2rem;
+        }
+    
+        .user-profession {
+            color: $color-3;
+            position: relative;
+            top:
+                2rem;
+        }
+    
+        .user-infos {
+            display: block;
+            position: relative;
+            top: 3rem;
+        }
+    
+        .Adresse,
+        .Telephone,
+        .AdresseMail {
+            width: 2rem;
+            margin: 1rem;
+        }
+    
+        .AdresseBlanc,
+        .TelephoneBlanc,
+        .AdresseMailBlanc {
+            display: none;
+        }
+    
+        .td-gauche {
+            margin: 15rem;
+        }
+    
+        .td-droite {
+            text-align: left;
+        }
+    
+        .td-droite:hover {
+            color: $color-3;
+        }
 }

@@ -1,6 +1,16 @@
 // Général
 @import "./settings";
 
+// Pages
+@import "./pages/home";
+@import "./pages/curriculumvitae";
+@import "./pages/contact";
+@import "./pages/galerie";
+@import "./pages/jams";
+@import "./pages/videos";
+@import "./pages/mentionslegales";
+
+@import "./pages/notfound";
 // Composants
 @import "./components/logo";
 @import "./components/menu";
@@ -19,13 +29,3 @@
 @import "./components/cv/user";
 
 
-// Pages
-@import "./pages/home";
-@import "./pages/curriculumvitae";
-@import "./pages/contact";
-@import "./pages/galerie";
-@import "./pages/jams";
-@import "./pages/videos";
-@import "./pages/mentionslegales";
-
-@import "./pages/notfound";
