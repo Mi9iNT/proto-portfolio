@@ -22,22 +22,11 @@
 
 
 .title {
+    color: $color-3;
     text-align: center;
     position: relative;
     top: -20rem;
     font-size: 8rem;
-}
-
-h1 {
-    color: $color-3;
-}
-
-h2 {
-    color: $color-3;
-}
-
-h3 {
-    color: $white;
 }
 
 .sectionTitle {
@@ -47,6 +36,7 @@ h3 {
 }
 
 .TitleHome1 {
+    color: $color-3;
     position: relative;
     top: -8rem;
     left: 0rem;
@@ -54,6 +44,7 @@ h3 {
 }
 
 .TitleHome2 {
+    color: $white;
     position: relative;
     top: -2rem;
     left: 0rem;
