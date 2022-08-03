@@ -52,8 +52,9 @@ const [toggleState, setToggleState] = useState(1);
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <h2 className="Title-Portrait">Portrait</h2>
-          <hr />
+          <h2 className="Title-Onglet">Portrait</h2>
+          <hr className="trait1" />
+          <hr className="trait2" />
           <div className="contentPortrait">
             <img className="ImgPortait" src={PortraitImg} alt="Mon Portrait" title="Mon Portrait Photoshopé"  />
             <p className="pitchPortrait">Je me présente comme étant <span className='pitchBleu'>Clairy Miguel Développeur Front-End</span> et <span className='pitchBleu'>Designer Web</span>.</p>
@@ -76,7 +77,7 @@ const [toggleState, setToggleState] = useState(1);
               </a>
             </div>
             <br/>
-            <p className="pitchPortrait">En vous souhaitant bien sur une chouette visite</p>
+            <p className="pitchPortraitLast">En vous souhaitant bien sur une chouette visite</p>
             <p className="pitchPortraitNb">ps: les feedbacks sont hautement appréciés car ils permettent avant tout de se perfectionner donc à ceux qui m'en feront 💙 sur vous</p>
             
           </div>
@@ -97,7 +98,7 @@ const [toggleState, setToggleState] = useState(1);
               </div>
             </div>
           </div>
-          <div className="WhatUseMain">
+          <div className="contact-btn">
             <NavLink to="/contact">
               <button className="Btn-Contact-Me-Main">Contacter Moi</button>
             </NavLink>
@@ -109,71 +110,85 @@ const [toggleState, setToggleState] = useState(1);
         <div
           className={toggleState === 2 ? "content  active-content" : "content"} id="mes-illustrations"
         >
-          <h2>Mes Illustrations</h2>
-          <hr />
+          <h2 className="Title-Onglet">Mes Illustrations</h2>
+          <hr className="trait1" />
+          <hr className="trait2" />
           <SliderIllustrations />
           <div className="WhatUse">
             <p className="pitchSoft">J'utilise principalement ces logiciels afin de réaliser mes illustrations :</p>
             <span className="pitchBleu">
               <ul className="Software">
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-                <li>Blender3D</li>
-                <li>AfterEffects</li>
+                <li><a className="LinkSoftware" href="https://www.adobe.com/fr/products/aftereffects.html" target="blank">AfterEffects</a></li>
+                <li><a className="LinkSoftware" href="https://www.adobe.com/fr/products/illustrator.html" target="blank">Illustrator</a></li>
+                <li><a className="LinkSoftware" href="https://www.adobe.com/fr/products/photoshop.html" target="blank">Photoshop</a></li>
+                <li><a className="LinkSoftware" href="https://www.blender.org/" target="blank">Blender3D</a></li>
               </ul>
             </span>
-            <NavLink to="/contact">
-              <button className="Btn-Contact-Me">Contacter Moi</button>
-            </NavLink>
-            <NavLink to="/Galerie">
-              <button className="Btn-Galerie-Me-Main">Galerie</button>
-            </NavLink>
+            <div className="contact-btn-galerie">
+              <NavLink to="/contact">
+              <button className="Btn-Contact-Me-Galerie">Contacter Moi</button>
+              </NavLink>
+              <NavLink to="/Galerie">
+                <button className="Btn-Galerie-Me-Main">Galerie</button>
+              </NavLink>
+            </div>
+            
           </div>
         </div>
 
         <div
           className={toggleState === 3 ? "content  active-content" : "content"} id="mes-videos"
         >
-          <h2>Mes vidéos</h2>
-          <hr />
+          <h2 className="Title-Onglet">Mes vidéos</h2>
+          <hr className="trait1" />
+          <hr className="trait2" />
           <SlideVideos />
           <div className="WhatUseVideos">
             <p className="pitchSoft">J'utilise principalement ces logiciels afin de réaliser mes Vidéos et Animations :</p>
             <span className="pitchBleu">
               <ul className="Software">
-                <li>AfterEffects</li>
-                <li>Première Pro</li>
-                <li>Audition</li>
-                <li>Blender3D</li>
+                <li><a className="LinkSoftware" href="https://www.adobe.com/fr/products/aftereffects.html" target="blank">AfterEffects</a></li>
+                <li><a className="LinkSoftware" href="https://www.adobe.com/fr/products/premiere.html" target="blank">Première Pro</a></li>
+                <li><a className="LinkSoftware" href="https://www.adobe.com/fr/products/audition.html" target="blank">Audition</a></li>
+                <li><a className="LinkSoftware" href="https://www.blender.org/" target="blank">Blender3D</a></li>
               </ul>
             </span>
-            <NavLink to="/contact">
-              <button className="Btn-Contact-Me">Contacter Moi</button>
-            </NavLink>
-            <NavLink to="/Videos">
-              <button className="Btn-Videos-Me-Main">Vidéos</button>
-            </NavLink>
+            <div className="contact-btn-Videos">
+              <NavLink to="/contact">
+              <button className="Btn-Contact-Me-Videos">Contacter Moi</button>
+              </NavLink>
+              <NavLink to="/Videos">
+                <button className="Btn-Videos-Me-Main">Vidéos</button>
+              </NavLink>
+            </div>
+            
           </div>
         </div>
         <div
           className={toggleState === 4 ? "content  active-content" : "content"} id="mes-jams"
         >
-          <h2>Mes Jams</h2>
-          <hr />
+          <h2 className="Title-Onglet">Mes Jams</h2>
+          <hr className="trait1" />
+          <hr className="trait2" />
           <SliderJams />
           <div className="WhatUsejams">
             <p className="pitchSoft">J'utilise principalement ces logiciels afin de réaliser mes Jams :</p>
             <span className="pitchBleu">
               <ul className="Software">
-                <li>Music Maker Jam</li>
+                <li>
+                  <a className="Magix" href="https://www.magix.com/fr/musique/music-maker/" target="blank">Music Maker Jam</a>
+                </li>
               </ul>
             </span>
-            <NavLink to="/contact">
-              <button className="Btn-Contact-Me">Contacter Moi</button>
-            </NavLink>
-            <NavLink to="/Jams">
-              <button className="Btn-Jams-Me-Main">Jams</button>
-            </NavLink>
+            <div className="contact-btn-Jams">
+              <NavLink to="/contact">
+              <button className="Btn-Contact-Me-Jams">Contacter Moi</button>
+              </NavLink>
+              <NavLink to="/Jams">
+                <button className="Btn-Jams-Me-Main">Jams</button>
+              </NavLink>
+            </div>
+            
           </div>
         </div>      
       </div>

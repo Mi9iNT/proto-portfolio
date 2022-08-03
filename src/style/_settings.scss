@@ -31,7 +31,7 @@ body{
     background: url(../assets/img/TerreLuneBlender.png);
     background-attachment: fixed;
     background-position: center top;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -46,6 +46,10 @@ h2 {
 }
 
 h3 {
+    font-family: $font-2;
+    text-align: center;
+}
+h4 {
     font-family: $font-2;
     text-align: center;
 }
