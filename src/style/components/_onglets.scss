@@ -13,837 +13,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 @media #{$BREAKPOINT-MOBILE-LAND} {
 
 /*         START Nav Onglet        */
-.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    position: relative;
-    top: 0rem;
-    margin-top: 0.5rem;
-    width: 100%;
-    height: 100%;
-    margin: 100px auto 0;
-    word-break: break-all;
-    left: 0rem;
-}
-
-.bloc-tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    height: 2.5rem;
-    width: 100%;
-}
-
-.tabs {
-    padding: 2px;
-    text-align: center;
-    width: auto;
-    color: $color-1;
-    cursor: pointer;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    position: relative;
-    outline: none;
-    font-size: 1rem;
-}
-
-.tabs:hover {
-    font-size: 1rem;
-    width: auto;
-    border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
-    transform: translateY(-10px);
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-    animation-duration: 0.4s ease;
-    
-}
-
-.active-tabs {
-    background: $color-3;
-    border: 0.1rem solid $color-1;
-    width: auto;
-    font-size: 1.2rem;
-    color: $color-2;
-    border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-}
-
-.active-tabs:hover {
-    background: $transparent-3;
-    border: 0.1rem solid $color-3;
-    width: auto;
-    font-size: 0.6rem;
-    color: $white;
-    border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-}
-
-.active-tabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -4px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 1px;
-    border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
-}
-
-.content-tabs {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-}
-
-/*         END Nav Onglet        */
-/*         START Contenu onglet        */
-
-.content {
-    border-left: 0.01rem solid $color-1;
-    border-top: 0.01rem solid $color-1;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-
-    /*Margin-right de quoi pourquoi /?\*/
-    margin-right: 1rem;
-    /* */
-
-    display: none;
-    color: $white;
-    background-position: center bottom;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 0rem;
-}
-
-.Title-Onglet {
-    font-size: 1.4rem;
-    padding: 0px 0 5px 0px;
-}
-
-.trait1 {
-    width: 75px;
-    height: 2px;
-    margin-bottom: 5px;
-    color: $color-1;
-}
-.trait2 {
-    width: 25px;
-    height: 2px;
-    margin-bottom: 5px;
-    color: $color-3;
-}
-
-.active-content {
-    display: block;
-    background: $transparent-1;
-}
-
-/* START ONGLET PORTRAIT */
-
-.ImgPortait {
-    float: none;
-    width: 8rem;
-    margin: 0 auto;
-}
-
-.pitchPortrait {
-    width: auto;
-    position: relative;
-    top: 2rem;
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 3rem;
-    padding: 0rem;
-}
-
-.pitchPortraitLast {
-    width: auto;
-    position: relative;
-    top: 2rem;
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 3rem;
-    padding: 0rem;
-}
-
-.pitchBleu {
-    color: $color-3;
-    font-size: 1.4rem;
-}
-
-.pitchPortraitNb {
-    margin-top: 2rem;
-    color: #50bbfd;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    position: relative;
-    top: 5rem;
-    width: 100%;
-}
-
-.ContentLinkPortrait {
-    position: relative;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 2rem;
-    // display: -webkit-box;
-    // display: -ms-flexbox;
-    // display: inline-flexbox;
-    // -webkit-box-pack: center;
-    // -ms-flex-pack: center;
-    // justify-content: center;
-}
-
-.LinkPortrait {
-    color: $color-3;
-}
-
-.LinkPortrait:hover {
-    color: $color-1;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-    ;
-}
-
-.ThumbSiteSection {
-    position: relative;
-    top: 6rem;
-    height: 100%;
-}
-
-.siteWeb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    flex-direction: column;
-    position: relative;
-    top: 5rem;
-}
-
-.ThumbContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
-.ThumbImgSite {
-    width: 10rem;
-}
-
-.TitleThumb {
-    position: relative;
-    top: -12rem;
-    font-size: 1.2rem;
-    color: $color-3;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.ParaThumb {
-    position: relative;
-    top: -1rem;
-    width: auto;
-    text-align: left;
-    line-height: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.Linkthumb {
-    color: $color-3;
-    font-size: 1.2rem;
-}
-
-.Linkthumb:hover {
-    color: $color-1;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-}
-
-.contact-btn {
-    position: relative;
-    top: 5rem;
-}
-
-.Btn-Contact-Me {
-    width: 18rem !important;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -2rem;
-    left: 0rem;
-    padding: 1.5em 3em;
-    background: #a4cbf2;
-    border: none;
-    border-radius: 0.5rem;
-    color: rgb(243, 243, 243);
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-3,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-3,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-}
-
-.Btn-Contact-Me:hover {
-    color: $white;
-    background: $color-3;
-    -webkit-box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Contact-Me:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-.Btn-Contact-Me-Main {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 7rem;
-    width: 10rem;
-    padding: 1.5em 1em;
-    background: $color-1;
-    border: none;
-    border-radius: .5rem;
-    color: $white;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-}
-
-.Btn-Contact-Me-Main:hover {
-    background: $color-3;
-    -webkit-box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Contact-Me-Main:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-
-        /* END ONGLET PORTRAIT */
-
-        /* START ONGLET ILLUSTRATIONS */
-
-.Software {
-    position: relative;
-    top: 4rem;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-
-    li {
-        margin: 1rem;
-    }
-    .LinkSoftware{
-        color: $color-3;
-    }
-}
-
-.contact-btn-galerie{
-    position: relative;
-    top: 10rem;
-}
-
-.Btn-Contact-Me-Galerie {
-    width: 10rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 0rem;
-    left: 0rem;
-    padding: 1.5em 1em;
-    background: $color-3;
-    border: none;
-    border-radius: 0.5rem;
-    color: rgb(243, 243, 243);
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-3,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-3,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-}
-
-.Btn-Contact-Me-Galerie:hover {
-    color: $white;
-    background: $color-1;
-    -webkit-box-shadow: -2px -2px 6px $color-3,
-        -2px -2px 4px $color-3,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-3,
-        -2px -2px 4px $color-3,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Contact-Me-Galerie:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-3,
-        inset -2px -2px 4px $color-3,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-3,
-        inset -2px -2px 4px $color-3,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-.Btn-Galerie-Me-Main {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 0rem;
-    width: 10rem;
-    padding: 1.5em 1em;
-    background: $color-1;
-    border: none;
-    border-radius: .5rem;
-    color: $white;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-}
-
-.Btn-Galerie-Me-Main:hover {
-    background: $color-3;
-    -webkit-box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Galerie-Me-Main:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-        /* END ONGLET ILLUSTRATIONS */
-
-        /* START ONGLET VIDEOS */
-
- .WhatUseVideos {
-    position: relative;
-    top: 0rem;
-}
-
-.contact-btn-Videos {
-    position: relative;
-    top: 10rem;
-}
-.Btn-Contact-Me-Videos {
-    width: 10rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 0rem;
-    left: 0rem;
-    padding: 1.5em 1em;
-    background: $color-3;
-    border: none;
-    border-radius: 0.5rem;
-    color: rgb(243, 243, 243);
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-3,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-3,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-}
-
-.Btn-Contact-Me-Videos:hover {
-    color: $white;
-    background: $color-1;
-    -webkit-box-shadow: -2px -2px 6px $color-3,
-        -2px -2px 4px $color-3,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-3,
-        -2px -2px 4px $color-3,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Contact-Me-Videos:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-3,
-        inset -2px -2px 4px $color-3,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-3,
-        inset -2px -2px 4px $color-3,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-.Btn-Videos-Me-Main {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 0rem;
-    width: 10rem;
-    padding: 1.5em 1em;
-    background: $color-1;
-    border: none;
-    border-radius: .5rem;
-    color: $white;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-}
-
-.Btn-Videos-Me-Main:hover {
-    background: $color-3;
-    -webkit-box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Videos-Me-Main:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-
-
-        /* END ONGLET VIDEOS */
-        
-        /* START ONGLET JAMS */
-
-.overlay__text {
-    top: 1rem !important;
-    height: 5rem;
-}
-
-.WhatUsejams {
-    position: relative;
-    top: -6rem;
-}
-
-.pitchSoft {
-    position: relative;
-    top: 2rem;
-}
-
-.Magix {
-    color: $color-3  !important;
-}
-
-.Magix:hover {
-    color: $color-1;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-    ;
-}
-
-.contact-btn-Videos {
-    position: relative;
-    top: 10rem;
-}
-
-.Btn-Contact-Me-Jams {
-    width: 10rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 10rem;
-    left: 0rem;
-    padding: 1.5em 1em;
-    background: $color-3;
-    border: none;
-    border-radius: 0.5rem;
-    color: rgb(243, 243, 243);
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-3,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-3,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 1px rgba(0, 0, 0, .15);
-}
-
-.Btn-Contact-Me-Jams:hover {
-    color: $white;
-    background: $color-1;
-    -webkit-box-shadow: -2px -2px 6px $color-3,
-        -2px -2px 4px $color-3,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-3,
-        -2px -2px 4px $color-3,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Contact-Me-Jams:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-3,
-        inset -2px -2px 4px $color-3,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-3,
-        inset -2px -2px 4px $color-3,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-
-.Btn-Jams-Me-Main {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 0rem;
-    width: 10rem;
-    padding: 1.5em 1em;
-    background: $color-1;
-    border: none;
-    border-radius: .5rem;
-    color: $white;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    text-align: center;
-    margin: 0 Auto;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-    -webkit-box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-    box-shadow: -6px -6px 14px $color-1,
-        -6px -6px 10px $color-1,
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-}
-
-.Btn-Jams-Me-Main:hover {
-    background: $color-3;
-    -webkit-box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-    box-shadow: -2px -2px 6px $color-1,
-        -2px -2px 4px $color-1,
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.Btn-Jams-Me-Main:active {
-    -webkit-box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-    box-shadow: inset -2px -2px 6px $color-1,
-        inset -2px -2px 4px $color-1,
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
-}
-        /* END ONGLET JAMS */
-   
-}
-
-@media #{$BREAKPOINT-TABLET} {
-
-    /*         START Nav Onglet        */
     .container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -875,7 +44,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .tabs {
         padding: 2px;
         text-align: center;
-        width: auto;
+        width: 2rem;
         color: $color-1;
         cursor: pointer;
         -webkit-box-sizing: content-box;
@@ -887,12 +56,881 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
     .tabs:hover {
         font-size: 1rem;
-        width: auto;
+        width: 2rem;
         border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
         transform: translateY(-10px);
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
+        -webkit-animation-duration: 0.4s ease;
+        animation-duration: 0.4s ease;
+
+    }
+
+    .active-tabs {
+        background: $color-3;
+        border: 0.1rem solid $color-1;
+        width: 4rem;
+        font-size: 1.2rem;
+        color: $color-2;
+        border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .active-tabs:hover {
+        background: $transparent-3;
+        border: 0.1rem solid $color-3;
+        width: 4rem;
+        font-size: 0.6rem;
+        color: $white;
+        border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .active-tabs::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -4px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: calc(100% + 2px);
+        height: 1px;
+        border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
+    }
+
+    .content-tabs {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+
+    /*         END Nav Onglet        */
+    /*         START Contenu onglet        */
+
+    .content {
+        border-left: 0.01rem solid $color-1;
+        border-top: 0.01rem solid $color-1;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+
+        /*Margin-right de quoi pourquoi /?\*/
+        margin-right: 1rem;
+        /* */
+
+        display: none;
+        color: $white;
+        background-position: center bottom;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 0rem;
+    }
+
+    .Title-Onglet {
+        font-size: 1.4rem;
+        padding: 0px 0 5px 0px;
+    }
+
+    .trait1 {
+        width: 75px;
+        height: 2px;
+        margin-bottom: 5px;
+        color: $color-1;
+    }
+
+    .trait2 {
+        width: 25px;
+        height: 2px;
+        margin-bottom: 5px;
+        color: $color-3;
+    }
+
+    .active-content {
+        display: block;
+        background: $transparent-1;
+    }
+
+    /* START ONGLET PORTRAIT */
+
+    .ImgPortait {
+        float: none;
+        width: 8rem;
+        margin: 0 auto;
+    }
+
+    .pitchPortrait {
+        width: auto;
+        position: relative;
+        top: 2rem;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        padding: 0rem;
+    }
+
+    .pitchPortraitLast {
+        width: auto;
+        position: relative;
+        top: 2rem;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        padding: 0rem;
+    }
+
+    .pitchBleu {
+        color: $color-3;
+        font-size: 1.4rem;
+    }
+
+    .pitchPortraitNb {
+        margin-top: 2rem;
+        color: #50bbfd;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        position: relative;
+        top: 5rem;
+        width: 100%;
+    }
+
+    .ContentLinkPortrait {
+        position: relative;
+        top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        line-height: 2rem;
+    }
+
+    .LinkPortrait {
+        color: $color-3;
+    }
+
+    .LinkPortrait:hover {
+        color: $color-1;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+        ;
+    }
+
+    .ThumbSiteSection {
+        position: relative;
+        top: 6rem;
+        height: 100%;
+    }
+
+    .siteWeb {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+        top: 5rem;
+    }
+
+    .ThumbContent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .ThumbImgSite {
+        width: 10rem;
+    }
+
+    .TitleThumb {
+        position: relative;
+        top: -12rem;
+        font-size: 1.2rem;
+        color: $color-3;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .ParaThumb {
+        position: relative;
+        top: -1rem;
+        width: auto;
+        text-align: left;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .Linkthumb {
+        color: $color-3;
+        font-size: 1.2rem;
+    }
+
+    .Linkthumb:hover {
+        color: $color-1;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .contact-btn {
+        position: relative;
+        top: 5rem;
+    }
+
+    .Btn-Contact-Me {
+        width: 18rem !important;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: -2rem;
+        left: 0rem;
+        padding: 1.5em 3em;
+        background: #a4cbf2;
+        border: none;
+        border-radius: 0.5rem;
+        color: rgb(243, 243, 243);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-3,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-3,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me:hover {
+        color: $white;
+        background: $color-3;
+        -webkit-box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Contact-Me:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Main {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 7rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Main:hover {
+        background: $color-3;
+        -webkit-box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Contact-Me-Main:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+
+    /* END ONGLET PORTRAIT */
+
+    /* START ONGLET ILLUSTRATIONS */
+
+    .Software {
+        position: relative;
+        top: 4rem;
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+
+        li {
+            margin: 1rem;
+        }
+
+        .LinkSoftware {
+            color: $color-3;
+        }
+    }
+
+    .contact-btn-galerie {
+        position: relative;
+        top: 10rem;
+    }
+
+    .Btn-Contact-Me-Galerie {
+        width: 10rem;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 0rem;
+        left: 0rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: 0.5rem;
+        color: rgb(243, 243, 243);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-3,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-3,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Galerie:hover {
+        color: $white;
+        background: $color-1;
+        -webkit-box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Contact-Me-Galerie:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Galerie-Me-Main {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Galerie-Me-Main:hover {
+        background: $color-3;
+        -webkit-box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Galerie-Me-Main:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    /* END ONGLET ILLUSTRATIONS */
+
+    /* START ONGLET VIDEOS */
+
+    .WhatUseVideos {
+        position: relative;
+        top: 0rem;
+    }
+
+    .contact-btn-Videos {
+        position: relative;
+        top: 10rem;
+    }
+
+    .Btn-Contact-Me-Videos {
+        width: 10rem;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 0rem;
+        left: 0rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: 0.5rem;
+        color: rgb(243, 243, 243);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-3,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-3,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Videos:hover {
+        color: $white;
+        background: $color-1;
+        -webkit-box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Contact-Me-Videos:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Videos-Me-Main {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Videos-Me-Main:hover {
+        background: $color-3;
+        -webkit-box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Videos-Me-Main:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+
+
+    /* END ONGLET VIDEOS */
+
+    /* START ONGLET JAMS */
+
+    .overlay__text {
+        top: 1rem !important;
+        height: 5rem;
+    }
+
+    .WhatUsejams {
+        position: relative;
+        top: -6rem;
+    }
+
+    .pitchSoft {
+        position: relative;
+        top: 2rem;
+    }
+
+    .Magix {
+        color: $color-3  !important;
+    }
+
+    .Magix:hover {
+        color: $color-1;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+        ;
+    }
+
+    .contact-btn-Videos {
+        position: relative;
+        top: 10rem;
+    }
+
+    .Btn-Contact-Me-Jams {
+        width: 10rem;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 10rem;
+        left: 0rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: 0.5rem;
+        color: rgb(243, 243, 243);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-3,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-3,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 1px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Jams:hover {
+        color: $white;
+        background: $color-1;
+        -webkit-box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Contact-Me-Jams:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Jams-Me-Main {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+        box-shadow: -6px -6px 14px $color-1,
+            -6px -6px 10px $color-1,
+            6px 6px 8px rgba(255, 255, 255, .075),
+            6px 6px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Jams-Me-Main:hover {
+        background: $color-3;
+        -webkit-box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-1,
+            -2px -2px 4px $color-1,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+    }
+
+    .Btn-Jams-Me-Main:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-1,
+            inset -2px -2px 4px $color-1,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    /* END ONGLET JAMS */
+   
+}
+
+@media #{$BREAKPOINT-TABLET} {
+
+/*         START Nav Onglet        */
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+        top: 0rem;
+        margin-top: 0.5rem;
+        width: 100%;
+        height: 100%;
+        margin: 100px auto 0;
+        word-break: break-all;
+        left: 0rem;
+    }
+
+    .bloc-tabs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    .tabs {
+        padding: 2px;
+        text-align: center;
+        width: 5rem;
+        color: $color-1;
+        cursor: pointer;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        position: relative;
+        outline: none;
+        font-size: 1rem;
+    }
+
+    .tabs:hover {
+        font-size: 1rem;
+        width: 5rem;
+        border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+        -webkit-animation-duration: 0.4s ease;
         animation-duration: 0.4s ease;
 
     }
@@ -1008,7 +1046,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         padding: 1rem;
         width: 100%;
     }
-         
+
     .pitchPortraitLast {
         position: relative;
         top: 2rem;
@@ -1038,16 +1076,17 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .ContentLinkPortrait {
         position: relative;
         top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         line-height: 2rem;
-        // display: -webkit-box;
-        // display: -ms-flexbox;
-        // display: inline-flexbox;
-        // -webkit-box-pack: center;
-        // -ms-flex-pack: center;
-        // justify-content: center;
     }
 
     .LinkPortrait {
@@ -1078,6 +1117,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         -ms-flex-align: center;
         align-items: center;
         -ms-flex-pack: distribute;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         position: relative;
         top: 5rem;
@@ -1143,7 +1185,11 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .Btn-Contact-Me {
         width: 18rem !important;
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         top: -2rem;
         left: 0rem;
@@ -1159,6 +1205,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         margin: 0 Auto;
         outline: none;
         cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
         transition: 0.2s ease;
         -webkit-box-shadow: -6px -6px 14px $color-3,
             -6px -6px 10px $color-1,
@@ -1283,7 +1331,11 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .Btn-Contact-Me-Galerie {
         width: 10rem;
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         top: 0rem;
         left: 0rem;
@@ -1299,6 +1351,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         margin: 0 Auto;
         outline: none;
         cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
         transition: 0.2s ease;
         -webkit-box-shadow: -6px -6px 14px $color-1,
             -6px -6px 10px $color-3,
@@ -1409,59 +1463,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .Btn-Contact-Me-Videos {
         width: 10rem;
         position: relative;
-        display: flex;
-        justify-content: center;
-        top: 0rem;
-        left: 0rem;
-        padding: 1.5em 1em;
-        background: $color-3;
-        border: none;
-        border-radius: 0.5rem;
-        color: rgb(243, 243, 243);
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        transition: 0.2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-3,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-3,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Contact-Me-Videos:hover {
-        color: $white;
-        background: $color-1;
-        -webkit-box-shadow: -2px -2px 6px $color-3,
-            -2px -2px 4px $color-3,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-3,
-            -2px -2px 4px $color-3,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Contact-Me-Videos:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-3,
-            inset -2px -2px 4px $color-3,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-3,
-            inset -2px -2px 4px $color-3,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Videos-Me-Main {
-        position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1469,102 +1470,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         -ms-flex-pack: center;
         justify-content: center;
         top: 0rem;
-        width: 10rem;
-        padding: 1.5em 1em;
-        background: $color-1;
-        border: none;
-        border-radius: .5rem;
-        color: $white;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: .2s ease;
-        -o-transition: .2s ease;
-        transition: .2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Videos-Me-Main:hover {
-        background: $color-3;
-        -webkit-box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Videos-Me-Main:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-
-
-    /* END ONGLET VIDEOS */
-
-    /* START ONGLET JAMS */
-
-    .overlay__text{
-        top: 1rem !important;
-        height: 5rem;
-    }
-
-    .WhatUsejams {
-        position: relative;
-        top: 2rem;
-    }
-
-    .pitchSoft {
-        position: relative;
-        top: 0rem;
-    }
-
-    .Magix {
-        color: $color-3  !important;
-    }
-
-    .Magix:hover {
-        color: $color-1;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-        ;
-    }
-
-    .contact-btn-Jams {
-        position: relative;
-        top: 10rem;
-    }
-
-    .Btn-Contact-Me-Jams {
-        width: 10rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: 0rem;
         left: 0rem;
         padding: 1.5em 1em;
         background: $color-3;
@@ -1578,690 +1483,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         margin: 0 Auto;
         outline: none;
         cursor: pointer;
-        transition: 0.2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-3,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-3,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Contact-Me-Jams:hover {
-        color: $white;
-        background: $color-1;
-        -webkit-box-shadow: -2px -2px 6px $color-3,
-            -2px -2px 4px $color-3,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-3,
-            -2px -2px 4px $color-3,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Contact-Me-Jams:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-3,
-            inset -2px -2px 4px $color-3,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-3,
-            inset -2px -2px 4px $color-3,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Jams-Me-Main {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        top: 0rem;
-        width: 10rem;
-        padding: 1.5em 1em;
-        background: $color-1;
-        border: none;
-        border-radius: .5rem;
-        color: $white;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: .2s ease;
-        -o-transition: .2s ease;
-        transition: .2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Jams-Me-Main:hover {
-        background: $color-3;
-        -webkit-box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Jams-Me-Main:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-    /* END ONGLET JAMS */
-
-}
-
-@media #{$BREAKPOINT-TABLET-LAND} {
-
-    /*         START Nav Onglet        */
-    .container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        position: relative;
-        top: 0rem;
-        margin-top: 0.5rem;
-        width: 100%;
-        height: 100%;
-        margin: 100px auto 0;
-        word-break: break-all;
-        left: 0rem;
-    }
-
-    .bloc-tabs {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        height: 2.5rem;
-        width: 100%;
-    }
-
-    .tabs {
-        padding: 2px;
-        text-align: center;
-        width: auto;
-        color: $color-1;
-        cursor: pointer;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        position: relative;
-        outline: none;
-        font-size: 1rem;
-    }
-
-    .tabs:hover {
-        font-size: 1rem;
-        width: auto;
-        border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
-        transform: translateY(-10px);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-        animation-duration: 0.4s ease;
-
-    }
-
-    .active-tabs {
-        background: $color-3;
-        border: 0.1rem solid $color-1;
-        width: 4rem;
-        font-size: 1.2rem;
-        color: $color-2;
-        border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
-
-    .active-tabs:hover {
-        background: $transparent-3;
-        border: 0.1rem solid $color-3;
-        width: 4rem;
-        font-size: 0.6rem;
-        color: $white;
-        border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
-
-    .active-tabs::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -4px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: calc(100% + 2px);
-        height: 1px;
-        border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
-    }
-
-    .content-tabs {
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-    }
-
-    /*         END Nav Onglet        */
-    /*         START Contenu onglet        */
-
-    .content {
-        border-left: 0.01rem solid $color-1;
-        border-top: 0.01rem solid $color-1;
-        padding: 20px;
-        width: 100%;
-        height: 100%;
-        background: $transparent-1;
-
-        /*Margin-right de quoi pourquoi /?\*/
-        margin-right: 1rem;
-        /* */
-
-        display: none;
-        color: $white;
-        background-position: center bottom;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        position: relative;
-        top: 0rem;
-    }
-
-    .Title-Onglet {
-        font-size: 1.4rem;
-        padding: 0px 0 5px 0px;
-    }
-
-    .trait1 {
-        width: 250px;
-        height: 6px;
-        margin-bottom: 5px;
-        color: $color-1;
-        background: $color-1;
-    }
-
-    .trait2 {
-        width: 150px;
-        height: 4px;
-        margin-bottom: 5px;
-        color: $color-3;
-        background: $color-3;
-    }
-
-    .active-content {
-        display: block;
-        background: $transparent-1;
-    }
-
-    /* START ONGLET PORTRAIT */
-
-    .ImgPortait {
-        float: left;
-        width: 12rem;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-
-    .pitchPortrait {
-        position: relative;
-        top: 2rem;
-        text-align: left;
-        font-size: 1.4rem;
-        line-height: 3rem;
-        padding: 1rem;
-        width: 100%;
-    }
-   
-    .pitchPortraitLast {
-        position: relative;
-        top: 2rem;
-        text-align: center;
-        font-size: 1.4rem;
-        line-height: 3rem;
-        padding: 1rem;
-        width: 100%;
-    }
-
-    .pitchBleu {
-        color: $color-3;
-        font-size: 1.6rem;
-    }
-
-    .pitchPortraitNb {
-        margin-top: 2rem;
-        color: #50bbfd;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        position: relative;
-        top: 5rem;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .ContentLinkPortrait {
-        position: relative;
-        top: 2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        line-height: 2rem;
-        // display: -webkit-box;
-        // display: -ms-flexbox;
-        // display: inline-flexbox;
-        // -webkit-box-pack: center;
-        // -ms-flex-pack: center;
-        // justify-content: center;
-    }
-
-    .LinkPortrait {
-        color: $color-3;
-        margin: 1rem;
-        font-size: 1.2rem;
-    }
-
-    .LinkPortrait:hover {
-        color: $color-1;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-        ;
-    }
-
-    .ThumbSiteSection {
-        position: relative;
-        top: 8rem;
-    }
-
-    .siteWeb {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: distribute;
-        flex-direction: column;
-        position: relative;
-        top: 5rem;
-    }
-
-    .ThumbContent {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin-bottom: 5rem;
-    }
-
-    .ThumbImgSite {
-        width: 10rem;
-    }
-
-    .TitleThumb {
-        position: relative;
-        top: -12rem;
-        font-size: 1.2rem;
-        color: $color-3;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .ParaThumb {
-        position: relative;
-        top: -1rem;
-        width: auto;
-        text-align: left;
-        line-height: 2rem;
-        margin-bottom: 1rem;
-        font-size: 1rem;
-    }
-
-    .Linkthumb {
-        color: $color-3;
-        font-size: 1.2rem;
-    }
-
-    .Linkthumb:hover {
-        color: $color-1;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        -webkit-transition: 0.4s ease;
-        -o-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
-
-    .contact-btn {
-        position: relative;
-        top: 5rem;
-    }
-
-    .Btn-Contact-Me {
-        width: 18rem !important;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: -2rem;
-        left: 0rem;
-        padding: 1.5em 3em;
-        background: #a4cbf2;
-        border: none;
-        border-radius: 0.5rem;
-        color: rgb(243, 243, 243);
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        transition: 0.2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-3,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-3,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Contact-Me:hover {
-        color: $white;
-        background: $color-3;
-        -webkit-box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Contact-Me:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Contact-Me-Main {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        top: 7rem;
-        width: 10rem;
-        padding: 1.5em 1em;
-        background: $color-1;
-        border: none;
-        border-radius: .5rem;
-        color: $white;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: .2s ease;
-        -o-transition: .2s ease;
-        transition: .2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Contact-Me-Main:hover {
-        background: $color-3;
-        -webkit-box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Contact-Me-Main:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-
-    /* END ONGLET PORTRAIT */
-
-    /* START ONGLET ILLUSTRATIONS */
-
-    .Software {
-        position: relative;
-        top: 4rem;
-        list-style-type: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center;
-
-        li {
-            margin: 1rem;
-        }
-    }
-
-    .contact-btn-galerie {
-        position: relative;
-        top: 10rem;
-    }
-
-    .Btn-Contact-Me-Galerie {
-        width: 10rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: 0rem;
-        left: 0rem;
-        padding: 1.5em 1em;
-        background: $color-3;
-        border: none;
-        border-radius: 0.5rem;
-        color: rgb(243, 243, 243);
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        transition: 0.2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-3,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-3,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 1px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Contact-Me-Galerie:hover {
-        color: $white;
-        background: $color-1;
-        -webkit-box-shadow: -2px -2px 6px $color-3,
-            -2px -2px 4px $color-3,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-3,
-            -2px -2px 4px $color-3,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Contact-Me-Galerie:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-3,
-            inset -2px -2px 4px $color-3,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-3,
-            inset -2px -2px 4px $color-3,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Galerie-Me-Main {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        top: 0rem;
-        width: 10rem;
-        padding: 1.5em 1em;
-        background: $color-1;
-        border: none;
-        border-radius: .5rem;
-        color: $white;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: .2s ease;
-        -o-transition: .2s ease;
-        transition: .2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-    }
-
-    .Btn-Galerie-Me-Main:hover {
-        background: $color-3;
-        -webkit-box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-    }
-
-    .Btn-Galerie-Me-Main:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-    /* END ONGLET ILLUSTRATIONS */
-
-    /* START ONGLET VIDEOS */
-
-    .WhatUseVideos {
-        position: relative;
-        top: 0rem;
-    }
-
-    .contact-btn-Videos {
-        position: relative;
-        top: 10rem;
-    }
-
-    .Btn-Contact-Me-Videos {
-        width: 10rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: 0rem;
-        left: 0rem;
-        padding: 1.5em 1em;
-        background: $color-3;
-        border: none;
-        border-radius: 0.5rem;
-        color: rgb(243, 243, 243);
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
         transition: 0.2s ease;
         -webkit-box-shadow: -6px -6px 14px $color-1,
             -6px -6px 10px $color-3,
@@ -2368,7 +1591,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
     .WhatUsejams {
         position: relative;
-        top: 1rem;
+        top: 2rem;
     }
 
     .pitchSoft {
@@ -2399,7 +1622,11 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .Btn-Contact-Me-Jams {
         width: 10rem;
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         top: 0rem;
         left: 0rem;
@@ -2415,6 +1642,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         margin: 0 Auto;
         outline: none;
         cursor: pointer;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
         transition: 0.2s ease;
         -webkit-box-shadow: -6px -6px 14px $color-1,
             -6px -6px 10px $color-3,
@@ -2512,1412 +1741,1737 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
 }
 
+@media #{$BREAKPOINT-TABLET-LAND} {
+
+    /*         START Nav Onglet        */
+        .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            position: relative;
+            top: 0rem;
+            margin-top: 0.5rem;
+            width: 100%;
+            height: 100%;
+            margin: 100px auto 0;
+            word-break: break-all;
+            left: 0rem;
+        }
+    
+        .bloc-tabs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            height: 2.5rem;
+            width: 100%;
+        }
+    
+        .tabs {
+            padding: 2px;
+            text-align: center;
+            width: 10rem;
+            color: $color-1;
+            cursor: pointer;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            position: relative;
+            outline: none;
+            font-size: 1rem;
+        }
+    
+        .tabs:hover {
+            font-size: 1rem;
+            width: 10rem;
+            border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+            -webkit-animation-duration: 0.4s ease;
+            animation-duration: 0.4s ease;
+    
+        }
+    
+        .active-tabs {
+            background: $color-3;
+            border: 0.1rem solid $color-1;
+            width: 4rem;
+            font-size: 1.2rem;
+            color: $color-2;
+            border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .active-tabs:hover {
+            background: $transparent-3;
+            border: 0.1rem solid $color-3;
+            width: 4rem;
+            font-size: 0.6rem;
+            color: $white;
+            border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .active-tabs::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: calc(100% + 2px);
+            height: 1px;
+            border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
+        }
+    
+        .content-tabs {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+    
+        /*         END Nav Onglet        */
+        /*         START Contenu onglet        */
+    
+        .content {
+            border-left: 0.01rem solid $color-1;
+            border-top: 0.01rem solid $color-1;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            background: $transparent-1;
+    
+            /*Margin-right de quoi pourquoi /?\*/
+            margin-right: 1rem;
+            /* */
+    
+            display: none;
+            color: $white;
+            background-position: center bottom;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0rem;
+        }
+    
+        .Title-Onglet {
+            font-size: 1.4rem;
+            padding: 0px 0 5px 0px;
+        }
+    
+        .trait1 {
+            width: 250px;
+            height: 6px;
+            margin-bottom: 5px;
+            color: $color-1;
+            background: $color-1;
+        }
+    
+        .trait2 {
+            width: 150px;
+            height: 4px;
+            margin-bottom: 5px;
+            color: $color-3;
+            background: $color-3;
+        }
+    
+        .active-content {
+            display: block;
+            background: $transparent-1;
+        }
+    
+        /* START ONGLET PORTRAIT */
+    
+        .ImgPortait {
+            float: left;
+            width: 12rem;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+    
+        .pitchPortrait {
+            position: relative;
+            top: 2rem;
+            text-align: left;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            padding: 1rem;
+            width: 100%;
+        }
+    
+        .pitchPortraitLast {
+            position: relative;
+            top: 2rem;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            padding: 1rem;
+            width: 100%;
+        }
+    
+        .pitchBleu {
+            color: $color-3;
+            font-size: 1.6rem;
+        }
+    
+        .pitchPortraitNb {
+            margin-top: 2rem;
+            color: #50bbfd;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            position: relative;
+            top: 5rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+    
+        .ContentLinkPortrait {
+            position: relative;
+            top: 2rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            line-height: 2rem;
+        }
+    
+        .LinkPortrait {
+            color: $color-3;
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+    
+        .LinkPortrait:hover {
+            color: $color-1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+            ;
+        }
+    
+        .ThumbSiteSection {
+            position: relative;
+            top: 8rem;
+        }
+    
+        .siteWeb {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            position: relative;
+            top: 5rem;
+        }
+    
+        .ThumbContent {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+    
+        .ThumbImgSite {
+            width: 10rem;
+        }
+    
+        .TitleThumb {
+            position: relative;
+            top: -12rem;
+            font-size: 1.2rem;
+            color: $color-3;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    
+        .ParaThumb {
+            position: relative;
+            top: -1rem;
+            width: auto;
+            text-align: left;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+    
+        .Linkthumb {
+            color: $color-3;
+            font-size: 1.2rem;
+        }
+    
+        .Linkthumb:hover {
+            color: $color-1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .contact-btn {
+            position: relative;
+            top: 5rem;
+        }
+    
+        .Btn-Contact-Me {
+            width: 18rem !important;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: -2rem;
+            left: 0rem;
+            padding: 1.5em 3em;
+            background: #a4cbf2;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-3,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-3,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me:hover {
+            color: $white;
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 7rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+    
+        /* END ONGLET PORTRAIT */
+    
+        /* START ONGLET ILLUSTRATIONS */
+    
+        .Software {
+            position: relative;
+            top: 4rem;
+            list-style-type: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+    
+            li {
+                margin: 1rem;
+            }
+        }
+    
+        .contact-btn-galerie {
+            position: relative;
+            top: 10rem;
+        }
+    
+        .Btn-Contact-Me-Galerie {
+            width: 10rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            left: 0rem;
+            padding: 1.5em 1em;
+            background: $color-3;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Galerie:hover {
+            color: $white;
+            background: $color-1;
+            -webkit-box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Galerie:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Galerie-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Galerie-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Galerie-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        /* END ONGLET ILLUSTRATIONS */
+    
+        /* START ONGLET VIDEOS */
+    
+        .WhatUseVideos {
+            position: relative;
+            top: 0rem;
+        }
+    
+        .contact-btn-Videos {
+            position: relative;
+            top: 10rem;
+        }
+    
+        .Btn-Contact-Me-Videos {
+            width: 10rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            left: 0rem;
+            padding: 1.5em 1em;
+            background: $color-3;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Videos:hover {
+            color: $white;
+            background: $color-1;
+            -webkit-box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Videos:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Videos-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Videos-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Videos-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+    
+    
+        /* END ONGLET VIDEOS */
+    
+        /* START ONGLET JAMS */
+    
+        .overlay__text {
+            top: 1rem !important;
+            height: 5rem;
+        }
+    
+        .WhatUsejams {
+            position: relative;
+            top: 1rem;
+        }
+    
+        .pitchSoft {
+            position: relative;
+            top: 0rem;
+        }
+    
+        .Magix {
+            color: $color-3  !important;
+        }
+    
+        .Magix:hover {
+            color: $color-1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+            ;
+        }
+    
+        .contact-btn-Jams {
+            position: relative;
+            top: 10rem;
+        }
+    
+        .Btn-Contact-Me-Jams {
+            width: 10rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            left: 0rem;
+            padding: 1.5em 1em;
+            background: $color-3;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Jams:hover {
+            color: $white;
+            background: $color-1;
+            -webkit-box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Jams:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Jams-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Jams-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Jams-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        /* END ONGLET JAMS */
+
+}
+
 @media #{$BREAKPOINT-DESK} {
 
-     /*         START Nav Onglet        */
-     .container {
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-orient: vertical;
-         -webkit-box-direction: normal;
-         -ms-flex-direction: column;
-         flex-direction: column;
-         position: relative;
-         top: 0rem;
-         margin-top: 0.5rem;
-         width: 100%;
-         height: 100%;
-         margin: 100px auto 0;
-         word-break: break-all;
-         left: 0rem;
-     }
-
-     .bloc-tabs {
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -ms-flex-pack: distribute;
-         justify-content: space-around;
-         height: 2.5rem;
-         width: 100%;
-     }
-
-     .tabs {
-         padding: 2px;
-         text-align: center;
-         width: auto;
-         color: $color-1;
-         cursor: pointer;
-         -webkit-box-sizing: content-box;
-         box-sizing: content-box;
-         position: relative;
-         outline: none;
-         font-size: 1rem;
-     }
-
-     .tabs:hover {
-         font-size: 1rem;
-         width: auto;
-         border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
-         transform: translateY(-10px);
-         -webkit-transition: 0.4s ease;
-         -o-transition: 0.4s ease;
-         transition: 0.4s ease;
-         animation-duration: 0.4s ease;
-
-     }
-
-     .active-tabs {
-         background: $color-3;
-         border: 0.1rem solid $color-1;
-         width: 4rem;
-         font-size: 1.2rem;
-         color: $color-2;
-         border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
-         -webkit-transition: 0.4s ease;
-         -o-transition: 0.4s ease;
-         transition: 0.4s ease;
-     }
-
-     .active-tabs:hover {
-         background: $transparent-3;
-         border: 0.1rem solid $color-3;
-         width: 4rem;
-         font-size: 0.6rem;
-         color: $white;
-         border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
-         -webkit-transition: 0.4s ease;
-         -o-transition: 0.4s ease;
-         transition: 0.4s ease;
-     }
-
-     .active-tabs::before {
-         content: "";
-         display: block;
-         position: absolute;
-         top: -4px;
-         left: 50%;
-         -webkit-transform: translateX(-50%);
-         -ms-transform: translateX(-50%);
-         transform: translateX(-50%);
-         width: calc(100% + 2px);
-         height: 1px;
-         border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
-     }
-
-     .content-tabs {
-         -webkit-box-flex: 1;
-         -ms-flex-positive: 1;
-         flex-grow: 1;
-     }
-
-     /*         END Nav Onglet        */
-     /*         START Contenu onglet        */
-
-     .content {
-         border-left: 0.01rem solid $color-1;
-         border-top: 0.01rem solid $color-1;
-         padding: 20px;
-         width: 100%;
-         height: 100%;
-         background: $transparent-1;
-
-         /*Margin-right de quoi pourquoi /?\*/
-         margin-right: 1rem;
-         /* */
-
-         display: none;
-         color: $white;
-         background-position: center bottom;
-         background-size: 100% auto;
-         background-repeat: no-repeat;
-         position: relative;
-         top: 0rem;
-     }
-
-     .Title-Onglet {
-         font-size: 1.4rem;
-         padding: 0px 0 5px 0px;
-     }
-
-     .trait1 {
-         width: 300px;
-         height: 8px;
-         margin-bottom: 5px;
-         color: $color-1;
-         background: $color-1;
-     }
-
-     .trait2 {
-         width: 200px;
-         height: 6px;
-         margin-bottom: 5px;
-         color: $color-3;
-         background: $color-3;
-     }
-
-     .active-content {
-         display: block;
-         background: $transparent-1;
-     }
-
-     /* START ONGLET PORTRAIT */
-
-     .ImgPortait {
-         float: left;
-         width: 12rem;
-         margin: 5rem;
-         padding: 1rem;
-     }
-
-     .pitchPortrait {
-         position: relative;
-         top: 2rem;
-         text-align: left;
-         font-size: 1.4rem;
-         line-height: 3rem;
-         padding: 1rem;
-         width: 90%;
-     }
-     .pitchPortraitLast{
-        position: relative;
-        top: 2rem;
-        text-align: left;
-        font-size: 1.4rem;
-        line-height: 3rem;
-        padding: 1rem;
-        text-align: center;
-     }
-
-     .pitchBleu {
-         color: $color-3;
-         font-size: 1.6rem;
-     }
-
-     .pitchPortraitNb {
-         margin-top: 2rem;
-         color: #50bbfd;
-         font-size: 1.2rem;
-         line-height: 2rem;
-         position: relative;
-         top: 5rem;
-         width: 80%;
-         margin: 0 auto;
-     }
-
-     .ContentLinkPortrait {
-         position: relative;
-         top: 2rem;
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         line-height: 2rem;
-         // display: -webkit-box;
-         // display: -ms-flexbox;
-         // display: inline-flexbox;
-         // -webkit-box-pack: center;
-         // -ms-flex-pack: center;
-         // justify-content: center;
-     }
-
-     .LinkPortrait {
-         color: $color-3;
-         margin: 1rem;
-         font-size: 1.2rem;
-     }
-
-     .LinkPortrait:hover {
-         color: $color-1;
-         -webkit-transform: scale(1.1);
-         -ms-transform: scale(1.1);
-         transform: scale(1.1);
-         -webkit-transition: 0.4s ease;
-         -o-transition: 0.4s ease;
-         transition: 0.4s ease;
-         ;
-     }
-
-     .ThumbSiteSection {
-         position: relative;
-         top: 8rem;
-     }
-
-     .siteWeb {
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-align: center;
-         -ms-flex-align: center;
-         align-items: center;
-         -ms-flex-pack: distribute;
-         flex-flow: wrap;
-         justify-content: space-around;
-         position: relative;
-         top: 5rem;
-     }
-
-     .ThumbContent {
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-orient: vertical;
-         -webkit-box-direction: normal;
-         -ms-flex-direction: column;
-         flex-direction: column;
-         -webkit-box-align: center;
-         -ms-flex-align: center;
-         align-items: center;
-         margin-bottom: 5rem;
-     }
-
-     .ThumbImgSite {
-         width: 10rem;
-     }
-
-     .TitleThumb {
-         position: relative;
-         top: -12rem;
-         font-size: 1.2rem;
-         color: $color-3;
-         margin-top: 2rem;
-         margin-bottom: 1rem;
-     }
-
-     .ParaThumb {
-         position: relative;
-         top: -1rem;
-         width: auto;
-         text-align: left;
-         line-height: 2rem;
-         margin-bottom: 1rem;
-         font-size: 1rem;
-     }
-
-     .Linkthumb {
-         color: $color-3;
-         font-size: 1.2rem;
-     }
-
-     .Linkthumb:hover {
-         color: $color-1;
-         -webkit-transform: scale(1.1);
-         -ms-transform: scale(1.1);
-         transform: scale(1.1);
-         -webkit-transition: 0.4s ease;
-         -o-transition: 0.4s ease;
-         transition: 0.4s ease;
-     }
-
-     .contact-btn {
-         position: relative;
-         top: 5rem;
-     }
-
-     .Btn-Contact-Me {
-         width: 18rem !important;
-         position: relative;
-         display: flex;
-         justify-content: center;
-         top: -2rem;
-         left: 0rem;
-         padding: 1.5em 3em;
-         background: #a4cbf2;
-         border: none;
-         border-radius: 0.5rem;
-         color: rgb(243, 243, 243);
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: 0.2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         transition: 0.2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-3,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-3,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Contact-Me:hover {
-         color: $white;
-         background: $color-3;
-         -webkit-box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Contact-Me:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Contact-Me-Main {
-         position: relative;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
-         justify-content: center;
-         top: 7rem;
-         width: 10rem;
-         padding: 1.5em 1em;
-         background: $color-1;
-         border: none;
-         border-radius: .5rem;
-         color: $white;
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: .2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         -webkit-transition: .2s ease;
-         -o-transition: .2s ease;
-         transition: .2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Contact-Me-Main:hover {
-         background: $color-3;
-         -webkit-box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Contact-Me-Main:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-
-     /* END ONGLET PORTRAIT */
-
-     /* START ONGLET ILLUSTRATIONS */
-
-     .Software {
-         position: relative;
-         top: 4rem;
-         list-style-type: none;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-orient: vertical;
-         -webkit-box-direction: normal;
-         -ms-flex-direction: column;
-         flex-direction: column;
-         text-align: center;
-
-         li {
-             margin: 1rem;
-         }
-     }
-
-     .contact-btn-galerie {
-         position: relative;
-         top: 10rem;
-     }
-
-     .Btn-Contact-Me-Galerie {
-         width: 10rem;
-         position: relative;
-         display: flex;
-         justify-content: center;
-         top: 0rem;
-         left: 0rem;
-         padding: 1.5em 1em;
-         background: $color-3;
-         border: none;
-         border-radius: 0.5rem;
-         color: rgb(243, 243, 243);
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: 0.2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         transition: 0.2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-3,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-3,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Contact-Me-Galerie:hover {
-         color: $white;
-         background: $color-1;
-         -webkit-box-shadow: -2px -2px 6px $color-3,
-             -2px -2px 4px $color-3,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-3,
-             -2px -2px 4px $color-3,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Contact-Me-Galerie:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-3,
-             inset -2px -2px 4px $color-3,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-3,
-             inset -2px -2px 4px $color-3,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Galerie-Me-Main {
-         position: relative;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
-         justify-content: center;
-         top: 0rem;
-         width: 10rem;
-         padding: 1.5em 1em;
-         background: $color-1;
-         border: none;
-         border-radius: .5rem;
-         color: $white;
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: .2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         -webkit-transition: .2s ease;
-         -o-transition: .2s ease;
-         transition: .2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Galerie-Me-Main:hover {
-         background: $color-3;
-         -webkit-box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Galerie-Me-Main:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-     /* END ONGLET ILLUSTRATIONS */
-
-     /* START ONGLET VIDEOS */
-
-     .WhatUseVideos {
-         position: relative;
-         top: 0rem;
-     }
-
-     .contact-btn-Videos {
-         position: relative;
-         top: 10rem;
-     }
-
-     .Btn-Contact-Me-Videos {
-         width: 10rem;
-         position: relative;
-         display: flex;
-         justify-content: center;
-         top: 0rem;
-         left: 0rem;
-         padding: 1.5em 1em;
-         background: $color-3;
-         border: none;
-         border-radius: 0.5rem;
-         color: rgb(243, 243, 243);
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: 0.2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         transition: 0.2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-3,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-3,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Contact-Me-Videos:hover {
-         color: $white;
-         background: $color-1;
-         -webkit-box-shadow: -2px -2px 6px $color-3,
-             -2px -2px 4px $color-3,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-3,
-             -2px -2px 4px $color-3,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Contact-Me-Videos:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-3,
-             inset -2px -2px 4px $color-3,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-3,
-             inset -2px -2px 4px $color-3,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Videos-Me-Main {
-         position: relative;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
-         justify-content: center;
-         top: 0rem;
-         width: 10rem;
-         padding: 1.5em 1em;
-         background: $color-1;
-         border: none;
-         border-radius: .5rem;
-         color: $white;
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: .2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         -webkit-transition: .2s ease;
-         -o-transition: .2s ease;
-         transition: .2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Videos-Me-Main:hover {
-         background: $color-3;
-         -webkit-box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Videos-Me-Main:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-
-
-     /* END ONGLET VIDEOS */
-
-     /* START ONGLET JAMS */
-
-     .overlay__text {
-         top: 1rem !important;
-         height: 5rem;
-     }
-
-     .WhatUsejams {
-         position: relative;
-         top: 1rem;
-     }
-
-     .pitchSoft {
-         position: relative;
-         top: 0rem;
-     }
-
-     .Magix {
-         color: $color-3  !important;
-     }
-
-     .Magix:hover {
-         color: $color-1;
-         -webkit-transform: scale(1.1);
-         -ms-transform: scale(1.1);
-         transform: scale(1.1);
-         -webkit-transition: 0.4s ease;
-         -o-transition: 0.4s ease;
-         transition: 0.4s ease;
-         ;
-     }
-
-     .contact-btn-Jams {
-         position: relative;
-         top: 10rem;
-     }
-
-     .Btn-Contact-Me-Jams {
-         width: 10rem;
-         position: relative;
-         display: flex;
-         justify-content: center;
-         top: 0rem;
-         left: 0rem;
-         padding: 1.5em 1em;
-         background: $color-3;
-         border: none;
-         border-radius: 0.5rem;
-         color: rgb(243, 243, 243);
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: 0.2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         transition: 0.2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-3,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-3,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 1px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Contact-Me-Jams:hover {
-         color: $white;
-         background: $color-1;
-         -webkit-box-shadow: -2px -2px 6px $color-3,
-             -2px -2px 4px $color-3,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-3,
-             -2px -2px 4px $color-3,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Contact-Me-Jams:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-3,
-             inset -2px -2px 4px $color-3,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-3,
-             inset -2px -2px 4px $color-3,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Jams-Me-Main {
-         position: relative;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
-         justify-content: center;
-         top: 0rem;
-         width: 10rem;
-         padding: 1.5em 1em;
-         background: $color-1;
-         border: none;
-         border-radius: .5rem;
-         color: $white;
-         font-size: 1rem;
-         font-weight: 700;
-         letter-spacing: .2rem;
-         text-align: center;
-         margin: 0 Auto;
-         outline: none;
-         cursor: pointer;
-         -webkit-transition: .2s ease;
-         -o-transition: .2s ease;
-         transition: .2s ease;
-         -webkit-box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-         box-shadow: -6px -6px 14px $color-1,
-             -6px -6px 10px $color-1,
-             6px 6px 8px rgba(255, 255, 255, .075),
-             6px 6px 10px rgba(0, 0, 0, .15);
-     }
-
-     .Btn-Jams-Me-Main:hover {
-         background: $color-3;
-         -webkit-box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-         box-shadow: -2px -2px 6px $color-1,
-             -2px -2px 4px $color-1,
-             2px 2px 2px rgba(255, 255, 255, .05),
-             2px 2px 4px rgba(0, 0, 0, .1);
-     }
-
-     .Btn-Jams-Me-Main:active {
-         -webkit-box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-         box-shadow: inset -2px -2px 6px $color-1,
-             inset -2px -2px 4px $color-1,
-             inset 2px 2px 2px rgba(255, 255, 255, .075),
-             inset 2px 2px 4px rgba(0, 0, 0, .15);
-     }
-
-     /* END ONGLET JAMS */
+    /*         START Nav Onglet        */
+        .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            position: relative;
+            top: 0rem;
+            left: 1rem;
+            margin-top: 0.5rem;
+            width: 100%;
+            height: 100%;
+            margin: 100px auto 0;
+            word-break: break-all;
+        }
+    
+        .bloc-tabs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            height: 2.5rem;
+            width: auto;
+        }
+    
+        .tabs {
+            padding: 2px;
+            text-align: center;
+            width: 20rem;
+            color: $color-1;
+            cursor: pointer;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            position: relative;
+            outline: none;
+            font-size: 1rem;
+        }
+    
+        .tabs:hover {
+            font-size: 1rem;
+            width: 20rem;
+            border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+            -webkit-animation-duration: 0.4s ease;
+            animation-duration: 0.4s ease;
+    
+        }
+    
+        .active-tabs {
+            background: $color-3;
+            border: 0.1rem solid $color-1;
+            width: 4rem;
+            font-size: 1.2rem;
+            color: $color-2;
+            border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .active-tabs:hover {
+            background: $transparent-3;
+            border: 0.1rem solid $color-3;
+            width: 4rem;
+            font-size: 0.6rem;
+            color: $white;
+            border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .active-tabs::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: calc(100% + 2px);
+            height: 1px;
+            border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
+        }
+    
+        .content-tabs {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+    
+        /*         END Nav Onglet        */
+        /*         START Contenu onglet        */
+    
+        .content {
+            border-left: 0.01rem solid $color-1;
+            border-top: 0.01rem solid $color-1;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            background: $transparent-1;
+    
+            /*Margin-right de quoi pourquoi /?\*/
+            margin-right: 1rem;
+            /* */
+    
+            display: none;
+            color: $white;
+            background-position: center bottom;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0rem;
+        }
+    
+        .Title-Onglet {
+            font-size: 1.4rem;
+            padding: 0px 0 5px 0px;
+        }
+    
+        .trait1 {
+            width: 300px;
+            height: 8px;
+            margin-bottom: 5px;
+            color: $color-1;
+            background: $color-1;
+        }
+    
+        .trait2 {
+            width: 200px;
+            height: 6px;
+            margin-bottom: 5px;
+            color: $color-3;
+            background: $color-3;
+        }
+    
+        .active-content {
+            display: block;
+            background: $transparent-1;
+        }
+    
+        /* START ONGLET PORTRAIT */
+    
+        .ImgPortait {
+            float: left;
+            width: 12rem;
+            margin: 5rem;
+            padding: 1rem;
+        }
+    
+        .pitchPortrait {
+            position: relative;
+            top: 2rem;
+            text-align: left;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            padding: 1rem;
+            width: 90%;
+        }
+    
+        .pitchPortraitLast {
+            position: relative;
+            top: 2rem;
+            text-align: left;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            padding: 1rem;
+            text-align: center;
+        }
+    
+        .pitchBleu {
+            color: $color-3;
+            font-size: 1.6rem;
+        }
+    
+        .pitchPortraitNb {
+            margin-top: 2rem;
+            color: #50bbfd;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            position: relative;
+            top: 5rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+    
+        .ContentLinkPortrait {
+            position: relative;
+            top: 2rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            line-height: 2rem;
+        }
+    
+        .LinkPortrait {
+            color: $color-3;
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+    
+        .LinkPortrait:hover {
+            color: $color-1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+            ;
+        }
+    
+        .ThumbSiteSection {
+            position: relative;
+            top: 8rem;
+        }
+    
+        .siteWeb {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            -ms-flex-flow: wrap;
+            flex-flow: wrap;
+            justify-content: space-around;
+            position: relative;
+            top: 5rem;
+        }
+    
+        .ThumbContent {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+    
+        .ThumbImgSite {
+            width: 10rem;
+        }
+    
+        .TitleThumb {
+            position: relative;
+            top: -12rem;
+            font-size: 1.2rem;
+            color: $color-3;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    
+        .ParaThumb {
+            position: relative;
+            top: -1rem;
+            width: auto;
+            text-align: left;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+    
+        .Linkthumb {
+            color: $color-3;
+            font-size: 1.2rem;
+        }
+    
+        .Linkthumb:hover {
+            color: $color-1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    
+        .contact-btn {
+            position: relative;
+            top: 5rem;
+        }
+    
+        .Btn-Contact-Me {
+            width: 18rem !important;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: -2rem;
+            left: 0rem;
+            padding: 1.5em 3em;
+            background: #a4cbf2;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-3,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-3,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me:hover {
+            color: $white;
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 7rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+    
+        /* END ONGLET PORTRAIT */
+    
+        /* START ONGLET ILLUSTRATIONS */
+    
+        .Software {
+            position: relative;
+            top: 4rem;
+            list-style-type: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+    
+            li {
+                margin: 1rem;
+            }
+        }
+    
+        .contact-btn-galerie {
+            position: relative;
+            top: 10rem;
+        }
+    
+        .Btn-Contact-Me-Galerie {
+            width: 10rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            left: 0rem;
+            padding: 1.5em 1em;
+            background: $color-3;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Galerie:hover {
+            color: $white;
+            background: $color-1;
+            -webkit-box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Galerie:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Galerie-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Galerie-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Galerie-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        /* END ONGLET ILLUSTRATIONS */
+    
+        /* START ONGLET VIDEOS */
+    
+        .WhatUseVideos {
+            position: relative;
+            top: 0rem;
+        }
+    
+        .contact-btn-Videos {
+            position: relative;
+            top: 10rem;
+        }
+    
+        .Btn-Contact-Me-Videos {
+            width: 10rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            left: 0rem;
+            padding: 1.5em 1em;
+            background: $color-3;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Videos:hover {
+            color: $white;
+            background: $color-1;
+            -webkit-box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Videos:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Videos-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Videos-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Videos-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+    
+    
+        /* END ONGLET VIDEOS */
+    
+        /* START ONGLET JAMS */
+    
+        .overlay__text {
+            top: 1rem !important;
+            height: 5rem;
+        }
+    
+        .WhatUsejams {
+            position: relative;
+            top: 1rem;
+        }
+    
+        .pitchSoft {
+            position: relative;
+            top: 0rem;
+        }
+    
+        .Magix {
+            color: $color-3  !important;
+        }
+    
+        .Magix:hover {
+            color: $color-1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+            ;
+        }
+    
+        .contact-btn-Jams {
+            position: relative;
+            top: 10rem;
+        }
+    
+        .Btn-Contact-Me-Jams {
+            width: 10rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            left: 0rem;
+            padding: 1.5em 1em;
+            background: $color-3;
+            border: none;
+            border-radius: 0.5rem;
+            color: rgb(243, 243, 243);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-3,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 1px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Contact-Me-Jams:hover {
+            color: $white;
+            background: $color-1;
+            -webkit-box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-3,
+                -2px -2px 4px $color-3,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Contact-Me-Jams:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-3,
+                inset -2px -2px 4px $color-3,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Jams-Me-Main {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            top: 0rem;
+            width: 10rem;
+            padding: 1.5em 1em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+    
+        .Btn-Jams-Me-Main:hover {
+            background: $color-3;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+        }
+    
+        .Btn-Jams-Me-Main:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+    
+        /* END ONGLET JAMS */
 
  }
-// @media (min-width: 100px) and (max-width: 600px) {
-//     .container{
-//         left: 3rem;
-//         top: 10rem;
-//     }
-//     .bloc-tabs {
-//             width: 30%;
-//             -ms-flex-pack: distribute;
-//             justify-content: space-around;
-//             height: 2.5rem;
-//         }
-    
-//         .content {
-//             width: 95%;
-//             left: 0rem;
-//         }
-    
-//         .tabs {
-//             padding: 2px;
-//             text-align: center;
-//             width: 2rem;
-//             color: $color-1;
-//             cursor: pointer;
-//             -webkit-box-sizing: content-box;
-//             box-sizing: content-box;
-//             position: relative;
-//             outline: none;
-//             font-size: 1rem;
-//         }
-    
-//         .tabs:hover {
-//             font-size: 1.2rem;
-//             width: 5rem;
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .active-tabs {
-//             background: $color-3;
-//             border: 0.1rem solid $color-1;
-//             width: 4rem;
-//             margin-right: 1rem;
-//             font-size: 1rem;
-//             color: $color-2;
-//             border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .active-tabs:hover {
-//             background: $transparent-3;
-//             border: 0.1rem solid $color-3;
-//             width: 4rem;
-//             font-size: 0.9rem;
-//             color: $white;
-//             border-radius: 50% 50% 50% 50% / 50% 50% 10% 10%;
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .active-tabs::before {
-//             content: "";
-//             display: block;
-//             position: absolute;
-//             top: -4px;
-//             left: 50%;
-//             -webkit-transform: translateX(-50%);
-//             -ms-transform: translateX(-50%);
-//             transform: translateX(-50%);
-//             width: calc(100% + 2px);
-//             height: 1px;
-//             background: $color-1;
-//             border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
-//         }
-    
-//         .ImgPortait {
-//             float: left;
-//             width: 7rem;
-//             margin-top: 0rem;
-//             margin-left: 0rem;
-//             height: auto;
-//             padding: 0.5rem;
-//         }
-    
-//         .pitchPortrait {
-//             font-size: 1rem;
-//             top: 0rem;
-//             text-align: right;
-//             left: 1rem !important;
-//             padding: 1rem;
-//             width: 26rem !important;
-//         }
-    
-//         .ContentLinkPortrait {
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -ms-flex-direction: column;
-//             flex-direction: column;
-//             left: 6rem;
-//             top: 1rem;
-//         }
-    
-//         .LinkPortrait {
-//             margin-bottom: 1rem;
-//             height: 2rem;
-//             width: 15rem;
-//             text-align: center;
-//         }
-    
-//         .pitchPortraitNb {
-//             left: 1rem !important;
-//             top: 0rem;
-//             margin: 0rem;
-//             padding: 1rem;
-//             position: relative;
-//             width: 25rem !important;
-//         }
-//         .ThumbSiteSection{
-//                 top: 4rem !important;
-//                 left: -32rem;
-//         }
-//         .siteWeb {
-//             -webkit-box-orient: vertical;
-//             -webkit-box-direction: normal;
-//             -ms-flex-direction: column;
-//             flex-direction: column;
-//         }
-    
-//         .ParaThumb {
-//             left: 0rem;
-//             padding: 1rem;
-//         }
-    
-//         .IlluSlide:first-child {
-//             width: 16rem !important;
-//             height: auto;
-//         }
-    
-//         .thumb {
-//             height: 4rem;
-//         }
-//         .WhatUseMain {
-//             position: relative;
-//             top: 11rem;
-//             left: -28rem;
-//         }
-//     }
-// @media (min-width: 601px) and (max-width: 1100px) {
-//     .container {
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-orient: vertical;
-//             -webkit-box-direction: normal;
-//             -ms-flex-direction: column;
-//             flex-direction: column;
-//             position: relative;
-//             top: 0rem;
-//             margin-top: 0.5rem;
-//             width: 100rem;
-//             height: 20rem;
-//             margin: 100px auto 0;
-//             word-break: break-all;
-//             left: 1rem !important;
-//         }
-    
-//         .bloc-tabs {
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -ms-flex-pack: distribute;
-//             justify-content: space-around;
-//             height: 2.5rem;
-//             margin-left: 0rem;
-//             margin-right: 16rem;
-//         }
-    
-//         .tabs {
-//             padding: 2px;
-//             text-align: center;
-//             width: 2rem;
-//             color: $color-1;
-//             cursor: pointer;
-//             -webkit-box-sizing: content-box;
-//             box-sizing: content-box;
-//             position: relative;
-//             outline: none;
-//             font-size: 1rem;
-//         }
-    
-//         .tabs:hover {
-//             font-size: 1rem;
-//             width: 25%;
-//             border-radius: 50% 0% 0% 0% / 50% 0% 50% 0%;
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .active-tabs {
-//             background: $color-3;
-//             border: 0.1rem solid $color-1;
-//             width: 8rem;
-//             margin-right: 1rem;
-//             font-size: 1.2rem;
-//             color: $color-2;
-//             border-radius: 50% 50% 0% 0% / 50% 50% 10% 10%;
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .active-tabs:hover {
-//             background: $color-1;
-//             border: 0.1rem solid $color-3;
-//             width: 8rem;
-//             font-size: 0.6rem;
-//             color: $white;
-//             border-radius: 50% 50% 50% 50% / 50% 50% 20% 20%;
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .active-tabs::before {
-//             content: "";
-//             display: block;
-//             position: absolute;
-//             top: -4px;
-//             left: 50%;
-//             -webkit-transform: translateX(-50%);
-//             -ms-transform: translateX(-50%);
-//             transform: translateX(-50%);
-//             width: calc(100% + 2px);
-//             height: 1px;
-//             border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
-//         }
-    
-    
-    
-//         button {
-//             border: none;
-    
-//         }
-    
-//         .content-tabs {
-//             -webkit-box-flex: 1;
-//             -ms-flex-positive: 1;
-//             flex-grow: 1;
-//         }
-    
-//         .content {
-//             border-left: 0.01rem solid $color-1;
-//             border-top: 0.01rem solid $color-1;
-//             padding: 20px;
-//             width: 70% !important;
-//             height: 150%;
-//             margin-right: 1rem;
-//             display: none;
-//             color: $white;
-//             background-position: center bottom;
-//             background-size: 100% auto;
-//             background-repeat: no-repeat;
-//             position: relative;
-//             top: 0rem;
-//         }
-    
-//         .Title-Portrait {
-//             position: relative;
-//             left: -4rem;
-//         }
-    
-//         .content h2 {
-//             padding: 0px 0 5px 0px;
-//             margin: 0 auto;
-//         }
-    
-//         .content hr {
-//             width: 100px;
-//             height: 2px;
-//             margin-bottom: 5px;
-//         }
-    
-//         .content p {
-//             width: 100%;
-//             height: 100%;
-//             font-size: 1rem;
-//         }
-    
-//         .active-content {
-//             display: block;
-//             background: $transparent-1;
-//         }
-    
-//         .ContentLinkPortrait {
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-pack: end;
-//             -ms-flex-pack: end;
-//             justify-content: end;
-//             position: relative;
-//             top: -10rem;
-//         }
-    
-//         .pitchPortrait {
-//             position: relative;
-//             top: 0rem;
-//             text-align: right;
-//             font-size: 1.4rem;
-//             line-height: 3rem;
-//             padding: 0rem;
-//         }
-    
-//         .pitchBleu {
-//             color: $color-3;
-//             font-size: 1.4rem;
-//         }
-    
-//         .pitchPortraitNb {
-//             margin-top: 2rem;
-//             color: $color-3;
-//             font-size: 1.2rem;
-//             line-height: 2rem;
-//         }
-    
-//         .ImgPortait {
-//             float: left;
-//             width: 10rem;
-//             margin-top: 0rem;
-//             margin-left: 0rem;
-//             height: auto;
-//         }
-    
-//         .LinkPortrait {
-//             color: $color-3;
-//             margin-right: 2rem;
-//         }
-    
-//         .LinkPortrait:hover {
-//             color: $color-1;
-//             -webkit-transform: scale(1.2);
-//             -ms-transform: scale(1.2);
-//             transform: scale(1.2);
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//             ;
-//         }
-    
-//         .ThumbSiteSection {
-//             position: relative;
-//             top: 8rem;
-//         }
-    
-//         .siteWeb {
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-align: center;
-//             -ms-flex-align: center;
-//             align-items: center;
-//             -webkit-box-orient: vertical;
-//             -webkit-box-direction: normal;
-//             -ms-flex-direction: column;
-//             flex-direction: column;
-//             position: relative;
-//             top: 5rem;
-//         }
-    
-//         .ThumbContent {
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-orient: vertical;
-//             -webkit-box-direction: normal;
-//             -ms-flex-direction: column;
-//             flex-direction: column;
-//             -webkit-box-align: center;
-//             -ms-flex-align: center;
-//             align-items: center;
-//         }
-    
-//         .ThumbImgSite {
-//             width: 15rem;
-//         }
-    
-//         .TitleThumb {
-//             font-size: 1.4rem;
-//             color: $color-3;
-//             margin: 1rem;
-//         }
-    
-//         .ParaThumb {
-//             position: relative;
-//             top: 0rem;
-//             margin: 1rem;
-//             font-size: 1.2rem;
-//         }
-    
-//         .Linkthumb {
-//             color: $color-3;
-//             font-size: 1.2rem;
-//         }
-    
-//         .Linkthumb:hover {
-//             color: $color-1;
-//             -webkit-transform: scale(1.2);
-//             -ms-transform: scale(1.2);
-//             transform: scale(1.2);
-//             -webkit-transition: 0.4s ease;
-//             -o-transition: 0.4s ease;
-//             transition: 0.4s ease;
-//         }
-    
-//         .WhatUseMain {
-//             position: relative;
-//             top: 24rem;
-//         }
-    
-//         .WhatUseVideos {
-//             position: relative;
-//             top: 12rem;
-//         }
-    
-//         .WhatUsejams {
-//             position: relative;
-//             top: -6rem;
-//         }
-    
-//         .pitchSoft {
-//             position: relative;
-//             top: 2rem;
-//         }
-    
-//         .Software {
-//             position: relative;
-//             top: 4rem;
-//             list-style-type: none;
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-orient: vertical;
-//             -webkit-box-direction: normal;
-//             -ms-flex-direction: column;
-//             flex-direction: column;
-//             text-align: center;
-    
-//             li {
-//                 margin: 1rem;
-//             }
-//         }
-    
-//         .Btn-Contact-Me {
-//             position: relative;
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-pack: center;
-//             -ms-flex-pack: center;
-//             justify-content: center;
-//             top: 7rem;
-//             padding: 1.5em 3em;
-//             background: $color-1;
-//             border: none;
-//             border-radius: .5rem;
-//             color: $white;
-//             font-size: 1rem;
-//             font-weight: 700;
-//             letter-spacing: .2rem;
-//             text-align: center;
-//             margin: 0 auto;
-//             outline: none;
-//             cursor: pointer;
-//             -webkit-transition: .2s ease;
-//             -o-transition: .2s ease;
-//             transition: .2s ease;
-//             -webkit-box-shadow: -6px -6px 14px $color-1,
-//                 -6px -6px 10px $color-1,
-//                 6px 6px 8px rgba(255, 255, 255, .075),
-//                 6px 6px 10px rgba(0, 0, 0, .15);
-//             box-shadow: -6px -6px 14px $color-1,
-//                 -6px -6px 10px $color-1,
-//                 6px 6px 8px rgba(255, 255, 255, .075),
-//                 6px 6px 10px rgba(0, 0, 0, .15);
-//         }
-    
-//         .Btn-Contact-Me:hover {
-//             background: $color-3;
-//             -webkit-box-shadow: -2px -2px 6px $color-1,
-//                 -2px -2px 4px $color-1,
-//                 2px 2px 2px rgba(255, 255, 255, .05),
-//                 2px 2px 4px rgba(0, 0, 0, .1);
-//             box-shadow: -2px -2px 6px $color-1,
-//                 -2px -2px 4px $color-1,
-//                 2px 2px 2px rgba(255, 255, 255, .05),
-//                 2px 2px 4px rgba(0, 0, 0, .1);
-//         }
-    
-//         .Btn-Contact-Me:active {
-//             -webkit-box-shadow: inset -2px -2px 6px $color-1,
-//                 inset -2px -2px 4px $color-1,
-//                 inset 2px 2px 2px rgba(255, 255, 255, .075),
-//                 inset 2px 2px 4px rgba(0, 0, 0, .15);
-//             box-shadow: inset -2px -2px 6px $color-1,
-//                 inset -2px -2px 4px $color-1,
-//                 inset 2px 2px 2px rgba(255, 255, 255, .075),
-//                 inset 2px 2px 4px rgba(0, 0, 0, .15);
-//         }
-    
-//         .Btn-Contact-Me-Main {
-//             position: relative;
-//             display: -webkit-box;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-box-pack: center;
-//             -ms-flex-pack: center;
-//             justify-content: center;
-//             top: 0rem;
-//             left: -4rem;
-//             padding: 1.5em 3em;
-//             background: $color-1;
-//             border: none;
-//             border-radius: .5rem;
-//             color: $white;
-//             font-size: 1rem;
-//             font-weight: 700;
-//             letter-spacing: .2rem;
-//             text-align: center;
-//             margin: 0 Auto;
-//             outline: none;
-//             cursor: pointer;
-//             -webkit-transition: .2s ease;
-//             -o-transition: .2s ease;
-//             transition: .2s ease;
-//             -webkit-box-shadow: -6px -6px 14px $color-1,
-//                 -6px -6px 10px $color-1,
-//                 6px 6px 8px rgba(255, 255, 255, .075),
-//                 6px 6px 10px rgba(0, 0, 0, .15);
-//             box-shadow: -6px -6px 14px $color-1,
-//                 -6px -6px 10px $color-1,
-//                 6px 6px 8px rgba(255, 255, 255, .075),
-//                 6px 6px 10px rgba(0, 0, 0, .15);
-//         }
-    
-//         .Btn-Contact-Me-Main:hover {
-//             background: $color-3;
-//             -webkit-box-shadow: -2px -2px 6px $color-1,
-//                 -2px -2px 4px $color-1,
-//                 2px 2px 2px rgba(255, 255, 255, .05),
-//                 2px 2px 4px rgba(0, 0, 0, .1);
-//             box-shadow: -2px -2px 6px $color-1,
-//                 -2px -2px 4px $color-1,
-//                 2px 2px 2px rgba(255, 255, 255, .05),
-//                 2px 2px 4px rgba(0, 0, 0, .1);
-//         }
-    
-//         .Btn-Contact-Me-Main:active {
-//             -webkit-box-shadow: inset -2px -2px 6px $color-1,
-//                 inset -2px -2px 4px $color-1,
-//                 inset 2px 2px 2px rgba(255, 255, 255, .075),
-//                 inset 2px 2px 4px rgba(0, 0, 0, .15);
-//             box-shadow: inset -2px -2px 6px $color-1,
-//                 inset -2px -2px 4px $color-1,
-//                 inset 2px 2px 2px rgba(255, 255, 255, .075),
-//                 inset 2px 2px 4px rgba(0, 0, 0, .15);
-//         }
-// }
-
