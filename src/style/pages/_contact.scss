@@ -5,225 +5,867 @@
 * Browsers: last 4 version
 */
 
-h1 {
-    margin: 1rem;
-}
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 200px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
-.Pcontact {
-
-    position: relative;
-    top: 10rem;
-    color: $white;
-    text-align: center;
-}
-
-.Pcontact2 {
-    position: relative;
-    top: 10rem;
-    text-align: center;
-    color: $white;
-}
-
-.Pcontact2:hover {
-    color: red;
-    background: $transparent-1;
-}
-
-.contactForm {
-    position: relative;
-    left: 0rem;
-    top: 12rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 0 auto;
-
-    .putForm {
-        margin-top: 1rem;
-        width: 20rem;
-        height: 2rem;
-    }
-
-    .msgForm {
-        margin-top: 2rem;
-        height: 5rem;
-        width: 20rem;
-    }
-
-    .sendForm {
-        position: relative;
-        top: 4rem;
-        padding: 1.2em 2em;
-        background: $color-1;
-        border: none;
-        border-radius: .5rem;
-        color: $color-2;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        text-align: center;
-        margin: 0 Auto;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: .2s ease;
-        -o-transition: .2s ease;
-        transition: .2s ease;
-        -webkit-box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-        box-shadow: -6px -6px 14px $color-1,
-            -6px -6px 10px $color-1,
-            6px 6px 8px rgba(255, 255, 255, .075),
-            6px 6px 10px rgba(0, 0, 0, .15);
-    }
-
-    .sendForm:hover {
-        background: $color-3;
-        color: $white;
-        font-size: 1.2rem;
-        font-weight: 900;
-        letter-spacing: .4rem;
-        -webkit-box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        box-shadow: -2px -2px 6px $color-1,
-            -2px -2px 4px $color-1,
-            2px 2px 2px rgba(255, 255, 255, .05),
-            2px 2px 4px rgba(0, 0, 0, .1);
-        -webkit-transition: 0.4 ease;
-        -o-transition: 0.4 ease;
-        transition: 0.4 ease;
-    }
-
-    .sendForm:active {
-        -webkit-box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-        box-shadow: inset -2px -2px 6px $color-1,
-            inset -2px -2px 4px $color-1,
-            inset 2px 2px 2px rgba(255, 255, 255, .075),
-            inset 2px 2px 4px rgba(0, 0, 0, .15);
-    }
-
-}
-
-.putForm::-webkit-input-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.putForm::-moz-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.putForm:-ms-input-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.putForm::-ms-input-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.putForm::placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.msgForm::-webkit-input-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.msgForm::-moz-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.msgForm:-ms-input-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.msgForm::-ms-input-placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.msgForm::placeholder {
-    color: $color-2;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-@media (min-width: 100px) and (max-width: 600px) {
-    .Pcontact {
+@media #{$BREAKPOINT-MOBILE-LAND} {
+    .ContactTitle {
+            color: $color-1;
+            position: relative;
+            top: 8rem;
+        }
+    
+        .Pcontact {
+            position: relative;
+            top: 10rem;
+            color: $white;
             text-align: center;
+            width: 16rem;
             margin: 0 auto;
-            width: 20rem !important;
+        }
+    
+        .Pcontact:hover {
+            color: $color-3;
+            font-size: large;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
         }
     
         .Pcontact2 {
-            width: 20rem;
             position: relative;
             top: 10rem;
             text-align: center;
-            margin: 0 auto;
             color: $white;
+            width: 12rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+    
+        .Pcontact2:hover {
+            color: red;
+            background: $transparent-1;
+            width: 13;
+            font-size: 1.2rem;
+            line-height: 1rem;
+            border-radius: 5%;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
         }
     
         .contactForm {
             position: relative;
+            left: 0rem;
             top: 12rem;
-            left: 1rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
             margin: 0 auto;
-            justify-items: center;
+    
+            .putForm {
+                margin-top: 1rem;
+                width: 12rem;
+                height: 2rem;
+            }
+    
+            .putForm:hover {
+                margin-top: 1.1rem;
+                width: 13rem;
+                height: 2.1rem;
+                border: solid 0.2rem $color-3;
+                -webkit-transition: 0.6s ease;
+                -o-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+    
+            .msgForm {
+                margin-top: 2rem;
+                height: 5rem;
+                width: 12rem;
+            }
+    
+            .msgForm:hover {
+                margin-top: 2.1rem;
+                height: 5rem;
+                width: 13rem;
+                border: solid 0.2rem $color-3;
+                -webkit-transition: 0.6s ease;
+                -o-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+    
+            .sendForm {
+                position: relative;
+                top: 10rem;
+                padding: 1.2em 2em;
+                background: $color-1;
+                border: none;
+                border-radius: .5rem;
+                color: $color-2;
+                font-size: 1rem;
+                font-weight: 700;
+                letter-spacing: .2rem;
+                text-align: center;
+                margin: 0 Auto;
+                outline: none;
+                cursor: pointer;
+                -webkit-transition: .2s ease;
+                -o-transition: .2s ease;
+                transition: .2s ease;
+                -webkit-box-shadow: -6px -6px 14px $color-1,
+                    -6px -6px 10px $color-1,
+                    6px 6px 8px rgba(255, 255, 255, .075),
+                    6px 6px 10px rgba(0, 0, 0, .15);
+                box-shadow: -6px -6px 14px $color-1,
+                    -6px -6px 10px $color-1,
+                    6px 6px 8px rgba(255, 255, 255, .075),
+                    6px 6px 10px rgba(0, 0, 0, .15);
+            }
+    
+            .sendForm:hover {
+                background: $color-3;
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: 900;
+                letter-spacing: .4rem;
+                -webkit-box-shadow: -2px -2px 6px $color-1,
+                    -2px -2px 4px $color-1,
+                    2px 2px 2px rgba(255, 255, 255, .05),
+                    2px 2px 4px rgba(0, 0, 0, .1);
+                box-shadow: -2px -2px 6px $color-1,
+                    -2px -2px 4px $color-1,
+                    2px 2px 2px rgba(255, 255, 255, .05),
+                    2px 2px 4px rgba(0, 0, 0, .1);
+                -webkit-transition: 0.4 ease;
+                -o-transition: 0.4 ease;
+                transition: 0.4 ease;
+            }
+    
+            .sendForm:active {
+                -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                    inset -2px -2px 4px $color-1,
+                    inset 2px 2px 2px rgba(255, 255, 255, .075),
+                    inset 2px 2px 4px rgba(0, 0, 0, .15);
+                box-shadow: inset -2px -2px 6px $color-1,
+                    inset -2px -2px 4px $color-1,
+                    inset 2px 2px 2px rgba(255, 255, 255, .075),
+                    inset 2px 2px 4px rgba(0, 0, 0, .15);
+            }
+    
         }
     
-        .sendForm {
-            top: 10rem !important;
+        .putForm::-webkit-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
         }
     
-        .MenuBottom {
-            left: -3rem;
+        .putForm::-moz-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
         }
     
-        .MenuBottom:hover {
-            left: -2rem !important;
+        .putForm:-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-webkit-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-moz-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm:-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
         }
 }
-@media (min-width: 601px) and (max-width: 1100px) {
-    .sendForm {
-            top: 8rem !important;
+
+@media #{$BREAKPOINT-TABLET} {
+    .ContactTitle {
+            color: $color-1;
+            position: relative;
+            top: 8rem;
+        }
+    
+        .Pcontact {
+            position: relative;
+            top: 10rem;
+            color: $white;
+            text-align: center;
+            width: 24rem;
+            margin: 0 auto;
+        }
+    
+        .Pcontact:hover {
+            color: $color-3;
+            font-size: large;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
         }
     
         .Pcontact2 {
-            width: 20rem;
             position: relative;
             top: 10rem;
             text-align: center;
-            margin: 0 auto;
             color: $white;
+            width: 18rem;
+            margin: 0 auto;
+        }
+    
+        .Pcontact2:hover {
+            color: red;
+            background: $transparent-1;
+            width: 20rem;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            border-radius: 5%;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+        }
+    
+        .contactForm {
+            position: relative;
+            left: 0rem;
+            top: 12rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0 auto;
+    
+            .putForm {
+                margin-top: 1rem;
+                width: 20rem;
+                height: 2rem;
+            }
+    
+            .putForm:hover {
+                margin-top: 1.1rem;
+                width: 22rem;
+                height: 2.2rem;
+                border: solid 0.2rem $color-3;
+                -webkit-transition: 0.6s ease;
+                -o-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+    
+            .msgForm {
+                margin-top: 2rem;
+                height: 5rem;
+                width: 20rem;
+            }
+    
+            .msgForm {
+                margin-top: 2.1rem;
+                height: 6rem;
+                width: 22rem;
+                border: solid 0.2rem $color-3;
+                -webkit-transition: 0.6s ease;
+                -o-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+    
+            .sendForm {
+                position: relative;
+                top: 6rem;
+                padding: 1.2em 2em;
+                background: $color-1;
+                border: none;
+                border-radius: .5rem;
+                color: $color-2;
+                font-size: 1rem;
+                font-weight: 700;
+                letter-spacing: .2rem;
+                text-align: center;
+                margin: 0 Auto;
+                outline: none;
+                cursor: pointer;
+                -webkit-transition: .2s ease;
+                -o-transition: .2s ease;
+                transition: .2s ease;
+                -webkit-box-shadow: -6px -6px 14px $color-1,
+                    -6px -6px 10px $color-1,
+                    6px 6px 8px rgba(255, 255, 255, .075),
+                    6px 6px 10px rgba(0, 0, 0, .15);
+                box-shadow: -6px -6px 14px $color-1,
+                    -6px -6px 10px $color-1,
+                    6px 6px 8px rgba(255, 255, 255, .075),
+                    6px 6px 10px rgba(0, 0, 0, .15);
+            }
+    
+            .sendForm:hover {
+                background: $color-3;
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: 900;
+                letter-spacing: .4rem;
+                -webkit-box-shadow: -2px -2px 6px $color-1,
+                    -2px -2px 4px $color-1,
+                    2px 2px 2px rgba(255, 255, 255, .05),
+                    2px 2px 4px rgba(0, 0, 0, .1);
+                box-shadow: -2px -2px 6px $color-1,
+                    -2px -2px 4px $color-1,
+                    2px 2px 2px rgba(255, 255, 255, .05),
+                    2px 2px 4px rgba(0, 0, 0, .1);
+                -webkit-transition: 0.4 ease;
+                -o-transition: 0.4 ease;
+                transition: 0.4 ease;
+            }
+    
+            .sendForm:active {
+                -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                    inset -2px -2px 4px $color-1,
+                    inset 2px 2px 2px rgba(255, 255, 255, .075),
+                    inset 2px 2px 4px rgba(0, 0, 0, .15);
+                box-shadow: inset -2px -2px 6px $color-1,
+                    inset -2px -2px 4px $color-1,
+                    inset 2px 2px 2px rgba(255, 255, 255, .075),
+                    inset 2px 2px 4px rgba(0, 0, 0, .15);
+            }
+    
+        }
+    
+        .putForm::-webkit-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::-moz-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm:-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-webkit-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-moz-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm:-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
         }
 }
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+    .ContactTitle {
+            color: $color-1;
+            position: relative;
+            top: 5rem;
+        }
+    
+        .Pcontact {
+            position: relative;
+            top: 10rem;
+            color: $white;
+            text-align: center;
+            width: 40rem;
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+    
+        .Pcontact:hover {
+            color: $color-3;
+            font-size: 1.4rem;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+        }
+    
+        .Pcontact2 {
+            position: relative;
+            top: 10rem;
+            text-align: center;
+            color: $white;
+            width: 18rem;
+            margin: 0 auto;
+        }
+    
+        .Pcontact2:hover {
+            color: red;
+            background: $transparent-1;
+            width: 20rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            border-radius: 5%;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+        }
+    
+        .contactForm {
+            position: relative;
+            left: 0rem;
+            top: 12rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0 auto;
+    
+            .putForm {
+                margin-top: 1rem;
+                width: 30rem;
+                height: 2rem;
+            }
+    
+            .putForm:hover {
+                margin-top: 1.1rem;
+                width: 32rem;
+                height: 2.1rem;
+                border: solid 0.2rem $color-3;
+                -webkit-transition: 0.6s ease;
+                -o-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+    
+            .msgForm {
+                margin-top: 2rem;
+                height: 5rem;
+                width: 30rem;
+            }
+    
+            .msgForm:hover {
+                margin-top: 2.2rem;
+                height: 10.2rem;
+                width: 32rem;
+                border: solid 0.2rem $color-3;
+                -webkit-transition: 0.6s ease;
+                -o-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+    
+            .sendForm {
+                position: relative;
+                top: 6rem;
+                padding: 1.2em 2em;
+                background: $color-1;
+                border: none;
+                border-radius: .5rem;
+                color: $color-2;
+                font-size: 1rem;
+                font-weight: 700;
+                letter-spacing: .2rem;
+                text-align: center;
+                margin: 0 Auto;
+                outline: none;
+                cursor: pointer;
+                -webkit-transition: .2s ease;
+                -o-transition: .2s ease;
+                transition: .2s ease;
+                -webkit-box-shadow: -6px -6px 14px $color-1,
+                    -6px -6px 10px $color-1,
+                    6px 6px 8px rgba(255, 255, 255, .075),
+                    6px 6px 10px rgba(0, 0, 0, .15);
+                box-shadow: -6px -6px 14px $color-1,
+                    -6px -6px 10px $color-1,
+                    6px 6px 8px rgba(255, 255, 255, .075),
+                    6px 6px 10px rgba(0, 0, 0, .15);
+            }
+    
+            .sendForm:hover {
+                background: $color-3;
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: 900;
+                letter-spacing: .4rem;
+                -webkit-box-shadow: -2px -2px 6px $color-1,
+                    -2px -2px 4px $color-1,
+                    2px 2px 2px rgba(255, 255, 255, .05),
+                    2px 2px 4px rgba(0, 0, 0, .1);
+                box-shadow: -2px -2px 6px $color-1,
+                    -2px -2px 4px $color-1,
+                    2px 2px 2px rgba(255, 255, 255, .05),
+                    2px 2px 4px rgba(0, 0, 0, .1);
+                -webkit-transition: 0.4 ease;
+                -o-transition: 0.4 ease;
+                transition: 0.4 ease;
+            }
+    
+            .sendForm:active {
+                -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                    inset -2px -2px 4px $color-1,
+                    inset 2px 2px 2px rgba(255, 255, 255, .075),
+                    inset 2px 2px 4px rgba(0, 0, 0, .15);
+                box-shadow: inset -2px -2px 6px $color-1,
+                    inset -2px -2px 4px $color-1,
+                    inset 2px 2px 2px rgba(255, 255, 255, .075),
+                    inset 2px 2px 4px rgba(0, 0, 0, .15);
+            }
+    
+        }
+    
+        .putForm::-webkit-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::-moz-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm:-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .putForm::placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-webkit-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-moz-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm:-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::-ms-input-placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    
+        .msgForm::placeholder {
+            color: $color-3;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+}
+
+@media #{$BREAKPOINT-DESK} {
+.ContactTitle {
+        color: $color-1;
+        position: relative;
+        top: 5rem;
+    }
+
+    .Pcontact {
+        position: relative;
+        top: 10rem;
+        color: $white;
+        text-align: center;
+        width: 40rem;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+
+    .Pcontact:hover {
+        color: $color-3;
+        font-size: 1.4rem;
+        -webkit-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+    .Pcontact2 {
+        position: relative;
+        top: 10rem;
+        text-align: center;
+        color: $white;
+        width: 18rem;
+        margin: 0 auto;
+    }
+
+    .Pcontact2:hover {
+        color: red;
+        background: $transparent-1;
+        width: 20rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        border-radius: 5%;
+        -webkit-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+    .contactForm {
+        position: relative;
+        left: 0rem;
+        top: 12rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .putForm {
+            margin-top: 1rem;
+            width: 30rem;
+            height: 2rem;
+        }
+
+        .putForm:hover {
+            margin-top: 1.1rem;
+            width: 32rem;
+            height: 2.1rem;
+            border: solid 0.2rem $color-3;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+        }
+
+        .msgForm {
+            margin-top: 2rem;
+            height: 5rem;
+            width: 30rem;
+        }
+
+        .msgForm:hover {
+            margin-top: 2.2rem;
+            height: 10.2rem;
+            width: 32rem;
+            border: solid 0.2rem $color-3;
+            -webkit-transition: 0.6s ease;
+            -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+        }
+
+        .sendForm {
+            position: relative;
+            top: 6rem;
+            padding: 1.2em 2em;
+            background: $color-1;
+            border: none;
+            border-radius: .5rem;
+            color: $color-2;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+            margin: 0 Auto;
+            outline: none;
+            cursor: pointer;
+            -webkit-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+            -webkit-box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+            box-shadow: -6px -6px 14px $color-1,
+                -6px -6px 10px $color-1,
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+        }
+
+        .sendForm:hover {
+            background: $color-3;
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 900;
+            letter-spacing: .4rem;
+            -webkit-box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            box-shadow: -2px -2px 6px $color-1,
+                -2px -2px 4px $color-1,
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+            -webkit-transition: 0.4 ease;
+            -o-transition: 0.4 ease;
+            transition: 0.4 ease;
+        }
+
+        .sendForm:active {
+            -webkit-box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+            box-shadow: inset -2px -2px 6px $color-1,
+                inset -2px -2px 4px $color-1,
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+        }
+
+    }
+
+    .putForm::-webkit-input-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .putForm::-moz-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .putForm:-ms-input-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .putForm::-ms-input-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .putForm::placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .msgForm::-webkit-input-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .msgForm::-moz-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .msgForm:-ms-input-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .msgForm::-ms-input-placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .msgForm::placeholder {
+        color: $color-3;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+}
+

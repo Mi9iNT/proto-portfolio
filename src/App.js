@@ -23,14 +23,14 @@ function App() {
     <div className="App">
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
+          <Route path="/Accueil" element={<Home />} />
           <Route path="/Curriculum-Vitae" element={<CurriculumVitae />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Galerie" element={<Galerie />} />
           <Route path="/Jams" element={<Jams />} />
           <Route path="/Videos" element={<Videos />} />
           <Route path="/Mentions-Legales" element={<MentionsLegales />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/*" element={<Home />} />
         </Routes>
       </AnimatePresence>
         

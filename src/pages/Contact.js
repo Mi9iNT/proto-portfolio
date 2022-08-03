@@ -4,6 +4,7 @@ import Logo from '../components/Logo';
 import Menu from '../components/menu/Menu';
 
 import { motion } from "framer-motion";
+import RS from '../components/reseaux_sociaux/RS';
 
 const Contact = () => {
 
@@ -36,7 +37,8 @@ const Contact = () => {
         >
             <Logo />
             <Menu />
-            <h1>Contact</h1>
+            <RS />
+            <h2 className="ContactTitle">Contact</h2>
             <p className='Pcontact'>Pour me contacter veuillez renseigner et envoyer ce formulaire</p>
             
             <form ref={form}  onSubmit={sendEmail} className="contactForm">

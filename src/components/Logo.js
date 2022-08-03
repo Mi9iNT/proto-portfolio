@@ -5,7 +5,7 @@ import Avatar from "../assets/img/LogoMobileBleu.svg";
 const Logo = () => {
     return (
         <div className="logo-container">
-            <a href='/'>
+            <a href='/Accuei'>
                 <img src={Avatar} alt="Retourner à l'accueil" className="logo" title="Retourner à l'accueil" />
             </a>
             
