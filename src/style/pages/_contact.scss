@@ -308,7 +308,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
                 width: 20rem;
             }
     
-            .msgForm {
+            .msgForm:hover {
                 margin-top: 2.1rem;
                 height: 6rem;
                 width: 22rem;
@@ -808,64 +808,61 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
     }
 
+
     .putForm::-webkit-input-placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
+        opacity: 1;
     }
 
     .putForm::-moz-placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
+        opacity: 1;
     }
 
     .putForm:-ms-input-placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
-    }
-
-    .putForm::-ms-input-placeholder {
-        color: $color-3;
-        font-size: 1.2em;
-        font-weight: 600;
+        opacity: 1;
     }
 
     .putForm::placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
+        opacity: 1;
     }
 
     .msgForm::-webkit-input-placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
+        opacity: 1;
     }
 
     .msgForm::-moz-placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
+        opacity: 1;
     }
 
     .msgForm:-ms-input-placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
-    }
-
-    .msgForm::-ms-input-placeholder {
-        color: $color-3;
-        font-size: 1.2em;
-        font-weight: 600;
+        opacity: 1;
     }
 
     .msgForm::placeholder {
         color: $color-3;
         font-size: 1.2em;
         font-weight: 600;
+        opacity: 1;
     }
 }
 

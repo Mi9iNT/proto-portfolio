@@ -202,7 +202,7 @@ const Galerie = () => {
         >
             <Menu />
             <RS />
-            <h2 className="GalerieTitle">Galerie d'illustrations</h2>
+            <h2 className="GalerieTitle">Galerie d'Illustrations</h2>
             <div className={model ? "model open" : "model"}>
                 <img src={tempimgSrc} alt={tempalt} />
                 <img src={CloseBTN} onClick={ () => setModel(false) } alt="fermer" className="btnClose"/>

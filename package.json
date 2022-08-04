@@ -1,7 +1,7 @@
 {
   "name": "proto-portfolio",
   "version": "0.1.0",
-  "homepage": "https://Mi9iNT.github.io/Proto-Portfolio/Accueil",
+  "homepage": "https://Mi9iNT.github.io/Proto-Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",

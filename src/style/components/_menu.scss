@@ -13,7 +13,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 @media #{$BREAKPOINT-MOBILE-LAND} {
 
 a {
-        border: none;
+    border: none;
     }
 
     .MenuBottom {
@@ -32,9 +32,9 @@ a {
     }
 
     .MenuBottom:hover {
-        -webkit-transform: translateX(2rem);
-        -ms-transform: translateX(2rem);
-        transform: translateX(2rem);
+        -webkit-transform: translateX(4rem);
+        -ms-transform: translateX(4rem);
+        transform: translateX(4rem);
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
@@ -259,8 +259,8 @@ a {
 
     .IllusImg {
         position: relative;
-        left: -16rem;
-        top: -5rem;
+        left: -13rem;
+        top: -6rem;
         width: 5rem;
         height: 5rem;
     }
@@ -582,7 +582,7 @@ a {
         .MenuBottom {
             background-color: #a4cbf2;
             height: 80%;
-            left: -5rem;
+            left: -4rem;
             width: 5rem;
             position: fixed;
             top: 10.35rem;
@@ -595,9 +595,9 @@ a {
         }
     
         .MenuBottom:hover {
-            -webkit-transform: translateX(5rem);
-            -ms-transform: translateX(5rem);
-            transform: translateX(5rem);
+            -webkit-transform: translateX(4rem);
+            -ms-transform: translateX(4rem);
+            transform: translateX(4rem);
             -webkit-transition: 0.4s ease;
             -o-transition: 0.4s ease;
             transition: 0.4s ease;

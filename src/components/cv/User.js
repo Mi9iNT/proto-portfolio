@@ -15,12 +15,12 @@ import DonwLoader from '../../assets/fonts/fontawesome/donwload-solid.svg';
 const User = () => {
     return (
         <div className='user'>
-            <a href="/Accueil" title="Retourner à l'accueil">
+            <a href="/" title="Retourner à l'accueil">
                 <img src={AvatarBlanc} alt='Avatar de Miguel' className='Avatar' />
                 <img src={AvatarBlanc} alt='Avatar de Miguel' className='AvatarBlanc' />
             </a>
             
-                <a href="/Accueil">
+                <a href="/">
                     <img src={Retour} className='btnBack' alt="Retourner à l'accueil" title="Retourner à l'accueil" />
                 </a>
                <a href={CV} download="">

@@ -11,7 +11,7 @@ const Menu = () => {
       <div><div className="MenuBottom" id="menuBottom">
       <ul className='dispoMenuBottom'>
         
-          <NavLink to="/Accueil" className={(nav) => (nav.isActive ? "active" : "")}>
+          <NavLink to="/" className={(nav) => (nav.isActive ? "active" : "")}>
             <li>
               <img className='icoMenuBottom' src={House} alt="Accueil" title="Acceuil" id="Accueil" />
             </li>
