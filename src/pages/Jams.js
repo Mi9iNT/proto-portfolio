@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import Logo from '../components/Logo';
 import Menu from '../components/menu/Menu';
@@ -18,8 +19,13 @@ const Jams = () => {
             <Logo />
             <Menu />
             <RS />
-            <h2>Jams</h2>
+            <h2 className="JamsTitle">Jams</h2>
             <p className="jam_pitch">Au plaisir de les partager, ils sont fait pour mes soins en grande part sur Music Maker Jam et sont donc libre de droit en vous saignant pas trop vos (no) n'oreilles (j'espère) 🤪</p>
+            <div className="contact-btn-Page-Jams">
+              <NavLink to="/contact">
+              <button className="Btn-Contact-Me-Page-Jams">Contacter Moi</button>
+              </NavLink>
+            </div>
             <div className="jams">
                 
                 
@@ -36,7 +42,7 @@ const Jams = () => {
                 <div className='jam'>
                     <ReactPlayer url="https://soundcloud.com/myguel-mgsx-clairy/easier-remix" />
                     <h3 className='jam_title'>Easier Remix</h3>
-                    <p className='jam_text'>à vos avis 🤔</p>
+                    <p className='jam_text'>À vos avis 🤔</p>
                 </div>
                 <div className='jam'>
                     <ReactPlayer url="https://soundcloud.com/myguel-mgsx-clairy/quit_mars_to_earth_ep1-mp3" />
@@ -74,6 +80,11 @@ const Jams = () => {
                     <p className='jam_text'>Une mélodie qui me hantait et qui a donnée ça 🤔</p>
                 </div>
             
+            </div>
+            <div className="contact-btn-Page-Jams2">
+              <NavLink to="/contact">
+              <button className="Btn-Contact-Me-Page-Jams2">Contacter Moi</button>
+              </NavLink>
             </div>
         </motion.div>
     );

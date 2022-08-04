@@ -4,6 +4,16 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 200px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+
+.JamsTitle {
+    color: $color-3;
+}
 
 .jams {
     position: relative;
@@ -20,7 +30,7 @@
 }
 
 .jam {
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 .jam_title {
@@ -29,54 +39,274 @@
     color: $color-1;
 }
 
+.jam_title:hover {
+    color: $color-3;
+    transform: scale(0.8);
+    background-color: $transparent-1;
+    border-radius: 0.5rem;
+    transition: 0.4s ease;
+}
+
 .jam_text {
+    position: relative;
+    top: -15rem;
     color: $white;
     text-align: center;
     font-size: 1.2rem;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.jam_text:hover {
+    color: $color-3;
+    line-height: 3rem;
+    border-radius: 0.5rem;
+    background: $transparent-1;
+    transition: 0.4s ease;
 }
 
 .jam_pitch {
     position: relative;
     color: $white;
-    top: 15rem;
+    top: 10rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    width: 10rem;
+    line-height: 2rem;
+    margin: 0 auto;
 }
-@media (min-width: 100px) and (max-width: 600px) {
+
+.jam_pitch:hover {
+    color: $color-3;
+    background-color: $transparent-1;
+}
+
+ iframe {
+    width: 30% !important;
+    height: 35% !important;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.contact-btn-Page-Jams {
+    position: relative;
+    top: 8rem;
+}
+
+.Btn-Contact-Me-Page-Jams {
+
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 7rem;
+    width: 10rem;
+    padding: 1.5em 1em;
+    background: $color-1;
+    border: none;
+    border-radius: .5rem;
+    color: $color-2;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    margin: 0 Auto;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    -webkit-box-shadow: -3px -3px 14px $color-1,
+        -3px -3px 10px $color-1,
+        3px 3px 8px rgba(255, 255, 255, .075),
+        3px 3px 10px rgba(0, 0, 0, .15);
+    box-shadow: -3px -3px 14px $color-1,
+        -3px -3px 10px $color-1,
+        3px 3px 8px rgba(255, 255, 255, .075),
+        3px 3px 10px rgba(0, 0, 0, .15);
+}
+
+.Btn-Contact-Me-Page-Jams:hover {
+    color: $white;
+    background: $color-3;
+    transform: scale(1.1);
+    -webkit-box-shadow: -2px -2px 6px $color-1,
+        -2px -2px 4px $color-1,
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: -2px -2px 6px $color-1,
+        -2px -2px 4px $color-1,
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+.Btn-Contact-Me-Page-Jams:active {
+    -webkit-box-shadow: inset -2px -2px 6px $color-1,
+        inset -2px -2px 4px $color-1,
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+    box-shadow: inset -2px -2px 6px $color-1,
+        inset -2px -2px 4px $color-1,
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+.contact-btn-Page-Jams2 {
+    position: relative;
+    top: -18rem;
+}
+
+.Btn-Contact-Me-Page-Jams2 {
+
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 7rem;
+    width: 10rem;
+    padding: 1.5em 1em;
+    background: $color-3;
+    border: none;
+    border-radius: .5rem;
+    color: $color-2;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    margin: 0 Auto;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    -webkit-box-shadow: -3px -3px 14px $color-1,
+        -3px -3px 10px $color-1,
+        3px 3px 8px rgba(255, 255, 255, .075),
+        3px 3px 10px rgba(0, 0, 0, .15);
+    box-shadow: -3px -3px 14px $color-1,
+        -3px -3px 10px $color-1,
+        3px 3px 8px rgba(255, 255, 255, .075),
+        3px 3px 10px rgba(0, 0, 0, .15);
+}
+
+.Btn-Contact-Me-Page-Jams2:hover {
+    color: $white;
+    background: $color-1;
+    transform: scale(1.1);
+    -webkit-box-shadow: -2px -2px 6px $color-3,
+        -2px -2px 4px $color-3,
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: -2px -2px 6px $color-3,
+        -2px -2px 4px $color-3,
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+.Btn-Contact-Me-Page-Jams2:active {
+    -webkit-box-shadow: inset -2px -2px 6px $color-3,
+        inset -2px -2px 4px $color-3,
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+    box-shadow: inset -2px -2px 6px $color-3,
+        inset -2px -2px 4px $color-3,
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+}
+
+@media #{$BREAKPOINT-TABLET} {
+
+    .JamsTitle {
+        color: $color-3;
+    }
+
+    .jams {
+        position: relative;
+        top: 25rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .jam {
+        margin-bottom: 2rem;
+    }
+
+    .jam_title {
+        position: relative;
+        top: -26rem;
+        color: $color-1;
+    }
+
+    .jam_title:hover {
+        color: $color-3;
+        transform: scale(0.8);
+        background-color: $transparent-1;
+        border-radius: 0.5rem;
+        transition: 0.4s ease;
+    }
+
+    .jam_text {
+        position: relative;
+        top: -15rem;
+        color: $white;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .jam_text:hover {
+        color: $color-3;
+        line-height: 3rem;
+        border-radius: 0.5rem;
+        background: $transparent-1;
+        transition: 0.4s ease;
+    }
+
+    .jam_pitch {
+        position: relative;
+        color: $white;
+        top: 10rem;
+        text-align: center;
+        font-size: 1rem;
+        width: 20rem;
+        line-height: 2rem;
+        margin: 0 auto;
+    }
+
+    .jam_pitch:hover {
+        color: $color-3;
+        background-color: $transparent-1;
+    }
+
     iframe {
-            width: 60% !important;
-            height: 60% !important;
-            position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            margin: 0 auto;
-        }
-    
-        .jam_pitch {
-            width: 20rem;
-            text-align: center;
-            position: relative;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            margin: 0 auto;
-        }
-    
-        .jam_text {
-            width: 20rem;
-            text-align: center;
-            position: relative;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            margin: 0 auto;
-        }
-}
-@media (min-width: 601px) and (max-width: 1100px) {
-iframe {
-        width: 70% !important;
-        height: 70% !important;
+        width: 60% !important;
+        height: 35% !important;
         position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -86,21 +316,596 @@ iframe {
         margin: 0 auto;
     }
 
-    .jam_pitch {
-        width: 30rem;
-        text-align: center;
+    .contact-btn-Page-Jams {
         position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Jams {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 7rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+    }
+
+    .Btn-Contact-Me-Page-Jams:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+        2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Jams:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+                -2px -2px 10px $color-1,
+                2px 2px 8px rgba(255, 255, 255, .075),
+                2px 2px 10px rgba(0, 0, 0, .15);
+            box-shadow: -2px -2px 14px $color-1,
+                -2px -2px 8px $color-1,
+                2px 2px 8px rgba(255, 255, 255, .075),
+                2px 2px 10px rgba(0, 0, 0, .15);
+            transition: 0.4s ease;
+    }
+
+    .contact-btn-Page-Jams2 {
+        position: relative;
+        top: -18rem;
+    }
+
+    .Btn-Contact-Me-Page-Jams2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 7rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -5px -5px 14px $color-1,
+            5px 5px 10px $color-1,
+            5px 5px 8px rgba(255, 255, 255, .075),
+            5px 5px 10px rgba(0, 0, 0, .15);
+        box-shadow: -5px -5px 14px $color-1,
+            -5px -5px 10px $color-1,
+            5px 5px 8px rgba(255, 255, 255, .075),
+            5px 5px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Page-Jams2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Jams2:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+
+    .JamsTitle{
+        color: $color-3;
+    }
+
+    .jams {
+        position: relative;
+        top: 25rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .jam {
+        margin-bottom: 2rem;
+    }
+
+    .jam_title {
+        position: relative;
+        top: -26rem;
+        color: $color-1;
+    }
+
+    .jam_title:hover {
+        color: $color-3;
+        transform: scale(0.8);
+        background-color: $transparent-1;
+        border-radius: 0.5rem;
+        transition: 0.4s ease;
+    }
+
+    .jam_text {
+        position: relative;
+        top: -10rem;
+        color: $white;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 40rem;
+        margin: 0 auto;
+    }
+
+    .jam_text:hover {
+        color: $color-3;
+        line-height: 3rem;
+        border-radius: 0.5rem;
+        background: $transparent-1;
+        transition: 0.4s ease;
+    }
+
+    .jam_pitch {
+        position: relative;
+        color: $white;
+        top: 10rem;
+        text-align: center;
+        font-size: 1rem;
+        width: 40rem;
+        line-height: 2rem;
+        margin: 0 auto;
+    }
+
+    .jam_pitch:hover {
+        color: $color-3;
+        background-color: $transparent-1;
+    }
+
+    iframe {
+        width: 80% !important;
+        height: 60% !important;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -ms-flex-line-pack: center;
         align-content: center;
         margin: 0 auto;
     }
 
-    .jam_text {
-        width: 30rem;
-        text-align: center;
+    .contact-btn-Page-Jams {
         position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Jams {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 7rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+    }
+
+    .Btn-Contact-Me-Page-Jams:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Jams:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+    }
+
+    .contact-btn-Page-Jams2 {
+        position: relative;
+        top: 10rem;
+    }
+
+    .Btn-Contact-Me-Page-Jams2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 10rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -5px -5px 14px $color-1,
+            5px 5px 10px $color-1,
+            5px 5px 8px rgba(255, 255, 255, .075),
+            5px 5px 10px rgba(0, 0, 0, .15);
+        box-shadow: -5px -5px 14px $color-1,
+            -5px -5px 10px $color-1,
+            5px 5px 8px rgba(255, 255, 255, .075),
+            5px 5px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Page-Jams2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Jams2:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
+}
+
+@media #{$BREAKPOINT-DESK} {
+
+    .JamsTitle {
+        color: $color-3;
+    }
+
+    .jams {
+        position: relative;
+        top: 25rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .jam {
+        margin-bottom: 10rem;
+    }
+
+    .jam_title {
+        position: relative;
+        top: -26rem;
+        color: $color-1;
+    }
+
+    .jam_title:hover {
+        color: $color-3;
+        transform: scale(0.8);
+        background-color: $transparent-1;
+        border-radius: 0.5rem;
+        transition: 0.4s ease;
+    }
+
+    .jam_text {
+        position: relative;
+        top: -4rem;
+        color: $white;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .jam_text:hover {
+        color: $color-3;
+        line-height: 3rem;
+        border-radius: 0.5rem;
+        background: $transparent-1;
+        transition: 0.4s ease;
+    }
+
+    .jam_pitch {
+        position: relative;
+        color: $white;
+        top: 10rem;
+        text-align: center;
+        font-size: 1rem;
+        width: 40rem;
+        line-height: 2rem;
+        margin: 0 auto;
+    }
+
+    .jam_pitch:hover {
+        color: $color-3;
+        background-color: $transparent-1;
+    }
+
+    iframe {
+        width: 90% !important;
+        height: 80% !important;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -ms-flex-line-pack: center;
         align-content: center;
         margin: 0 auto;
     }
+
+    .contact-btn-Page-Jams {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Jams {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 7rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+    }
+
+    .Btn-Contact-Me-Page-Jams:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Jams:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+    }
+
+    .contact-btn-Page-Jams2 {
+        position: relative;
+        top: 10rem;
+    }
+
+    .Btn-Contact-Me-Page-Jams2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -5px -5px 14px $color-1,
+            5px 5px 10px $color-1,
+            5px 5px 8px rgba(255, 255, 255, .075),
+            5px 5px 10px rgba(0, 0, 0, .15);
+        box-shadow: -5px -5px 14px $color-1,
+            -5px -5px 10px $color-1,
+            5px 5px 8px rgba(255, 255, 255, .075),
+            5px 5px 10px rgba(0, 0, 0, .15);
+    }
+
+    .Btn-Contact-Me-Page-Jams2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        box-shadow: -2px -2px 6px $color-3,
+            -2px -2px 4px $color-3,
+            2px 2px 2px rgba(255, 255, 255, .05),
+            2px 2px 4px rgba(0, 0, 0, .1);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Jams2:active {
+        -webkit-box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+        box-shadow: inset -2px -2px 6px $color-3,
+            inset -2px -2px 4px $color-3,
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+    }
+
 }

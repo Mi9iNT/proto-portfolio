@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import CloseBTN from '../assets/fonts/fontawesome/x-solid.svg';
 
@@ -205,7 +206,12 @@ const Galerie = () => {
             <h2 className="GalerieTitle">Galerie d'Illustrations</h2>
             <div className={model ? "model open" : "model"}>
                 <img src={tempimgSrc} alt={tempalt} />
-                <img src={CloseBTN} onClick={ () => setModel(false) } alt="fermer" className="btnClose"/>
+                <img src={CloseBTN} onClick={() => setModel(false)} alt="fermer" className="btnClose" />
+                <div className="contact-btn-Page-Galerie">
+                    <NavLink to="/contact">
+                        <button className="Btn-Contact-Me-Page-Galerie">Contacter Moi</button>
+                    </NavLink>
+                </div>
             </div>
             
             {data.map((item, index) => {

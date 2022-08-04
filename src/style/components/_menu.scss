@@ -12,10 +12,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
 @media #{$BREAKPOINT-MOBILE-LAND} {
 
-a {
-    border: none;
-    }
-
     .MenuBottom {
         background-color: #a4cbf2;
         height: 80%;
@@ -209,6 +205,7 @@ a {
 
     .IllusImg:hover {
         background-color: #50bbfd;
+        border-radius: 100%;
         -webkit-transform: scale(1.3) translateY(-0.5rem);
         -ms-transform: scale(1.3) translateY(-0.5rem);
         transform: scale(1.3) translateY(-0.5rem);
@@ -292,10 +289,6 @@ a {
 }
 
 @media #{$BREAKPOINT-TABLET} {
-
-    a {
-            border: none;
-        }
     
         .MenuBottom {
             background-color: #a4cbf2;
@@ -575,9 +568,6 @@ a {
 
 @media #{$BREAKPOINT-TABLET-LAND} {
 
-    a {
-            border: none;
-        }
     
         .MenuBottom {
             background-color: #a4cbf2;
@@ -856,10 +846,6 @@ a {
 }
 
 @media #{$BREAKPOINT-DESK} {
-
-    a {
-            border: none;
-        }
     
         .MenuBottom {
             background-color: #a4cbf2;
