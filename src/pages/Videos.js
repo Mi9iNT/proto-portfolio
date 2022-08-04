@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import Logo from '../components/Logo';
 import Menu from '../components/menu/Menu';
 import RS from '../components/reseaux_sociaux/RS';
@@ -40,15 +42,24 @@ const Videos = () => {
             <RS />
             <h2 className="title_videos">Vidéos</h2>
             <p className="text_videos">Cette liste se mettra automatiquement à jour au fur et à mesure des ajouts sur Youtube ; vous n'aurez donc qu'a passer sur cette page pour les retrouver toutes</p>
+            <div className="contact-btn-Page-Videos">
+                <NavLink to="/contact">
+                    <button className="Btn-Contact-Me-Page-Videos">Contacter Moi</button>
+                </NavLink>
+            </div>
             {allvideos.map((item) => {
                 return (
                     <div className='Video'>
-                        <iframe width="560" height="315" src={item.videoLink} title={item.description} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                        <iframe className='iframYt' width="560" height="315" src={item.videoLink} title={item.description} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                         
                     </div>
                 );
                 })}
-            
+            <div className="contact-btn-Page-Videos2">
+                <NavLink to="/contact">
+                    <button className="Btn-Contact-Me-Page-Videos2">Contacter Moi</button>
+                </NavLink>
+            </div>
         </motion.div>
     );
 };

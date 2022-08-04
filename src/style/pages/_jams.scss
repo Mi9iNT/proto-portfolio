@@ -160,6 +160,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         inset -2px -2px 4px $color-1,
         inset 2px 2px 2px rgba(255, 255, 255, .075),
         inset 2px 2px 4px rgba(0, 0, 0, .15);
+    transition: 0.4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
 }
 .contact-btn-Page-Jams2 {
     position: relative;
@@ -228,6 +231,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         inset -2px -2px 4px $color-3,
         inset 2px 2px 2px rgba(255, 255, 255, .075),
         inset 2px 2px 4px rgba(0, 0, 0, .15);
+    transition: 0.4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
 }
 
 }
@@ -268,6 +274,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         background-color: $transparent-1;
         border-radius: 0.5rem;
         transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
     }
 
     .jam_text {
@@ -286,6 +294,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         border-radius: 0.5rem;
         background: $transparent-1;
         transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+
     }
 
     .jam_pitch {
@@ -355,7 +366,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             -3px -3px 8px $color-3,
             3px 3px 8px rgba(255, 255, 255, .075),
             3px 3px 10px rgba(0, 0, 0, .15);
-        transition: 0.4s ease;
     }
 
     .Btn-Contact-Me-Page-Jams:hover {
@@ -384,7 +394,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
                 -2px -2px 8px $color-1,
                 2px 2px 8px rgba(255, 255, 255, .075),
                 2px 2px 10px rgba(0, 0, 0, .15);
-            transition: 0.4s ease;
+            transition: 0.4s ease-in-out;
+            -webkit-transition: .4s ease-in-out;
+            -o-transition: .4s ease-in-out;
     }
 
     .contact-btn-Page-Jams2 {
@@ -454,6 +466,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             inset -2px -2px 4px $color-3,
             inset 2px 2px 2px rgba(255, 255, 255, .075),
             inset 2px 2px 4px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
     }
 
 }
@@ -494,6 +509,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         background-color: $transparent-1;
         border-radius: 0.5rem;
         transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
     }
 
     .jam_text {
@@ -512,6 +529,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         border-radius: 0.5rem;
         background: $transparent-1;
         transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
     }
 
     .jam_pitch {
@@ -581,7 +600,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             -3px -3px 8px $color-3,
             3px 3px 8px rgba(255, 255, 255, .075),
             3px 3px 10px rgba(0, 0, 0, .15);
-        transition: 0.4s ease;
     }
 
     .Btn-Contact-Me-Page-Jams:hover {
@@ -610,7 +628,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             -2px -2px 8px $color-1,
             2px 2px 8px rgba(255, 255, 255, .075),
             2px 2px 10px rgba(0, 0, 0, .15);
-        transition: 0.4s ease;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
     }
 
     .contact-btn-Page-Jams2 {
@@ -680,6 +700,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             inset -2px -2px 4px $color-3,
             inset 2px 2px 2px rgba(255, 255, 255, .075),
             inset 2px 2px 4px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
     }
 
 }
@@ -738,6 +761,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         border-radius: 0.5rem;
         background: $transparent-1;
         transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
     }
 
     .jam_pitch {
@@ -754,6 +779,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .jam_pitch:hover {
         color: $color-3;
         background-color: $transparent-1;
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
     }
 
     iframe {
@@ -807,7 +835,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             -3px -3px 8px $color-3,
             3px 3px 8px rgba(255, 255, 255, .075),
             3px 3px 10px rgba(0, 0, 0, .15);
-        transition: 0.4s ease;
     }
 
     .Btn-Contact-Me-Page-Jams:hover {
@@ -837,6 +864,8 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             2px 2px 8px rgba(255, 255, 255, .075),
             2px 2px 10px rgba(0, 0, 0, .15);
         transition: 0.4s ease;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
     }
 
     .contact-btn-Page-Jams2 {
@@ -906,6 +935,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             inset -2px -2px 4px $color-3,
             inset 2px 2px 2px rgba(255, 255, 255, .075),
             inset 2px 2px 4px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
     }
 
 }

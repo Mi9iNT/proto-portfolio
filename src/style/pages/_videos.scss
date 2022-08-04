@@ -5,45 +5,819 @@
 * Browsers: last 4 version
 */
 
-.text_videos {
-    color: $white;
-    position: relative;
-    top: 10rem;
-    text-align: center;
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 200px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 10rem;
+    }
+
+    .text_videos {
+        color: $white;
+        position: relative;
+        top: 14rem;
+        width: 10rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 20rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 12rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
 }
 
-.Video {
-    position: relative;
-    top: 20rem;
-    margin-bottom: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-@media (min-width: 100px) and (max-width: 600px) {
+@media #{$BREAKPOINT-TABLET} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 0rem;
+    }
+
     .text_videos {
-            width: 20rem;
-            text-align: center;
-            position: relative;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            margin: 0 auto;
-        }
+        color: $white;
+        position: relative;
+        top: 10rem;
+        width: 30rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 24rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 16rem !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 16rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
 }
-@media (min-width: 601px) and (max-width: 1100px) {
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 0rem;
+    }
+
     .text_videos {
-            width: 30rem;
-            text-align: center;
-            position: relative;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            margin: 0 auto;
-        }
+        color: $white;
+        position: relative;
+        top: 10rem;
+        width: 40rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 24rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 20rem !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 16rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+}
+
+@media #{$BREAKPOINT-DESK} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 0rem;
+    }
+
+    .text_videos {
+        color: $white;
+        position: relative;
+        top: 8rem;
+        width: 80rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 24rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 40rem !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 16rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
 }
