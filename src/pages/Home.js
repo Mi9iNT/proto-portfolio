@@ -40,38 +40,25 @@ const Home = () => {
             })
             .to(".title", {
                 fontWeight: "100",
+                fontFamily: "$font-1",
+                scale: 0.6,
+                y: 120,
                 delay: 0.2
             })
-            
-            .to(".title", {
-                fontWeight: "400",
-                scale: 0.3,
-                delay: 0.2,
-            })
-            .to(".title", {
-                fontFamily: "$font-1",
-                delay: 0.3,
-            })
-            .to(".title", {
-                scale: 0.3,
-                y: 120,
-                delay: 0.2,
-                duration: 0.2,
-            })
             .to(window, {
-                delay: 0.5,
+                delay: 0.2,
                 duration: 3,
                 scrollTo: "#box1",
             })
             .to(window, {
-                delay: 0.5,
+                delay: 0.2,
                 duration: 1,
                 scrollTo: "#nextSection",
             })
             .to(".title", {
                 scale: 1,
                 y: 0,
-                delay: 0.5,
+                delay: 0.2,
                 duration: 0.2,
             })
 

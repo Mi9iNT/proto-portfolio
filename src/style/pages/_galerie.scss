@@ -5,12 +5,13 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 200px)";
+$BREAKPOINT-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 200px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 380px) and (max-height: 412px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
-@media #{$BREAKPOINT-MOBILE-LAND} {
+@media #{$BREAKPOINT-MOBILE-PORT} {
     .GalerieTitle{
         color: $color-3;
     }
@@ -765,5 +766,12 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
             2px 2px 8px rgba(255, 255, 255, .075),
             2px 2px 10px rgba(0, 0, 0, .15);
         transition: 0.4s ease;
+    }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+    .burger-menu,
+    .burger-menu.open {
+        top: -14rem !important;
     }
 }

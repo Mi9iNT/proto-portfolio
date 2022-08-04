@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import CV from '../../download/cv-Clairy_Miguel-Dev_Front_Qr.pdf';
 
@@ -15,14 +16,14 @@ import DonwLoader from '../../assets/fonts/fontawesome/donwload-solid.svg';
 const User = () => {
     return (
         <div className='user'>
-            <a href="/" title="Retourner à l'accueil">
+            <NavLink to="/" title="Retourner à l'accueil">
                 <img src={AvatarBlanc} alt='Avatar de Miguel' className='Avatar' />
                 <img src={AvatarBlanc} alt='Avatar de Miguel' className='AvatarBlanc' />
-            </a>
+            </NavLink>
             
-                <a href="/">
+                <NavLink to="/">
                     <img src={Retour} className='btnBack' alt="Retourner à l'accueil" title="Retourner à l'accueil" />
-                </a>
+                </NavLink>
                <a href={CV} download="">
                     <img src={DonwLoader} className='btnDonwlad' alt="Téléchargement" title='Télécharger le CV' />
                 </a>
@@ -44,9 +45,10 @@ const User = () => {
                                
                             </td>
                             <td className='td-droite'>
-                                <a href='https://goo.gl/maps/2dB5Ci7raxW4mdwj7' target="_blank" rel="noopener noreferrer"><address className="user-info">
-                                   : 14, rue du Try 95160 Montmorency
-                                </address>
+                                <a href='https://goo.gl/maps/2dB5Ci7raxW4mdwj7' target="_blank" rel="noopener noreferrer">
+                                    <address className="user-info">
+                                        : 14, rue du Try 95160 Montmorency
+                                    </address>
                                 </a>
                             </td>
                         </tr>
@@ -70,7 +72,7 @@ const User = () => {
                                 
                             </td>
                             <td className='td-droite'>
-                               <a href="/Contact">: miguel.clairy@gmail.com</a>
+                               <NavLink to="/Contact">: miguel.clairy@gmail.com</NavLink>
                             </td>
                         </tr>
                     </tbody>

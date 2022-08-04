@@ -17,13 +17,13 @@ const Menu = () => {
             </li>
         </NavLink>
         
-          <NavLink to="/curriculum-vitae" className={(nav) => (nav.isActive ? "active" : "")}>
+          <NavLink to="/Curriculum-vitae" className={(nav) => (nav.isActive ? "active" : "")}>
             <li>
               <img className='icoMenuBottom' src={MyCV} alt="Mon CV" title="Curriculum-Vitae" id="monCv" />
             </li>
           </NavLink>
           
-          <NavLink to="/contact" className={(nav) => (nav.isActive ? "active" : "")}>
+          <NavLink to="/Contact" className={(nav) => (nav.isActive ? "active" : "")}>
             <li>
               <img className='icoMenuBottom' src={ContactMe} alt="Me Contacter" title="Contact" id="meContacter" />
             </li>

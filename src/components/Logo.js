@@ -1,13 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Avatar from "../assets/img/LogoMobileBleu.svg";
 
 const Logo = () => {
     return (
         <div className="logo-container">
-            <a href='/Accuei'>
+            <NavLink to='/'>
                 <img src={Avatar} alt="Retourner à l'accueil" className="logo" title="Retourner à l'accueil" />
-            </a>
+            </NavLink>
             
         </div>
     );
