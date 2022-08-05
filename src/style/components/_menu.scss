@@ -5,13 +5,24 @@
 * Browsers: last 4 version (orientation:landscape)
 */
 
-$BREAKPOINT-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 200px)";
-$BREAKPOINT-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 380px) and (max-height: 412px)";
-$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
-$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
-@media #{$BREAKPOINT-MOBILE-PORT} {
+
+$BREAKPOINT-SMALL-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 300px)";
+$BREAKPOINT-SMART-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 400px)";
+
+$BREAKPOINT-TABLET-PORT: "only screen and (orientation: portrait) and (min-width: 600px)";
+
+$BREAKPOINT-SMALL-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 312px)";
+$BREAKPOINT-SMART-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 412px)";
+
+$BREAKPOINT-TABLET-LAND: "only screen and (orientation: landscape) and (min-width: 975px)";
+$BREAKPOINT-LAPTOP: "only screen and (min-width: 1200px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
+
+
+/*           Small Mobile Portrait Orientation           */
+
+@media #{$BREAKPOINT-SMALL-MOBILE-PORT} {
 
     .MenuBottom {
         background-color: #a4cbf2;
@@ -19,7 +30,286 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         left: -4rem;
         width: 5rem;
         position: fixed;
-        top: 10.35rem;
+        top: 8.5rem;
+        cursor: pointer;
+        border-radius: 5% 100% 100% 100% / 4% 30% 150% 0%;
+        border-top: 0.2rem groove #50bbfd6c;
+        border-left: 0.4rem groove #50bbfd6c;
+        border-right: 0.1rem groove #50bbfd6c;
+        z-index: 1200;
+    }
+
+    .MenuBottom:hover {
+        -webkit-transform: translateX(4rem);
+        -ms-transform: translateX(4rem);
+        transform: translateX(4rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .dispoMenuBottom {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        position: relative;
+        top: 1;
+    }
+
+    .icoMenuBottom {
+        width: 3rem;
+        position: relative;
+        top: 0rem;
+        left: -0.5rem;
+        margin-top: 5rem;
+    }
+
+
+
+    .active .icoMenuBottom {
+        position: relative;
+        left: 2rem;
+        width: 4.2rem;
+        height: 4.2rem;
+        background-color: #50bbfd;
+        border-radius: 100%;
+        padding: 0.35rem;
+        border: 0.2rem solid #a4cbf2;
+        -webkit-box-shadow: 0px 50px 50px -5px #50BBFD;
+        box-shadow: 0px 20px 50px 5px #50BBFD;
+        z-index: 1207;
+    }
+
+    .icoMenuBottom:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transform: scale(0.9) translateX(0.5rem);
+        -ms-transform: scale(0.9) translateX(0.5rem);
+        transform: scale(0.9) translateX(0.5rem);
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .active .icoMenuBottom:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .links-circle {
+        position: relative;
+        top: 0rem;
+    }
+
+    .burger-menu:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .burger-menu,
+    .burger-menu.open {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        height: 2rem;
+        width: 2rem;
+        left: 1rem;
+        top: -24rem;
+        z-index: 9999;
+        background-position: 50% 50%;
+        padding: 3.5px;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup-overlay {
+        background-color: $transparent-1  !important;
+    }
+
+    .btn-circle.menu-close .links-circle {
+        -webkit-transform: rotate(-225deg) scale(1.5);
+        -ms-transform: rotate(-225deg) scale(1.5);
+        transform: rotate(-225deg) scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .burger-menu.open .links-circle {
+        -webkit-transform: rotate(225deg) scale(1.5);
+        -ms-transform: rotate(225deg) scale(1.5);
+        transform: rotate(225deg) scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .menu {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .ImgBg {
+        position: relative;
+        bottom: 4rem;
+        left: 15.7rem;
+    }
+
+    .menu ul {
+        position: absolute;
+        bottom: -25rem;
+        left: -23rem;
+        height: 22rem;
+        width: 45rem;
+        font-size: 24px;
+        padding: 0px;
+        background-color: #a4cbf2;
+        border-top: 1rem groove #50bbfd6c;
+        border-left: 1rem groove #50bbfd6c;
+        border-right: 0.1rem groove #50bbfd6c;
+        border-top-right-radius: 400000px;
+        border-top-left-radius: 500000px;
+        border-bottom-right-radius: 300000px;
+        border-bottom-left-radius: 10000px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .IllusImg,
+    .MusiImg,
+    .FilmImg,
+    .AbouImg,
+    .MentioImg {
+        width: 5rem;
+        height: 5rem;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+        background-color: #a4cbf2;
+        border-radius: 100%;
+        border-top: 0.1rem groove #50bbfd6c;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        padding: 0.3rem;
+    }
+
+    .IllusImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.1) translateY(0rem);
+        -ms-transform: scale(1.1) translateY(0rem);
+        transform: scale(1.1) translateY(0rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .MusiImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.1) translateY(0rem);
+        -ms-transform: scale(1.1) translateY(0rem);
+        transform: scale(1.1) translateY(0rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .FilmImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.1) translateY(0rem);
+        -ms-transform: scale(1.1) translateY(0rem);
+        transform: scale(1.1) translateY(0rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .AbouImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.1) translateY(0rem);
+        -ms-transform: scale(1.1) translateY(0rem);
+        transform: scale(1.1) translateY(0rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .MentioImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.1) translateY(0rem);
+        -ms-transform: scale(1.1) translateY(0rem);
+        transform: scale(1.1) translateY(0rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .IllusImg {
+        position: relative;
+        left: -18rem;
+        top: -2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .MusiImg {
+        position: relative;
+        left: -12.5rem;
+        top: -3rem;
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .FilmImg {
+        position: relative;
+        left: -13rem;
+        top: -1rem;
+        width: 5.4rem;
+        height: 5.4rem;
+    }
+
+
+    .MentioImg {
+        position: relative;
+        left: -14rem;
+        top: 1rem;
+        width: 5.8rem;
+        height: 5.8rem;
+    }
+}
+
+/*           Smartphone Portrait Orientation           */
+
+@media #{$BREAKPOINT-SMART-MOBILE-PORT} {
+
+    .MenuBottom {
+        background-color: #a4cbf2;
+        height: 85%;
+        left: -4rem;
+        width: 5rem;
+        position: fixed;
+        top: 8rem;
         cursor: pointer;
         border-radius: 5% 100% 100% 100% / 4% 30% 150% 0%;
         border-top: 0.2rem groove #50bbfd6c;
@@ -257,39 +547,619 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
     .IllusImg {
         position: relative;
-        left: -13rem;
-        top: -6rem;
-        width: 5rem;
-        height: 5rem;
+        left: -15rem;
+        top: -2rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     .MusiImg {
         position: relative;
         left: -12.5rem;
-        top: -2rem;
-        width: 5.2rem;
-        height: 5.2rem;
+        top: 0rem;
+        width: 4.2rem;
+        height: 4.2rem;
     }
 
     .FilmImg {
         position: relative;
         left: -13rem;
         top: 3rem;
-        width: 5.4rem;
-        height: 5.4rem;
+        width: 4.4rem;
+        height: 4.4rem;
     }
 
 
     .MentioImg {
         position: relative;
-        left: -13.5rem;
-        top: 10rem;
-        width: 5.8rem;
-        height: 5.8rem;
+        left: -15rem;
+        top: 8rem;
+        width: 4.6rem;
+        height: 4.6rem;
     }
 }
 
-@media #{$BREAKPOINT-TABLET} {
+
+
+
+
+
+/*           Mobile Smartphone Landscape Orientation           */ 
+
+@media #{$BREAKPOINT-SMART-MOBILE-LAND} {
+
+        .MenuBottom {
+            background-color: #a4cbf2;
+            height: 70%;
+            left: -4rem;
+            width: 5rem;
+            position: fixed;
+            top: 7.6rem;
+            cursor: pointer;
+            border-radius: 5% 100% 100% 100% / 4% 30% 150% 0%;
+            border-top: 0.2rem groove #50bbfd6c;
+            border-left: 0.6rem groove #50bbfd6c;
+            border-right: 0.1rem groove #50bbfd6c;
+            z-index: 1200;
+        }
+
+        .MenuBottom:hover {
+            -webkit-transform: translateX(4rem);
+            -ms-transform: translateX(4rem);
+            transform: translateX(4rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .dispoMenuBottom {
+            list-style-type: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            position: relative;
+            top: 1rem;
+        }
+
+        .icoMenuBottom {
+            width: 2rem;
+            position: relative;
+            top: 1rem;
+            left: -0.5rem;
+            margin-top: 1rem;
+        }
+
+        .active .icoMenuBottom {
+            position: relative;
+            left: 2rem;
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #50bbfd;
+            border-radius: 100%;
+            padding: 0.35rem;
+            border: 0.2rem solid #a4cbf2;
+            -webkit-box-shadow: 0px 50px 50px -5px #50BBFD;
+            box-shadow: 0px 20px 50px 5px #50BBFD;
+            z-index: 1207;
+        }
+
+        .icoMenuBottom:hover {
+            -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+            box-shadow: 0px 0px 50px 5px #50BBFD;
+            -webkit-transform: scale(0.9) translateX(0.5rem);
+            -ms-transform: scale(0.9) translateX(0.5rem);
+            transform: scale(0.9) translateX(0.5rem);
+            -webkit-transition: 0.8 ease;
+            -o-transition: 0.8 ease;
+            transition: 0.8 ease;
+        }
+
+        .active .icoMenuBottom:hover {
+            -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+            box-shadow: 0px 0px 50px 5px #50BBFD;
+            -webkit-transition: 0.8 ease;
+            -o-transition: 0.8 ease;
+            transition: 0.8 ease;
+        }
+
+        .links-circle {
+            position: relative;
+            top: 0rem;
+        }
+
+        .burger-menu:hover {
+            -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+            box-shadow: 0px 0px 50px 5px #50BBFD;
+            -webkit-transition: 0.8 ease;
+            -o-transition: 0.8 ease;
+            transition: 0.8 ease;
+        }
+
+        // .burger-menu {
+        //     top: -15.5rem;
+        // }
+
+        .burger-menu,
+        .burger-menu.open {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            height: 1.5rem;
+            width: 1.5rem;
+            top: -11.5rem;
+            left: 0rem;
+            z-index: 9999;
+            background-position: 50% 50%;
+            padding: 3.5px;
+            border-radius: 100%;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .popup-overlay {
+            background-color: $transparent-1  !important;
+        }
+
+        .btn-circle.menu-close .links-circle {
+            -webkit-transform: rotate(-225deg) scale(1.5);
+            -ms-transform: rotate(-225deg) scale(1.5);
+            transform: rotate(-225deg) scale(1.5);
+            -webkit-transition: 1s ease;
+            -o-transition: 1s ease;
+            transition: 1s ease;
+        }
+
+        .burger-menu.open .links-circle {
+            -webkit-transform: rotate(225deg) scale(1.5);
+            -ms-transform: rotate(225deg) scale(1.5);
+            transform: rotate(225deg) scale(1.5);
+            -webkit-transition: 1s ease;
+            -o-transition: 1s ease;
+            transition: 1s ease;
+        }
+
+        .menu {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .ImgBg {
+            position: relative;
+            bottom: 4rem;
+            left: 15.7rem;
+        }
+
+        .menu ul {
+            position: absolute;
+            bottom: -25rem;
+            left: -23rem;
+            height: 22rem;
+            width: 45rem;
+            font-size: 24px;
+            padding: 0px;
+            background-color: #a4cbf2;
+            border-top: 1rem groove #50bbfd6c;
+            border-left: 1rem groove #50bbfd6c;
+            border-right: 0.1rem groove #50bbfd6c;
+            border-top-right-radius: 400000px;
+            border-top-left-radius: 500000px;
+            border-bottom-right-radius: 300000px;
+            border-bottom-left-radius: 10000px;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .IllusImg,
+        .MusiImg,
+        .FilmImg,
+        .AbouImg,
+        .MentioImg {
+            width: 5rem;
+            height: 5rem;
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -webkit-box-pack: justify !important;
+            -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+            background-color: #a4cbf2;
+            border-radius: 100%;
+            border-top: 0.1rem groove #50bbfd6c;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            padding: 0.3rem;
+        }
+
+        .IllusImg:hover {
+            background-color: #50bbfd;
+            border-radius: 100%;
+            -webkit-transform: scale(1.3) translateY(-0.5rem);
+            -ms-transform: scale(1.3) translateY(-0.5rem);
+            transform: scale(1.3) translateY(-0.5rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .MusiImg:hover {
+            background-color: #50bbfd;
+            -webkit-transform: scale(1.4) translateY(-0.5rem);
+            -ms-transform: scale(1.4) translateY(-0.5rem);
+            transform: scale(1.4) translateY(-0.5rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .FilmImg:hover {
+            background-color: #50bbfd;
+            -webkit-transform: scale(1.5) translateY(-0.5rem);
+            -ms-transform: scale(1.5) translateY(-0.5rem);
+            transform: scale(1.5) translateY(-0.5rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .AbouImg:hover {
+            background-color: #50bbfd;
+            -webkit-transform: scale(1.6) translateY(-0.5rem);
+            -ms-transform: scale(1.6) translateY(-0.5rem);
+            transform: scale(1.6) translateY(-0.5rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .MentioImg:hover {
+            background-color: #50bbfd;
+            -webkit-transform: scale(1.7) translateY(-0.5rem);
+            -ms-transform: scale(1.7) translateY(-0.5rem);
+            transform: scale(1.7) translateY(-0.5rem);
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .IllusImg {
+            position: relative;
+            left: -26rem;
+            top: 12.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .MusiImg {
+            position: relative;
+            left: -20.5rem;
+            top: 10rem;
+            width: 2.7rem;
+            height: 2.7rem;
+        }
+
+        .FilmImg {
+            position: relative;
+            left: -14rem;
+            top: 7.5rem;
+            width: 2.9rem;
+            height: 2.9rem;
+        }
+
+
+        .MentioImg {
+            position: relative;
+            left: -8rem;
+            top: 4.5rem;
+            width: 3.1rem;
+            height: 3.1rem;
+        }
+    }
+
+
+
+/*            Small Mobile Landscape Orientation           */
+@media #{$BREAKPOINT-SMALL-MOBILE-LAND} {
+
+
+    .MenuBottom {
+        background-color: #a4cbf2;
+        height: 70%;
+        left: -3rem;
+        width: 5rem;
+        position: fixed;
+        top: 7.5rem;
+        cursor: pointer;
+        border-radius: 5% 100% 100% 100% / 4% 30% 150% 0%;
+        border-top: 0.2rem groove #50bbfd6c;
+        border-left: 0.6rem groove #50bbfd6c;
+        border-right: 0.1rem groove #50bbfd6c;
+        z-index: 1200;
+    }
+
+    .MenuBottom:hover {
+        -webkit-transform: translateX(3rem);
+        -ms-transform: translateX(3rem);
+        transform: translateX(3rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .dispoMenuBottom {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        position: relative;
+        top: 1rem;
+    }
+
+    .icoMenuBottom {
+        width: 2rem;
+        position: relative;
+        top: 0rem;
+        left: -1rem;
+        margin-top: 0.5rem;
+    }
+
+    .active .icoMenuBottom {
+        position: relative;
+        left: 2rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: #50bbfd;
+        border-radius: 100%;
+        padding: 0.35rem;
+        border: 0.2rem solid #a4cbf2;
+        -webkit-box-shadow: 0px 50px 50px -5px #50BBFD;
+        box-shadow: 0px 20px 50px 5px #50BBFD;
+        z-index: 1207;
+    }
+
+    .icoMenuBottom:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transform: scale(0.9) translateX(0.5rem);
+        -ms-transform: scale(0.9) translateX(0.5rem);
+        transform: scale(0.9) translateX(0.5rem);
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .active .icoMenuBottom:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .links-circle {
+        position: relative;
+        top: 0rem;
+    }
+
+    .burger-menu:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    // .burger-menu {
+    //     top: -15.5rem;
+    // }
+
+    .burger-menu,
+    .burger-menu.open {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        height: 1.5rem;
+        width: 1.5rem;
+        top: -9rem;
+        left: 0rem;
+        z-index: 9999;
+        background-position: 50% 50%;
+        padding: 3.5px;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .popup-overlay {
+        background-color: $transparent-1  !important;
+    }
+
+    .btn-circle.menu-close .links-circle {
+        -webkit-transform: rotate(-225deg) scale(1.5);
+        -ms-transform: rotate(-225deg) scale(1.5);
+        transform: rotate(-225deg) scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .burger-menu.open .links-circle {
+        -webkit-transform: rotate(225deg) scale(1.5);
+        -ms-transform: rotate(225deg) scale(1.5);
+        transform: rotate(225deg) scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .menu {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .ImgBg {
+        position: relative;
+        bottom: 4rem;
+        left: 15.7rem;
+    }
+
+    .menu ul {
+        position: absolute;
+        bottom: -25rem;
+        left: -23rem;
+        height: 22rem;
+        width: 45rem;
+        font-size: 24px;
+        padding: 0px;
+        background-color: #a4cbf2;
+        border-top: 1rem groove #50bbfd6c;
+        border-left: 1rem groove #50bbfd6c;
+        border-right: 0.1rem groove #50bbfd6c;
+        border-top-right-radius: 400000px;
+        border-top-left-radius: 500000px;
+        border-bottom-right-radius: 300000px;
+        border-bottom-left-radius: 10000px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .IllusImg,
+    .MusiImg,
+    .FilmImg,
+    .AbouImg,
+    .MentioImg {
+        width: 5rem;
+        height: 5rem;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+        background-color: #a4cbf2;
+        border-radius: 100%;
+        border-top: 0.1rem groove #50bbfd6c;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        padding: 0.3rem;
+    }
+
+    .IllusImg:hover {
+        background-color: #50bbfd;
+        border-radius: 100%;
+        -webkit-transform: scale(1.3) translateY(-0.5rem);
+        -ms-transform: scale(1.3) translateY(-0.5rem);
+        transform: scale(1.3) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .MusiImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.4) translateY(-0.5rem);
+        -ms-transform: scale(1.4) translateY(-0.5rem);
+        transform: scale(1.4) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .FilmImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.5) translateY(-0.5rem);
+        -ms-transform: scale(1.5) translateY(-0.5rem);
+        transform: scale(1.5) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .AbouImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.6) translateY(-0.5rem);
+        -ms-transform: scale(1.6) translateY(-0.5rem);
+        transform: scale(1.6) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .MentioImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.7) translateY(-0.5rem);
+        -ms-transform: scale(1.7) translateY(-0.5rem);
+        transform: scale(1.7) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .IllusImg {
+        position: relative;
+        left: -24rem;
+        top: 10.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .MusiImg {
+        position: relative;
+        left: -17rem;
+        top: 7rem;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .FilmImg {
+        position: relative;
+        left: -10rem;
+        top: 3.5rem;
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+
+    .MentioImg {
+        position: relative;
+        left: -3rem;
+        top: 0rem;
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+}
+    
+
+
+
+
+
+    /*           Tablet Portrait Orientation           */
+
+@media #{$BREAKPOINT-TABLET-PORT} {
     
         .MenuBottom {
             background-color: #a4cbf2;
@@ -535,7 +1405,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .IllusImg {
             position: relative;
             left: -15rem;
-            top: -5rem;
+            top: 0rem;
             width: 5rem;
             height: 5rem;
         }
@@ -543,7 +1413,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .MusiImg {
             position: relative;
             left: -15rem;
-            top: 0rem;
+            top: 2.5rem;
             width: 5.2rem;
             height: 5.2rem;
         }
@@ -560,12 +1430,14 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .MentioImg {
             position: relative;
             left: -15rem;
-            top: 10rem;
+            top: 8rem;
             width: 5.8rem;
             height: 5.8rem;
         }
 
     }
+
+/*           Tablet Landscape Orientation           */
 
 @media #{$BREAKPOINT-TABLET-LAND} {
 
@@ -814,7 +1686,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .IllusImg {
             position: relative;
             left: -15rem;
-            top: -3rem;
+            top: 0rem;
             width: 5rem;
             height: 5rem;
         }
@@ -822,7 +1694,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .MusiImg {
             position: relative;
             left: -15rem;
-            top: 2rem;
+            top: 3rem;
             width: 5.2rem;
             height: 5.2rem;
         }
@@ -830,7 +1702,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .FilmImg {
             position: relative;
             left: -15rem;
-            top: 8rem;
+            top: 6rem;
             width: 5.4rem;
             height: 5.4rem;
         }
@@ -839,14 +1711,22 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         .MentioImg {
             position: relative;
             left: -15rem;
-            top: 12rem;
+            top: 9rem;
             width: 5.8rem;
             height: 5.8rem;
         }
 
 }
 
-@media #{$BREAKPOINT-DESK} {
+
+
+
+
+
+
+/*           Laptop         */
+
+@media #{$BREAKPOINT-LAPTOP} {
     
         .MenuBottom {
             background-color: #a4cbf2;
@@ -1123,279 +2003,287 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         }
 
 }
+/*           Desktop         */
 
-@media #{$BREAKPOINT-MOBILE-LAND} {
+@media #{$BREAKPOINT-DESK} {
 
-        .MenuBottom {
-            background-color: #a4cbf2;
-            height: 70%;
-            left: -4rem;
-            width: 5rem;
-            position: fixed;
-            top: 8.55rem;
-            cursor: pointer;
-            border-radius: 5% 100% 100% 100% / 4% 30% 150% 0%;
-            border-top: 0.2rem groove #50bbfd6c;
-            border-left: 1.3rem groove #50bbfd6c;
-            border-right: 0.1rem groove #50bbfd6c;
-            z-index: 1200;
-        }
-
-        .MenuBottom:hover {
-            -webkit-transform: translateX(4rem);
-            -ms-transform: translateX(4rem);
-            transform: translateX(4rem);
-            -webkit-transition: 0.4s ease;
-            -o-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .dispoMenuBottom {
-            list-style-type: none;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -ms-flex-pack: distribute;
-            justify-content: space-around;
-            position: relative;
-            top: 1rem;
-        }
-
-        .icoMenuBottom {
-            width: 2.5rem;
-            position: relative;
-            top: 0rem;
-            left: -1rem;
-            margin-top: 2rem;
-        }
-
-        .active .icoMenuBottom {
-            position: relative;
-            left: 2rem;
-            width: 4.2rem;
-            height: 4.2rem;
-            background-color: #50bbfd;
-            border-radius: 100%;
-            padding: 0.35rem;
-            border: 0.2rem solid #a4cbf2;
-            -webkit-box-shadow: 0px 50px 50px -5px #50BBFD;
-            box-shadow: 0px 20px 50px 5px #50BBFD;
-            z-index: 1207;
-        }
-
-        .icoMenuBottom:hover {
-            -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
-            box-shadow: 0px 0px 50px 5px #50BBFD;
-            -webkit-transform: scale(0.9) translateX(0.5rem);
-            -ms-transform: scale(0.9) translateX(0.5rem);
-            transform: scale(0.9) translateX(0.5rem);
-            -webkit-transition: 0.8 ease;
-            -o-transition: 0.8 ease;
-            transition: 0.8 ease;
-        }
-
-        .active .icoMenuBottom:hover {
-            -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
-            box-shadow: 0px 0px 50px 5px #50BBFD;
-            -webkit-transition: 0.8 ease;
-            -o-transition: 0.8 ease;
-            transition: 0.8 ease;
-        }
-
-        .links-circle {
-            position: relative;
-            top: 0rem;
-        }
-
-        .burger-menu:hover {
-            -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
-            box-shadow: 0px 0px 50px 5px #50BBFD;
-            -webkit-transition: 0.8 ease;
-            -o-transition: 0.8 ease;
-            transition: 0.8 ease;
-        }
-
-        .burger-menu,
-        .burger-menu.open {
-            display: inline-block;
-            cursor: pointer;
-            position: relative;
-            height: 2rem;
-            width: 2rem;
-            left: 0rem;
-            top: -16rem;
-            z-index: 9999;
-            background-position: 50% 50%;
-            padding: 3.5px;
-            border-radius: 100%;
-            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .popup-overlay {
-            background-color: $transparent-1  !important;
-        }
-
-        .btn-circle.menu-close .links-circle {
-            -webkit-transform: rotate(-225deg) scale(1.5);
-            -ms-transform: rotate(-225deg) scale(1.5);
-            transform: rotate(-225deg) scale(1.5);
-            -webkit-transition: 1s ease;
-            -o-transition: 1s ease;
-            transition: 1s ease;
-        }
-
-        .burger-menu.open .links-circle {
-            -webkit-transform: rotate(225deg) scale(1.5);
-            -ms-transform: rotate(225deg) scale(1.5);
-            transform: rotate(225deg) scale(1.5);
-            -webkit-transition: 1s ease;
-            -o-transition: 1s ease;
-            transition: 1s ease;
-        }
-
-        .menu {
-            width: 100%;
-            display: block;
-            text-align: center;
-            padding: 0px;
-        }
-
-        .ImgBg {
-            position: relative;
-            bottom: 4rem;
-            left: 15.7rem;
-        }
-
-        .menu ul {
-            position: absolute;
-            bottom: -25rem;
-            left: -23rem;
-            height: 22rem;
-            width: 45rem;
-            font-size: 24px;
-            padding: 0px;
-            background-color: #a4cbf2;
-            border-top: 1rem groove #50bbfd6c;
-            border-left: 1rem groove #50bbfd6c;
-            border-right: 0.1rem groove #50bbfd6c;
-            border-top-right-radius: 400000px;
-            border-top-left-radius: 500000px;
-            border-bottom-right-radius: 300000px;
-            border-bottom-left-radius: 10000px;
-            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .IllusImg,
-        .MusiImg,
-        .FilmImg,
-        .AbouImg,
-        .MentioImg {
-            width: 5rem;
-            height: 5rem;
-            display: -webkit-box !important;
-            display: -ms-flexbox !important;
-            display: flex !important;
-            -webkit-box-pack: justify !important;
-            -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-            background-color: #a4cbf2;
-            border-radius: 100%;
-            border-top: 0.1rem groove #50bbfd6c;
-            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-            padding: 0.3rem;
-        }
-
-        .IllusImg:hover {
-            background-color: #50bbfd;
-            border-radius: 100%;
-            -webkit-transform: scale(1.3) translateY(-0.5rem);
-            -ms-transform: scale(1.3) translateY(-0.5rem);
-            transform: scale(1.3) translateY(-0.5rem);
-            -webkit-transition: 0.4s ease;
-            -o-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .MusiImg:hover {
-            background-color: #50bbfd;
-            -webkit-transform: scale(1.4) translateY(-0.5rem);
-            -ms-transform: scale(1.4) translateY(-0.5rem);
-            transform: scale(1.4) translateY(-0.5rem);
-            -webkit-transition: 0.4s ease;
-            -o-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .FilmImg:hover {
-            background-color: #50bbfd;
-            -webkit-transform: scale(1.5) translateY(-0.5rem);
-            -ms-transform: scale(1.5) translateY(-0.5rem);
-            transform: scale(1.5) translateY(-0.5rem);
-            -webkit-transition: 0.4s ease;
-            -o-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .AbouImg:hover {
-            background-color: #50bbfd;
-            -webkit-transform: scale(1.6) translateY(-0.5rem);
-            -ms-transform: scale(1.6) translateY(-0.5rem);
-            transform: scale(1.6) translateY(-0.5rem);
-            -webkit-transition: 0.4s ease;
-            -o-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .MentioImg:hover {
-            background-color: #50bbfd;
-            -webkit-transform: scale(1.7) translateY(-0.5rem);
-            -ms-transform: scale(1.7) translateY(-0.5rem);
-            transform: scale(1.7) translateY(-0.5rem);
-            -webkit-transition: 0.4s ease;
-            -o-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .IllusImg {
-            position: relative;
-            left: -28rem;
-            top: 10.5rem;
-            width: 5rem;
-            height: 5rem;
-        }
-
-        .MusiImg {
-            position: relative;
-            left: -20.5rem;
-            top: 5.5rem;
-            width: 5.2rem;
-            height: 5.2rem;
-        }
-
-        .FilmImg {
-            position: relative;
-            left: -12rem;
-            top: 0rem;
-            width: 5.4rem;
-            height: 5.4rem;
-        }
-
-
-        .MentioImg {
-            position: relative;
-            left: -3rem;
-            top: -5.5rem;
-            width: 5.8rem;
-            height: 5.8rem;
-        }
+    .MenuBottom {
+        background-color: #a4cbf2;
+        height: 80%;
+        left: -4rem;
+        width: 5rem;
+        position: fixed;
+        top: 10.35rem;
+        cursor: pointer;
+        border-radius: 5% 100% 100% 100% / 4% 30% 150% 0%;
+        border-top: 0.2rem groove #50bbfd6c;
+        border-left: 0.4rem groove #50bbfd6c;
+        border-right: 0.1rem groove #50bbfd6c;
+        z-index: 1200;
     }
+
+    .MenuBottom:hover {
+        -webkit-transform: translateX(4rem);
+        -ms-transform: translateX(4rem);
+        transform: translateX(4rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .dispoMenuBottom {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        position: relative;
+        top: 1;
+    }
+
+    .icoMenuBottom {
+        width: 3rem;
+        position: relative;
+        top: 0rem;
+        left: -0.5rem;
+        margin-top: 5rem;
+    }
+
+
+
+    .active .icoMenuBottom {
+        position: relative;
+        left: 2rem;
+        width: 4.2rem;
+        height: 4.2rem;
+        background-color: #50bbfd;
+        border-radius: 100%;
+        padding: 0.35rem;
+        border: 0.2rem solid #a4cbf2;
+        -webkit-box-shadow: 0px 50px 50px -5px #50BBFD;
+        box-shadow: 0px 20px 50px 5px #50BBFD;
+        z-index: 1207;
+    }
+
+    .icoMenuBottom:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transform: scale(0.9) translateX(0.5rem);
+        -ms-transform: scale(0.9) translateX(0.5rem);
+        transform: scale(0.9) translateX(0.5rem);
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .active .icoMenuBottom:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .links-circle {
+        position: relative;
+        top: 0rem;
+    }
+
+    .burger-menu:hover {
+        -webkit-box-shadow: 0px 0px 50px 5px #50BBFD;
+        box-shadow: 0px 0px 50px 5px #50BBFD;
+        -webkit-transition: 0.8 ease;
+        -o-transition: 0.8 ease;
+        transition: 0.8 ease;
+    }
+
+    .burger-menu,
+    .burger-menu.open {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        height: 2rem;
+        width: 2rem;
+        left: 1rem;
+        top: -24rem;
+        z-index: 9999;
+        background-position: 50% 50%;
+        padding: 3.5px;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup-overlay {
+        background-color: $transparent-1  !important;
+    }
+
+    .btn-circle.menu-close .links-circle {
+        -webkit-transform: rotate(-225deg) scale(1.5);
+        -ms-transform: rotate(-225deg) scale(1.5);
+        transform: rotate(-225deg) scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .burger-menu.open .links-circle {
+        -webkit-transform: rotate(225deg) scale(1.5);
+        -ms-transform: rotate(225deg) scale(1.5);
+        transform: rotate(225deg) scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .menu {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .ImgBg {
+        position: relative;
+        bottom: 4rem;
+        left: 15.7rem;
+    }
+
+    .menu ul {
+        position: absolute;
+        bottom: -25rem;
+        left: -23rem;
+        height: 22rem;
+        width: 45rem;
+        font-size: 24px;
+        padding: 0px;
+        background-color: #a4cbf2;
+        border-top: 1rem groove #50bbfd6c;
+        border-left: 1rem groove #50bbfd6c;
+        border-right: 0.1rem groove #50bbfd6c;
+        border-top-right-radius: 400000px;
+        border-top-left-radius: 500000px;
+        border-bottom-right-radius: 300000px;
+        border-bottom-left-radius: 10000px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .IllusImg,
+    .MusiImg,
+    .FilmImg,
+    .AbouImg,
+    .MentioImg {
+        width: 5rem;
+        height: 5rem;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+        background-color: #a4cbf2;
+        border-radius: 100%;
+        border-top: 0.1rem groove #50bbfd6c;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        padding: 0.3rem;
+    }
+
+    .IllusImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.3) translateY(-0.5rem);
+        -ms-transform: scale(1.3) translateY(-0.5rem);
+        transform: scale(1.3) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .MusiImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.4) translateY(-0.5rem);
+        -ms-transform: scale(1.4) translateY(-0.5rem);
+        transform: scale(1.4) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .FilmImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.5) translateY(-0.5rem);
+        -ms-transform: scale(1.5) translateY(-0.5rem);
+        transform: scale(1.5) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .AbouImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.6) translateY(-0.5rem);
+        -ms-transform: scale(1.6) translateY(-0.5rem);
+        transform: scale(1.6) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .MentioImg:hover {
+        background-color: #50bbfd;
+        -webkit-transform: scale(1.7) translateY(-0.5rem);
+        -ms-transform: scale(1.7) translateY(-0.5rem);
+        transform: scale(1.7) translateY(-0.5rem);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .IllusImg {
+        position: relative;
+        left: -40rem;
+        top: 10rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .MusiImg {
+        position: relative;
+        left: -28rem;
+        top: 5rem;
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .FilmImg {
+        position: relative;
+        left: -16rem;
+        top: -0.5rem;
+        width: 5.4rem;
+        height: 5.4rem;
+    }
+
+
+    .MentioImg {
+        position: relative;
+        left: -3rem;
+        top: -6rem;
+        width: 5.8rem;
+        height: 5.8rem;
+    }
+
+}
+
+
+
+
+

@@ -24,7 +24,7 @@ const User = () => {
                 <NavLink to="/">
                     <img src={Retour} className='btnBack' alt="Retourner à l'accueil" title="Retourner à l'accueil" />
                 </NavLink>
-               <a href={CV} download="">
+               <a href={CV} download="" target="blank">
                     <img src={DonwLoader} className='btnDonwlad' alt="Téléchargement" title='Télécharger le CV' />
                 </a>
             <div className="identity">

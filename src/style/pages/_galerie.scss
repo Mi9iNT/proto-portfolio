@@ -768,10 +768,3 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
         transition: 0.4s ease;
     }
 }
-
-@media #{$BREAKPOINT-MOBILE-LAND} {
-    .burger-menu,
-    .burger-menu.open {
-        top: -14rem !important;
-    }
-}
