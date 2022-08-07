@@ -205,7 +205,7 @@ const Galerie = () => {
             <RS />
             <h2 className="GalerieTitle">Galerie d'Illustrations</h2>
             <div className={model ? "model open" : "model"}>
-                <img src={tempimgSrc} alt={tempalt} />
+                <img src={tempimgSrc} alt={tempalt} className="ImgShow"/>
                 <img src={CloseBTN} onClick={() => setModel(false)} alt="fermer" className="btnClose" />
                 <div className="contact-btn-Page-Galerie">
                     <NavLink to="/contact">

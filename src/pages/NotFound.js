@@ -7,7 +7,7 @@ const NotFound = () => {
             <h2 className='NotFoundTitle'>404</h2>
             <h3 className='notFound'>Not Found</h3>
             <h4 className='bruh'>Bruh...</h4>
-            <NavLink to="/">
+            <NavLink to="/Proto-Portfolio">
               <button className="Btn-404-Me-Main">Revenir</button>
             </NavLink>
         </div>

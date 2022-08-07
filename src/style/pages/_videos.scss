@@ -5,12 +5,19 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 200px)";
-$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
-$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-SMALL-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 300px)";
+$BREAKPOINT-SMART-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 400px)";
 
-@media #{$BREAKPOINT-MOBILE-LAND} {
+$BREAKPOINT-TABLET-PORT: "only screen and (orientation: portrait) and (min-width: 600px)";
+
+$BREAKPOINT-SMALL-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 312px)";
+$BREAKPOINT-SMART-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 412px)";
+
+$BREAKPOINT-TABLET-LAND: "only screen and (orientation: landscape) and (min-width: 975px)";
+$BREAKPOINT-LAPTOP: "only screen and (min-width: 1200px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
+
+@media #{$BREAKPOINT-SMALL-MOBILE-PORT} {
 
     .title_videos {
         color: $color-3;
@@ -213,7 +220,616 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     }
 }
 
-@media #{$BREAKPOINT-TABLET} {
+@media #{$BREAKPOINT-SMART-MOBILE-PORT} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 5rem;
+    }
+
+    .text_videos {
+        color: $white;
+        position: relative;
+        top: 10rem;
+        width: 20REM;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 20rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 12rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+}
+
+@media #{$BREAKPOINT-SMART-MOBILE-LAND} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 10rem;
+    }
+
+    .text_videos {
+        color: $white;
+        position: relative;
+        top: 16rem;
+        width: 10rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 20rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 12rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+}
+
+@media #{$BREAKPOINT-SMALL-MOBILE-LAND} {
+
+    .title_videos {
+        color: $color-3;
+        position: relative;
+        top: 10rem;
+    }
+
+    .text_videos {
+        color: $white;
+        position: relative;
+        top: 16rem;
+        width: 10rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text_videos:hover {
+        color: $color-3;
+        background: $transparent-1;
+        border-radius: 0.5rem;
+        transform: scale(1.1);
+        transition: 0.4 ease;
+        -webkit-transition: .4s ease;
+        -o-transition: .4s ease;
+    }
+
+    .Video {
+        position: relative;
+        top: 20rem;
+        margin-bottom: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .iframYt {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .contact-btn-Page-Videos {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 8rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-1;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-3,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-3,
+            -3px -3px 8px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos:hover {
+        color: $white;
+        background: $color-3;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos:active {
+        -webkit-box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-1,
+            -2px -2px 8px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .contact-btn-Page-Videos2 {
+        position: relative;
+        top: 8rem;
+    }
+
+    .Btn-Contact-Me-Page-Videos2 {
+
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        top: 12rem;
+        left: 0rem;
+        width: 10rem;
+        padding: 1.5em 1em;
+        background: $color-3;
+        border: none;
+        border-radius: .5rem;
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-align: center;
+        margin: 0 Auto;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-box-shadow: -3px -3px 14px $color-1,
+            -3px 3px 10px $color-3,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        box-shadow: -3px -3px 14px $color-1,
+            -3px -3px 8px $color-1,
+            3px 3px 8px rgba(255, 255, 255, .075),
+            3px 3px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        z-index: 10030;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:hover {
+        color: $white;
+        background: $color-1;
+        transform: scale(1.1);
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            2px -2px 10px $color-1,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+
+    .Btn-Contact-Me-Page-Videos2:active {
+        -webkit-box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 10px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        box-shadow: -2px -2px 14px $color-3,
+            -2px -2px 8px $color-3,
+            2px 2px 8px rgba(255, 255, 255, .075),
+            2px 2px 10px rgba(0, 0, 0, .15);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+    }
+}
+
+@media #{$BREAKPOINT-TABLET-PORT} {
 
     .title_videos {
         color: $color-3;

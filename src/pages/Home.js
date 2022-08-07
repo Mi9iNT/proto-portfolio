@@ -15,24 +15,33 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const Home = () => {
 
     const titleRef = useRef()
-
+    
+   
+   
     const onLoad = () => {
-        gsap.timeline().fromTo(".letter",
-            {
-                x: -100,
-                opacity: 0,
-            },
-            {
-                x: -40,
-                opacity: 1,
-                stagger: 0.3,
-                delay: 0.1,
-                duration: 1,
-            },
-        )
+        
+        gsap.timeline({
+            onComplete: function () {
+
+                sessionStorage.setItem("AnimateAlreadyPlayed", onLoad);
+            }
+        })
+            .fromTo(".letter",
+                {
+                    x: -100,
+                    opacity: 0,
+                },
+                {
+                    x: -40,
+                    opacity: 1,
+                    stagger: 0.3,
+                    delay: 0.1,
+                    duration: 1,
+                },
+            )
             .to(".title", {
                 y: 100,
-                scale : 0.5,
+                scale: 0.5,
             })
             .to(".title", {
                 fontFamily: "$font-2",
@@ -63,7 +72,30 @@ const Home = () => {
             })
 
     }
-    
+
+    const onLoaded = () => {
+        
+         gsap.timeline()
+             .fromTo(".letter",
+                {
+                    x: -100,
+                    opacity: 0,
+                },
+                {
+                    x: -40,
+                    opacity: 1,
+                    duration: 0.1,
+                 },
+                
+            )
+             .to(window, {
+                delay: 0.4,
+                duration: 0.5,
+                scrollTo: "#box1",
+            })
+
+    }
+
     
 
     const slideToBottom = (elem, delay, duration) => {
@@ -87,67 +119,69 @@ const Home = () => {
 
 
     
-const slideInLeft = (elem, delay, duration) => {
-  gsap.fromTo(
-    elem,
-    {
-      opacity: 0,
-      x: -200,
-    },
-    {
-      opacity: 1,
-      x: 0,
-      delay: delay || 0.2,
-      duration: duration || 0.6,
-      scrollTrigger: {
-        trigger: elem,
-        start: "top center",
-        end: "bottom center",
-      }
-      }
-  )
-}
-const slideInRight = (elem, delay, duration) => {
-  gsap.fromTo(
-    elem,
-    {
-      opacity: 0,
-      x: 200,
-    },
-    {
-      opacity: 1,
-      x: 0,
-      delay: delay || 0.2,
-      duration: duration || 0.6,
-      scrollTrigger: {
-        trigger: elem,
-        start: "top center",
-        end: "bottom center",
-      }
-      }
-  )
-}    
-useEffect(() => {
-  onLoad();
-}, [])
-useEffect(() => {
-  slideInLeft("#box1")
-}, [])
-useEffect(() => {
-  slideInLeft(".logo")
-}, [])
-useEffect(() => {
-  slideInRight(".FootCont")
-}, [])
-// useEffect(() => {
-//   slideInLeft("#box4")
-// }, [])
-useEffect(() => {
-  slideToBottom("#nextSection")
-}, [])
+    const slideInLeft = (elem, delay, duration) => {
+    gsap.fromTo(
+        elem,
+        {
+        opacity: 0,
+        x: -200,
+        },
+        {
+        opacity: 1,
+        x: 0,
+        delay: delay || 0.2,
+        duration: duration || 0.6,
+        scrollTrigger: {
+            trigger: elem,
+            start: "top center",
+            end: "bottom center",
+        }
+        }
+    )
+    }
 
+    const slideInRight = (elem, delay, duration) => {
+    gsap.fromTo(
+        elem,
+        {
+        opacity: 0,
+        x: 200,
+        },
+        {
+        opacity: 1,
+        x: 0,
+        delay: delay || 0.2,
+        duration: duration || 0.6,
+        scrollTrigger: {
+            trigger: elem,
+            start: "top center",
+            end: "bottom center",
+        }
+        }
+    )
+    }    
 
+    const AnimatePlayed = sessionStorage.getItem("AnimateAlreadyPlayed");
     
+    useEffect(() => {
+        if (!AnimatePlayed) { onLoaded() } else { onLoad()}
+    }, [])
+    useEffect(() => {
+    slideInLeft("#box1")
+    }, [])
+    useEffect(() => {
+    slideInLeft(".logo")
+    }, [])
+    useEffect(() => {
+    slideInRight(".FootCont")
+    }, [])
+    useEffect(() => {
+    slideToBottom("#nextSection")
+    }, [])
+
+   
+
+  
 
     return (
         <motion.div className="main"
@@ -155,7 +189,7 @@ useEffect(() => {
             
            initial={ { width: 0 } }
             animate={ { width: "100%" } }
-            exit={ { x: window.innerWidth, transitio: {duration: 0.1 } } }
+            exit={ { x: window.innerWidth, transition: {duration: 0.05  } } }
           
             
         >
@@ -199,5 +233,6 @@ useEffect(() => {
              
     );
 };
+
 
     export default Home;

@@ -20,6 +20,7 @@ $BREAKPOINT-LAPTOP: "only screen and (min-width: 1200px)";
 $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
 
 
+
 /*           Small Mobile Portrait Orientation           */
 
 @media #{$BREAKPOINT-SMALL-MOBILE-PORT} {
@@ -579,11 +580,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     }
 }
 
-
-
-
-
-
 /*           Mobile Smartphone Landscape Orientation           */ 
 
 @media #{$BREAKPOINT-SMART-MOBILE-LAND} {
@@ -867,8 +863,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         }
     }
 
-
-
 /*            Small Mobile Landscape Orientation           */
 @media #{$BREAKPOINT-SMALL-MOBILE-LAND} {
 
@@ -1151,11 +1145,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         height: 3.8rem;
     }
 }
-    
-
-
-
-
 
     /*           Tablet Portrait Orientation           */
 
@@ -1717,12 +1706,6 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         }
 
 }
-
-
-
-
-
-
 
 /*           Laptop         */
 

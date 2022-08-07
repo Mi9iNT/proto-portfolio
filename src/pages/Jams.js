@@ -35,6 +35,11 @@ const Jams = () => {
                     <p className='jam_text'>Ou comment se lacher un bon coup 😎</p>
                 </div>
                 <div className='jam'>
+                    <ReactPlayer url="https://soundcloud.com/myguel-mgsx-clairy/dreams" />
+                    <h3 className='jam_title'>Dreams</h3>
+                    <p className='jam_text'>Que dire ?</p>
+                </div>
+                <div className='jam'>
                     <ReactPlayer url="https://soundcloud.com/myguel-mgsx-clairy/butterfly-mp3" />
                     <h3 className='jam_title'>Butterfly</h3>
                     <p className='jam_text'>Plaisir 🌞</p>

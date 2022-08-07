@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
+          <Route path="/Proto-Portfolio" element={<Home />} />
           <Route path="/Curriculum-Vitae" element={<CurriculumVitae />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Galerie" element={<Galerie />} />
