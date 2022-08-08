@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-SMALL-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 300px)";
+$BREAKPOINT-SMALL-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 200px)";
 $BREAKPOINT-SMART-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 400px)";
 
 $BREAKPOINT-TABLET-PORT: "only screen and (orientation: portrait) and (min-width: 600px)";
@@ -20,11 +20,11 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
 @media #{$BREAKPOINT-SMALL-MOBILE-PORT} {
     .interests-bg {
             position: relative;
-            top: 87.2em;
+            top: 97.9em;
             background-color: rgba(80, 187, 253, 0.5921568627);
             width: 26rem;
             height: 20rem;
-            left: -2rem;
+            left: -3rem;
         }
     
         .interets {
@@ -37,11 +37,13 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         .InterestTitle {
             position: relative;
             top: -2rem;
+            left: -2rem;
         }
     
         .interet {
             position: relative;
             top: 1rem;
+            left: 3rem;
             text-align: left;
             color: $color-2;
             font-weight: 600;
@@ -216,7 +218,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
             top: -4rem;
             background-color: transparent;
             width: 20rem;
-            height: 10rem;
+            height: 5rem;
             left: 1rem;
         }
     
@@ -235,11 +237,12 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
             color: $white;
             font-weight: 600;
             line-height: 3rem;
-            height: 8rem;
+            height: 6rem;
+            overflow: auto;
         }
     
         .InterestTitle {
             position: relative;
-            top: 1rem;
+            top: 0rem;
         }
 }

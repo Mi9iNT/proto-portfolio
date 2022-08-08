@@ -45,9 +45,9 @@ const User = () => {
                                
                             </td>
                             <td className='td-droite'>
-                                <a href='https://goo.gl/maps/2dB5Ci7raxW4mdwj7' target="_blank" rel="noopener noreferrer">
+                                <a href='https://goo.gl/maps/rpaPxzhM1A4YGH1y8' target="_blank" rel="noopener noreferrer">
                                     <address className="user-info">
-                                        : 14, rue du Try 95160 Montmorency
+                                        : 95160 Montmorency
                                     </address>
                                 </a>
                             </td>
