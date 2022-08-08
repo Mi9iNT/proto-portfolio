@@ -12,7 +12,6 @@ import Videos from './pages/Videos';
 import MentionsLegales from './pages/MentionsLegales';
 
 import { AnimatePresence } from 'framer-motion';
-import { Earth } from './components/Earth';
 
 
 function App() {
