@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Avatar from "../assets/img/LogoMobileBleu.svg";
+import Avatar from "../assets/img/LogoMobileBleuv2.svg";
 
 const Logo = () => {
     return (

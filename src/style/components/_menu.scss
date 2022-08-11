@@ -12,8 +12,8 @@ $BREAKPOINT-SMART-MOBILE-PORT: "only screen and (orientation: portrait) and (min
 
 $BREAKPOINT-TABLET-PORT: "only screen and (orientation: portrait) and (min-width: 600px)";
 
-$BREAKPOINT-SMALL-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 312px)";
-$BREAKPOINT-SMART-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 412px)";
+$BREAKPOINT-SMALL-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 400px)";
+$BREAKPOINT-SMART-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 500px)";
 
 $BREAKPOINT-TABLET-LAND: "only screen and (orientation: landscape) and (min-width: 975px)";
 $BREAKPOINT-LAPTOP: "only screen and (min-width: 1200px)";
@@ -28,7 +28,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     .MenuBottom {
         background-color: #a4cbf2;
         height: 80%;
-        left: -4rem;
+        left: -3.5rem;
         width: 5rem;
         position: fixed;
         top: 8.5rem;
@@ -41,9 +41,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     }
 
     .MenuBottom:hover {
-        -webkit-transform: translateX(4rem);
-        -ms-transform: translateX(4rem);
-        transform: translateX(4rem);
+        -webkit-transform: translateX(3.5rem);
+        -ms-transform: translateX(3.5rem);
+        transform: translateX(3.5rem);
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
@@ -307,7 +307,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     .MenuBottom {
         background-color: #a4cbf2;
         height: 85%;
-        left: -4rem;
+        left: -3.5rem;
         width: 5rem;
         position: fixed;
         top: 8rem;
@@ -320,9 +320,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     }
 
     .MenuBottom:hover {
-        -webkit-transform: translateX(4rem);
-        -ms-transform: translateX(4rem);
-        transform: translateX(4rem);
+        -webkit-transform: translateX(3.5rem);
+        -ms-transform: translateX(3.5rem);
+        transform: translateX(3.5rem);
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
@@ -587,7 +587,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         .MenuBottom {
             background-color: #a4cbf2;
             height: 70%;
-            left: -4rem;
+            left: -3.5rem;
             width: 5rem;
             position: fixed;
             top: 7.6rem;
@@ -600,9 +600,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         }
 
         .MenuBottom:hover {
-            -webkit-transform: translateX(4rem);
-            -ms-transform: translateX(4rem);
-            transform: translateX(4rem);
+            -webkit-transform: translateX(3.5rem);
+            -ms-transform: translateX(3.5rem);
+            transform: translateX(3.5rem);
             -webkit-transition: 0.4s ease;
             -o-transition: 0.4s ease;
             transition: 0.4s ease;
@@ -1153,7 +1153,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         .MenuBottom {
             background-color: #a4cbf2;
             height: 80%;
-            left: -4rem;
+            left: -3.5rem;
             width: 5rem;
             position: fixed;
             top: 10.35rem;
@@ -1166,9 +1166,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         }
     
         .MenuBottom:hover {
-            -webkit-transform: translateX(4rem);
-            -ms-transform: translateX(4rem);
-            transform: translateX(4rem);
+            -webkit-transform: translateX(3.5rem);
+            -ms-transform: translateX(3.5rem);
+            transform: translateX(3.5rem);
             -webkit-transition: 0.4s ease;
             -o-transition: 0.4s ease;
             transition: 0.4s ease;
@@ -1434,7 +1434,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         .MenuBottom {
             background-color: #a4cbf2;
             height: 80%;
-            left: -4rem;
+            left: -3.5rem;
             width: 5rem;
             position: fixed;
             top: 10.35rem;
@@ -1447,9 +1447,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         }
     
         .MenuBottom:hover {
-            -webkit-transform: translateX(4rem);
-            -ms-transform: translateX(4rem);
-            transform: translateX(4rem);
+            -webkit-transform: translateX(3.5rem);
+            -ms-transform: translateX(3.5rem);
+            transform: translateX(3.5rem);
             -webkit-transition: 0.4s ease;
             -o-transition: 0.4s ease;
             transition: 0.4s ease;
@@ -1714,7 +1714,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         .MenuBottom {
             background-color: #a4cbf2;
             height: 80%;
-            left: -4rem;
+            left: -3.5rem;
             width: 5rem;
             position: fixed;
             top: 10.35rem;
@@ -1727,9 +1727,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
         }
     
         .MenuBottom:hover {
-            -webkit-transform: translateX(4rem);
-            -ms-transform: translateX(4rem);
-            transform: translateX(4rem);
+            -webkit-transform: translateX(3.5rem);
+            -ms-transform: translateX(3.5rem);
+            transform: translateX(3.5rem);
             -webkit-transition: 0.4s ease;
             -o-transition: 0.4s ease;
             transition: 0.4s ease;
@@ -1993,7 +1993,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     .MenuBottom {
         background-color: #a4cbf2;
         height: 80%;
-        left: -4rem;
+        left: -3.5rem;
         width: 5rem;
         position: fixed;
         top: 10.35rem;
@@ -2006,9 +2006,9 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
     }
 
     .MenuBottom:hover {
-        -webkit-transform: translateX(4rem);
-        -ms-transform: translateX(4rem);
-        transform: translateX(4rem);
+        -webkit-transform: translateX(3.5rem);
+        -ms-transform: translateX(3.5rem);
+        transform: translateX(3.5rem);
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;

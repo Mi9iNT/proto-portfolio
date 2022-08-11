@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function Formations({ datas }) {
-    console.log(datas);
+    
     return (
         <div className='cursus'>
             

@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1200px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
@@ -13,7 +13,7 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 @media #{$BREAKPOINT-MOBILE-LAND} {
     .skill-title {
             text-align: center;
-            color: $color-1;
+            color: $white;
             display: inline;
         }
     
@@ -46,22 +46,24 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
             text-align: center;
             color: $color-2;
             width: 10rem;
-            color: $color-2;
+            color: $white;
         }
     
         .skillImg {
             width: 2rem;
         }
     
-        .skill {
-            top: 1rem;
-        }
+       
     
         .skills {
+            position: relative;
+            left: -1rem;
             height: 20rem;
+            width: 109%;
         }
     
         .skill-wallet {
-            top: 2rem;
+            position: relative;
+            left: 2rem;
         }
 }

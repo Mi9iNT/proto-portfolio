@@ -5,14 +5,14 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1200px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 
 @media #{$BREAKPOINT-MOBILE-LAND} {
     .pitch {
-            color: $color-2;
+            color: $white;
             margin: 2rem;
             font-style: oblique;
             position: relative;
@@ -27,6 +27,23 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
             display: none;
         }
 }
+@media #{$BREAKPOINT-TABLET-LAND} {
+    .pitch {
+        color: $white;
+        margin: 2rem;
+        font-style: oblique;
+        position: relative;
+        top: -14rem;
+        left: 0rem;
+    }
+
+    .ProfilTitle {
+        margin: 1rem;
+        position: relative;
+        text-align: center;
+        display: none;
+    }
+}
 @media #{$BREAKPOINT-DESK} {
 .ProfilTitle {
         text-align: center !important;
@@ -35,7 +52,7 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
     }
 
     .pitch {
-        color: $color-2;
+        color: $white;
         margin: 2rem !important;
         font-style: oblique !important;
         position: relative !important;

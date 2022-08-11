@@ -5,10 +5,11 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1200px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
+
 
 @media #{$BREAKPOINT-MOBILE-LAND} {
 h2 {
@@ -77,14 +78,18 @@ h2 {
         position: relative;
     }
 
+    .grid_title{
+        color: $color-3 !important;
+    }
+
     .titleExperiences {
         position: relative;
-        top: 12rem;
+        top: 15rem;
     }
 
     .cursus {
         top: 8rem;
-        height: 20rem;
+        height: 22rem;
         background-color: $transparent-3;
     }
 

@@ -1,23 +1,20 @@
 
 @font-face {
-    font-family: "font-1", "font-2";
-    src: url(../assets/fonts/Oswald-VariableFont_wght.ttf);
-}
-
-@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/KdamThmorPro-Regular.ttf);
     font-family: "font-2";
-    src: url(../assets/fonts/JosefinSans-Medium.ttf);
+    src: url(../assets/fonts/whola.ttf);
 }
 
 $color-1: #a4cbf2;
 $color-2: rgb(1, 1, 1);
-$color-3: #50bbfd;
+$color-3: #409FFF;  // #50bbfd;
 $white: rgb(243, 243, 243);
 
 $transparent: #00ff0000;
 $transparent-1: #0b0b0ba2;
-$transparent-2: #50bbfd97;
-$transparent-3: #a4cbf289;
+$transparent-2: #50bbfd32;
+$transparent-3: #a4cbf23a;
 
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", sans-serif;
@@ -34,6 +31,7 @@ body{
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -68,6 +66,7 @@ h4 {
     text-align: center;
 }
 p {
+    font-family: $font-2;
     white-space: pre-line;
 }
 

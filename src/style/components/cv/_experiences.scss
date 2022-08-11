@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1200px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
@@ -16,10 +16,10 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
     }
 
     .grid_title_exp {
-        color: $white;
+        color: $color-3;
         position: relative;
         top: 2rem;
-        left: -7rem;
+        left: -4rem;
         text-align: center;
     }
 
@@ -45,6 +45,8 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-left: 1rem;
+        list-style-type: none;
 
     }
 
@@ -94,8 +96,8 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
 
     .cursus_exp {
         overflow: auto;
-        height: 20rem;
-        top: 14rem;
+        height: 26rem;
+        top: 22rem;
         color: $color-2;
         font-weight: 500;
         font-size: 1.5rem;
@@ -103,7 +105,7 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
     }
 
     .grid_title_exp {
-        color: $white;
+        color: $color-3;
         position: relative;
         top: 2rem;
         left: 0rem;

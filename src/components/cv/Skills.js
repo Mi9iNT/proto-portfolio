@@ -17,7 +17,6 @@ import Symfony from '../../assets/img/Skills/Symfony.svg';
 import Webflow from '../../assets/img/Skills/Webflow.svg';
 import WP from '../../assets/img/Skills/Wordpress.svg';
 import XD from '../../assets/img/Skills/XD.svg';
-import Interests from './Interests';
 
 const Skills = () => {
     return (
@@ -89,7 +88,6 @@ const Skills = () => {
                     
                 </div>
             </div>
-            <Interests />
         </div>
         
     );

@@ -304,12 +304,12 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     .ParaThumb {
         position: relative;
         top: -1rem;
-        width: auto;
+        width: 15rem;
+        margin: 0 auto;
         text-align: center;
         line-height: 2rem;
         margin-bottom: 1rem;
         font-size: 1rem;
-        white-space: pre;
     }
 
     .Linkthumb {
@@ -620,6 +620,16 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     /* END ONGLET ILLUSTRATIONS */
 
     /* START ONGLET VIDEOS */
+
+    iframe:first-child {
+        width: 80% !important;
+        height: 100% !important;
+    }
+
+    iframe:last-child {
+        width: 55% !important;
+        height: 55% !important;
+    }
 
     .WhatUseVideos {
         position: relative;

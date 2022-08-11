@@ -5,7 +5,8 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
+$BREAKPOINT-LAPTOP: "only screen and (min-width: 1200px)";
 $BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
@@ -57,15 +58,76 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
         left: 4rem;
     }
 }
+
+@media #{$BREAKPOINT-LAPTOP} {
+        .skills-title-competences {
+            position: relative;
+            top: 0rem;
+        }
+
+        .skill-title {
+            position: relative;
+            left: 2rem;
+        }
+
+        .competences {
+            position: relative;
+            top: 5rem;
+            width: 101%;
+        }
+
+        .competence {
+            background-color: $transparent-3;
+            text-align: left;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            overflow: auto;
+            scrollbar-width: thin;
+            scrollbar-color: $color-3;
+            height: 12rem;
+            left: -1rem !important;
+            width: 107.6%;
+        }
+
+        .skills-title-langues {
+            color: $color-3;
+            position: relative;
+            top: 0rem;
+        }
+
+        .skill-langues {
+            position: relative;
+            top: 2rem;
+            display: -ms-grid;
+            display: grid;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+        }
+
+        .skill-langue {
+            margin: 1rem;
+        }
+    }
+
 @media #{$BREAKPOINT-DESK} {
     .skills-title-competences {
             position: relative;
             top: 0rem;
         }
+        
+        .skill-title {
+            position: relative;
+            left: 2rem;
+        }
     
         .competences {
             position: relative;
             top: 5rem;
+            width: 101%;
         }
     
         .competence {
@@ -79,7 +141,8 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 100px)";
             scrollbar-width: thin;
             scrollbar-color: $color-3;
             height: 12rem;
-            left: 0rem;
+            left: -1rem !important;
+            width: 103.5%;
         }
     
         .skills-title-langues {

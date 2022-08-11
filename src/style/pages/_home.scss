@@ -5,14 +5,75 @@
 * Browsers: last 4 version
 */
 
-$BREAKPOINT-MOBILE-ZERO: "only screen and (min-width: 0px)";
-$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 200px)";
-$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
-$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-SMALL-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 300px)";
+$BREAKPOINT-SMART-MOBILE-PORT: "only screen and (orientation: portrait) and (min-width: 400px)";
 
-@media #{$BREAKPOINT-MOBILE-ZERO} {
+$BREAKPOINT-TABLET-PORT: "only screen and (orientation: portrait) and (min-width: 600px)";
+
+$BREAKPOINT-SMALL-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 400px)";
+$BREAKPOINT-SMART-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 600px) and (max-height: 500px)";
+$BREAKPOINT-LARGESMART-MOBILE-LAND: "only screen and (orientation: landscape) and (min-width: 800px) and (max-height: 500px)";
+
+$BREAKPOINT-TABLET-LAND: "only screen and (orientation: landscape) and (min-width: 975px)";
+$BREAKPOINT-LAPTOP: "only screen and (min-width: 1200px)";
+$BREAKPOINT-DESK: "only screen and (min-width: 1600px)";
+
+
+*{
+    word-break: normal;
+}
+
+
+@media #{$BREAKPOINT-SMALL-MOBILE-PORT} {
         
+
+    #firstSection {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0rem;
+
+    }
+
+    #nextSection {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: $transparent-1;
+        top: 20rem;
+    }
+
+
+    .title {
+        color: $color-3;
+        text-align: center;
+        position: relative;
+        top: 10rem;
+        font-size: 2.4rem;
+    }
+
+
+
+    .TitleHome1 {
+        color: $color-3;
+        position: relative;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .TitleHome2 {
+        color: $white;
+        position: relative;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media #{$BREAKPOINT-SMART-MOBILE-PORT} {
+
 
     #firstSection {
         height: 100%;
@@ -60,7 +121,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 }
 
 
-@media #{$BREAKPOINT-MOBILE-LAND} {
+@media #{$BREAKPOINT-SMALL-MOBILE-LAND} {
     
     .title {
         color: $color-3;
@@ -90,7 +151,69 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     }
 }
 
-@media #{$BREAKPOINT-TABLET} {
+@media #{$BREAKPOINT-SMART-MOBILE-LAND} {
+
+    .title {
+        color: $color-3;
+        text-align: center;
+        position: relative;
+        top: 10rem;
+        font-size: 2.6rem;
+        line-height: 4rem;
+    }
+
+    #firstSection {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0rem;
+
+    }
+
+    #nextSection {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: $transparent-1;
+        top: 20rem;
+    }
+}
+
+@media #{$BREAKPOINT-LARGESMART-MOBILE-LAND} {
+
+    .title {
+        color: $color-3;
+        text-align: center;
+        position: relative;
+        top: 10rem;
+        font-size: 2.6rem;
+        line-height: 4rem;
+    }
+
+    #firstSection {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0rem;
+
+    }
+
+    #nextSection {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: $transparent-1;
+        top: 20rem;
+    }
+}
+
+@media #{$BREAKPOINT-TABLET-PORT} {
 
     .title {
         color: $color-3;
@@ -151,7 +274,7 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     }
 }
 
-@media #{$BREAKPOINT-DESK} {
+@media #{$BREAKPOINT-LAPTOP} {
     .title {
         color: $color-3;
         text-align: center;
@@ -162,90 +285,13 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
     }
 }
 
-// @media  (min-width: 100px) and (max-width: 600px) {
-// body {
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//     }
-
-//     .title {
-//         font-size: 2rem;
-//         left: 0rem;
-//         top: -28rem;
-//         margin: 0 auto;
-//     }
-
-//     #firstSection {
-//         margin: 0 auto;
-//     }
-
-//     #nextSection {
-//         top: -30rem;
-//     }
-
-//     .TitleHome1 {
-//         left: 0rem;
-//         width: 18rem;
-//         font-size: 1rem;
-//         line-height: 2rem;
-//         top: 8rem;
-//         margin: 0 auto;
-//     }
-
-//     .TitleHome2 {
-//         left: 0rem;
-//         top: 12rem;
-//         font-size: 0.85rem;
-//         margin: 0 auto;
-//     }
-
-//     .container {
-//         left: 2.5rem;
-//         top: 10rem;
-//         width: 22rem;
-//     }
-
-//     .portrait {
-//         width: 15rem;
-//         height: auto;
-//         border-radius: 100%;
-//     }
-    
-// }
-// @media (min-width: 601px) and (max-width: 1100px) {
-// body {
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//     }
-
-//     .title {
-//         font-size: 4rem;
-//         margin: 0 auto;
-//         top: -20rem;
-//     }
-
-//     .TitleHome1 {
-//         margin: 0 auto;
-//         width: 20rem;
-//         font-size: 1.8rem;
-//         line-height: 3rem;
-//         top: -16rem;
-//     }
-
-//     .TitleHome2 {
-//         margin: 0 auto;
-//         top: -10rem;
-//         font-size: 1.3rem;
-//     }
-
-//     .container {
-//         left: 8rem;
-//         top: -10rem;
-//         width: 50rem;
-
-//     }
-// }
+@media #{$BREAKPOINT-DESK} {
+    .title {
+        color: $color-3;
+        text-align: center;
+        position: relative;
+        top: 12rem;
+        font-size: 8rem;
+        line-height: 4rem;
+    }
+}

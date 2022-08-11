@@ -1,8 +1,8 @@
 {
   "name": "proto-portfolio",
   "version": "0.1.0",
-  "homepage": "https://Mi9iNT.github.io/Proto-Portfolio",
-  "private": true,
+  "homepage": "https://Proto-Portfolio.fr",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@react-three/drei": "^9.19.2",
@@ -31,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [

@@ -9,6 +9,7 @@ import MusicIco from '../assets/fonts/fontawesome/music-note.svg';
 
 import EraThumb from '../assets/img/thumbs/erathumb.png';
 import UnmotThumb from '../assets/img/thumbs/1mot1filmthumb.png';
+import BlinguageThumb from '../assets/img/thumbs/blinguage-demothumb.png';
 
 
 import SliderIllustrations from './sliders/SliderIllustrations';
@@ -95,6 +96,12 @@ const [toggleState, setToggleState] = useState(1);
                 <h3 className='TitleThumb'>1mot1film</h3>
                 <p className="ParaThumb">Application de recherche de film réalisé avec ReactJS</p>
                 <a className="Linkthumb" href="https://polite-faun-e327f7.netlify.app/" target="blank">Lien</a>
+              </div>
+              <div className="ThumbContent">
+                <img className="ThumbImgSite" src={BlinguageThumb} alt="Miniature site web Blinguage-Demo" />
+                <h3 className='TitleThumb'>Blinguage-Demo</h3>
+                <p className="ParaThumb">Intégration d'une maquette avec Responsive et Animation avec ReactJS en moins de deux heures</p>
+                <a className="Linkthumb" href="https://mi9int.github.io/Blinguage-Demo/" target="blank">Lien</a>
               </div>
             </div>
           </div>

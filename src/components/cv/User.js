@@ -16,7 +16,7 @@ import DonwLoader from '../../assets/fonts/fontawesome/donwload-solid.svg';
 const User = () => {
     return (
         <div className='user'>
-            <NavLink to="/Proto-Portfolio/" title="Retourner à l'accueil">
+            <NavLink to="/" title="Retourner à l'accueil">
                 <img src={AvatarBlanc} alt='Avatar de Miguel' className='Avatar' />
                 <img src={AvatarBlanc} alt='Avatar de Miguel' className='AvatarBlanc' />
             </NavLink>
@@ -46,8 +46,8 @@ const User = () => {
                             </td>
                             <td className='td-droite'>
                                 <a href='https://goo.gl/maps/rpaPxzhM1A4YGH1y8' target="_blank" rel="noopener noreferrer">
-                                    <address className="user-info">
-                                        : 95160 Montmorency
+                                    <address className="user-private">
+                                        : 95160 Montmorency Val-d'Oise Île-de-France
                                     </address>
                                 </a>
                             </td>
@@ -60,7 +60,7 @@ const User = () => {
                                 </a>  
                             </td>
                             <td className='td-droite'>
-                               <a href="tel:+33768437621">: 07.68.43.76.21</a>
+                               <a className="user-private" href="tel:+33768437621">: 07.68.43.76.21</a>
                             </td>
                         </tr>
                         <tr>
@@ -72,7 +72,7 @@ const User = () => {
                                 
                             </td>
                             <td className='td-droite'>
-                               <NavLink to="/Contact">: miguel.clairy@gmail.com</NavLink>
+                               <NavLink to="/Contact" className="user-private">: miguel.clairy@gmail.com</NavLink>
                             </td>
                         </tr>
                     </tbody>

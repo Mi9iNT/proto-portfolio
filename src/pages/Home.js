@@ -91,7 +91,7 @@ const Home = () => {
              .to(window, {
                 delay: 0.4,
                 duration: 0.5,
-                scrollTo: "#box1",
+                scrollTo: "#nextSection",
             })
 
     }
@@ -195,6 +195,7 @@ const Home = () => {
         >
             
             <div className='Home' id="firstSection">
+                <Logo />
                 <section className='sectionTitle'>
                     <h1 className='title' ref={titleRef}>
                         <span className='letter'>P</span>
@@ -228,7 +229,7 @@ const Home = () => {
                 <Menu />
                 <RS />
             </div>
-            <Logo />
+            
         </motion.div>
              
     );

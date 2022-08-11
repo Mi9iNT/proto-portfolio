@@ -7,6 +7,7 @@ import Menu from '../components/menu/Menu';
 import RS from '../components/reseaux_sociaux/RS';
 
 import { motion } from "framer-motion";
+import Interests from '../components/cv/Interests';
 
 const Home = () => {
     return (
@@ -23,10 +24,18 @@ const Home = () => {
                 <div className="sidebar">
                     <User />
                     <Skills />
+                    <div className="interestDesktop">
+                        <Interests />
+                    </div>
+                    
                 </div>
                 <div className="mainCv">
                     <Profil />
                     <FormationsExperiences />
+                    <div className="interestMobile">
+                        <Interests />
+                    </div>
+                    
                 </div>
             </div>
         </motion.div>

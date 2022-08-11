@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Experiences({ datas }) {
-    console.log(datas);
+    
     return (
         <div className='cursus_exp'>
             
