@@ -206,10 +206,10 @@ const Galerie = () => {
             <h2 className="GalerieTitle">Galerie d'Illustrations</h2>
             <div className={model ? "model open" : "model"}>
                 <img src={tempimgSrc} alt={tempalt} className="ImgShow"/>
-                <img src={CloseBTN} onClick={() => setModel(false)} alt="fermer" className="btnClose" />
+                <img src={CloseBTN} onClick={() => setModel(false)} alt="fermer" className="btnClose" title="Fermer" />
                 <div className="contact-btn-Page-Galerie">
                     <NavLink to="/contact">
-                        <button className="Btn-Contact-Me-Page-Galerie">Contacter Moi</button>
+                        <button className="Btn-Contact-Me-Page-Galerie" title="Contacter moi">Contacter Moi</button>
                     </NavLink>
                 </div>
             </div>
@@ -217,10 +217,11 @@ const Galerie = () => {
             {data.map((item, index) => {
                 return (
                     <div key={index} onClick={() =>getImg(item.imgSrc)} className="ContentGalerie">
-                        <img className='illu' src={item.imgSrc} alt={item.alt} title={item.alt} stryle={{width: '100%'}} />
+                        <img className='illu' src={item.imgSrc} alt={item.alt} title={item.alt} style={{width: '100%'}} />
                     </div>
                 )
             })}
+            <p className='copyright'>&copy; 2022 Clairy Miguel</p>
             </motion.div>
     );
 };

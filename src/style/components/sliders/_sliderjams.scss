@@ -5,35 +5,25 @@
 * Browsers: last 4 version
 */
 
-.selected {
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.SliderOngletJams {
+    cursor: grab;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: none;
+    padding: 0rem;
+    height: 660px;
+    scroll-padding: 2rem;
+    gap: 20px 0px;
+
 }
 
-.overlay__text {
-    position: relative;
-    top: 2rem;
-    left: 0rem;
+.SliderOngletJams .overlay {
+    scroll-snap-align: center;
 }
 
-.control-dots {
-    position: relative;
-    top: 23rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.overlay__title {
-    position: relative;
-    top: 2rem;
-
+.JamsLink {
+    margin-left: 1rem;
+    height: 100%;
+    width: 50%;
 }

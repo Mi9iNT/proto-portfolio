@@ -13,7 +13,7 @@ function Experiences({ datas }) {
                         <table className='table_xp'>
                             <thead>
                                 <tr>
-                                    <th colspan="2" className="grid_title_exp" >
+                                    <th colspan="2" className="grid_title_exp" title={data.title} >
                                         {data.title}
                                     </th>
                                 </tr>
@@ -22,15 +22,15 @@ function Experiences({ datas }) {
                                 <tr className="grid_mission_exp">
                             {data.missions.map((missions) => 
                                 <td>
-                                    <li className='missions_exp'key={missions.id}>{missions.title}
+                                    <li className='missions_exp'key={missions.id} title={missions.title}>{missions.title}
                                     </li>
                                 </td>
                             )}
                                 <td className="infos_xp">
-                                    <p className="grid_date_exp">
+                                    <p className="grid_date_exp" title={data.date}>
                                         {data.date}
                                     </p>
-                                    <p className="grid_location_exp">
+                                    <p className="grid_location_exp" title={data.location}>
                                         {data.location}
                                     </p>
                                 </td>

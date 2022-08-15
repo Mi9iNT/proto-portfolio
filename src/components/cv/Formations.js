@@ -11,13 +11,13 @@ function Formations({ datas }) {
                 <div className="grid_row" key={datas.id}>
                     <table className="grid_item">
                         <thead>
-                            <h3 className="grid_title" >{datas.title}</h3>
+                            <h3 className="grid_title" title={datas.title}>{datas.title}</h3>
                         </thead>
                         
                         <tbody>
                             <tr className="infos-formations">
-                                <td className="grid_date">{datas.date}</td>
-                                <td className="grid_location">{datas.location}</td>
+                                <td className="grid_date" title={datas.date}>{datas.date}</td>
+                                <td className="grid_location"  title={datas.location}>{datas.location}</td>
                             </tr>
                         </tbody>
                     </table>

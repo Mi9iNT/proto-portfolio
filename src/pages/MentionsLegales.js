@@ -44,6 +44,9 @@ const MentionsLegales = () => {
             <p>En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles. L'Utilisateur exerce ce droit : via un formulaire de contact</p>
             <br />
             <p>Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site﻿, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.</p>
+            <br />
+            <br />
+            <p>&copy; 2022 Clairy Miguel</p>    
             </div>
         </motion.div>
     );

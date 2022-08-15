@@ -621,15 +621,15 @@ $BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
 
     /* START ONGLET VIDEOS */
 
-    iframe:first-child {
-        width: 80% !important;
-        height: 100% !important;
-    }
+    // iframe:first-child {
+    //     width: 80% !important;
+    //     height: 100% !important;
+    // }
 
-    iframe:last-child {
-        width: 55% !important;
-        height: 55% !important;
-    }
+    // iframe:last-child {
+    //     width: 55% !important;
+    //     height: 55% !important;
+    // }
 
     .WhatUseVideos {
         position: relative;

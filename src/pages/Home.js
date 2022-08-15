@@ -229,7 +229,7 @@ const Home = () => {
                 <Menu />
                 <RS />
             </div>
-            
+            <p className='copyright'>&copy; 2022 Clairy Miguel</p>
         </motion.div>
              
     );

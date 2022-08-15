@@ -60,6 +60,7 @@ const Videos = () => {
                     <button className="Btn-Contact-Me-Page-Videos2">Contacter Moi</button>
                 </NavLink>
             </div>
+            <p className='copyright'>&copy; 2022 Clairy Miguel</p>
         </motion.div>
     );
 };

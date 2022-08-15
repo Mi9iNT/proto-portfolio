@@ -11,10 +11,9 @@ import EraThumb from '../assets/img/thumbs/erathumb.png';
 import UnmotThumb from '../assets/img/thumbs/1mot1filmthumb.png';
 import BlinguageThumb from '../assets/img/thumbs/blinguage-demothumb.png';
 
-
-import SliderIllustrations from './sliders/SliderIllustrations';
-import SlideVideos from './sliders/SlideVideos';
 import SliderJams from './sliders/SliderJams';
+import Slider480 from './sliders/Slider480';
+import SliderOngletVideos from './sliders/SliderOngletVideos';
 
 const Onglets = () => {
 
@@ -120,7 +119,7 @@ const [toggleState, setToggleState] = useState(1);
           <h2 className="Title-Onglet">Mes Illustrations</h2>
           <hr className="trait1" />
           <hr className="trait2" />
-          <SliderIllustrations />
+          <Slider480 />
           <div className="WhatUse">
             <p className="pitchSoft">J'utilise principalement ces logiciels afin de réaliser mes illustrations :</p>
             <span className="pitchBleu">
@@ -149,7 +148,7 @@ const [toggleState, setToggleState] = useState(1);
           <h2 className="Title-Onglet">Mes vidéos</h2>
           <hr className="trait1" />
           <hr className="trait2" />
-          <SlideVideos />
+          <SliderOngletVideos />
           <div className="WhatUseVideos">
             <p className="pitchSoft">J'utilise principalement ces logiciels afin de réaliser mes Vidéos et Animations :</p>
             <span className="pitchBleu">

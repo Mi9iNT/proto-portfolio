@@ -17,8 +17,8 @@ const User = () => {
     return (
         <div className='user'>
             <NavLink to="/" title="Retourner à l'accueil">
-                <img src={AvatarBlanc} alt='Avatar de Miguel' className='Avatar' />
-                <img src={AvatarBlanc} alt='Avatar de Miguel' className='AvatarBlanc' />
+                <img src={AvatarBlanc} alt='Avatar de Miguel' className='Avatar' title="Retourner à l'accueil" />
+                <img src={AvatarBlanc} alt='Avatar de Miguel' className='AvatarBlanc' title="Retourner à l'accueil" />
             </NavLink>
             
                 <NavLink to="/">
@@ -46,7 +46,7 @@ const User = () => {
                             </td>
                             <td className='td-droite'>
                                 <a href='https://goo.gl/maps/rpaPxzhM1A4YGH1y8' target="_blank" rel="noopener noreferrer">
-                                    <address className="user-private">
+                                    <address className="user-private" title="Ma localisation">
                                         : 95160 Montmorency Val-d'Oise Île-de-France
                                     </address>
                                 </a>
@@ -60,7 +60,7 @@ const User = () => {
                                 </a>  
                             </td>
                             <td className='td-droite'>
-                               <a className="user-private" href="tel:+33768437621">: 07.68.43.76.21</a>
+                               <a className="user-private" href="tel:+33768437621" title="Mon numéro de téléphone">: 07 . 68 . 43 . 76 . 21</a>
                             </td>
                         </tr>
                         <tr>
@@ -72,7 +72,7 @@ const User = () => {
                                 
                             </td>
                             <td className='td-droite'>
-                               <NavLink to="/Contact" className="user-private">: miguel.clairy@gmail.com</NavLink>
+                               <NavLink to="/Contact" className="user-private" title="Mon adresse mail">: miguel.clairy@gmail.com</NavLink>
                             </td>
                         </tr>
                     </tbody>

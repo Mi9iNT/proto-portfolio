@@ -38,6 +38,7 @@ const Home = () => {
                     
                 </div>
             </div>
+            <p className='copyright'>&copy; 2022 Clairy Miguel</p>
         </motion.div>
     );
 };

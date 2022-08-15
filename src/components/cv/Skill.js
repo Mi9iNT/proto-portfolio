@@ -7,7 +7,7 @@ const Skill = ( {title, rating} ) => {
                 <table className="skill">
                     <tbody>
                         <tr>
-                            <td className='skill-title'>⊙{title}</td>
+                            <td className='skill-title' title={title}>⊙{title}</td>
                             <td className="skill-wallet">{ rating }</td>
                         </tr>
                     </tbody>

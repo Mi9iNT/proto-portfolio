@@ -1,0 +1,330 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.carousel-wrapper {
+    height: 480px;
+    position: relative;
+    display: block;
+    margin: 50px auto;
+    border-top: 2px solid $color-3;
+    border-left: 2px solid $color-3;
+    background: $transparent-2;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    border: solid $color-3;
+    border-width: 0.1px 13px 13px 0.1px;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+
+}
+
+.arrow-prev:hover {
+    border: solid $color-1;
+    border-width: 0px 10px 10px 0px;
+    background: $transparent-1;
+}
+
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.arrow-next:hover {
+    border: solid $color-1;
+    border-width: 0px 10px 10px 0px;
+    background: $transparent-2;
+}
+
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('../../../assets/img/Illustrations480/Autravers.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-2 {
+    background: url('../../../assets/img/Illustrations480/bo2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-3 {
+    background: url('../../../assets/img/Illustrations480/Conservatoire.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-4 {
+    background: url('../../../assets/img/Illustrations480/ConservatoireLight.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-5 {
+    background: url('../../../assets/img/Illustrations480/EspaceFilet2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-6 {
+    background: url('../../../assets/img/Illustrations480/etoiles.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-7 {
+    background: url('../../../assets/img/Illustrations480/FriendlyPumpkin2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-8 {
+    background: url('../../../assets/img/Illustrations480/fuck4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-9 {
+    background: url('../../../assets/img/Illustrations480/iang.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-10 {
+    background: url('../../../assets/img/Illustrations480/ladefense.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-11 {
+    background: url('../../../assets/img/Illustrations480/Laminutelogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-12 {
+    background: url('../../../assets/img/Illustrations480/MainFuckUkraina.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-13 {
+    background: url('../../../assets/img/Illustrations480/Mix.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-14 {
+    background: url('../../../assets/img/Illustrations480/Moi2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-15 {
+    background: url('../../../assets/img/Illustrations480/FriendlyPumpkin2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-16 {
+    background: url('../../../assets/img/Illustrations480/Moi3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-17 {
+    background: url('../../../assets/img/Illustrations480/NatoNtetu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-18 {
+    background: url('../../../assets/img/Illustrations480/Natou2mini.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-19 {
+    background: url('../../../assets/img/Illustrations480/NebuleuseRouge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-20 {
+    background: url('../../../assets/img/Illustrations480/NTF.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-21 {
+    background: url('../../../assets/img/Illustrations480/OBOH_Avatar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-22 {
+    background: url('../../../assets/img/Illustrations480/OBOHfinal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-21 {
+    background: url('../../../assets/img/Illustrations480/Papillonllonllon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-22 {
+    background: url('../../../assets/img/Illustrations480/PSX.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-23 {
+    background: url('../../../assets/img/Illustrations480/scultureenbronze.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-24 {
+    background: url('../../../assets/img/Illustrations480/snail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-25 {
+    background: url('../../../assets/img/Illustrations480/TerreBlender.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+.item-26 {
+    background: url('../../../assets/img/Illustrations480/zazon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+}
+
+*:target~.item-1 {
+    opacity: 0;
+}
+
+#item-1:target~.item-1 {
+    opacity: 1;
+
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3,
+#item-4:target~.item-4,
+#item-5:target~.item-5,
+#item-6:target~.item-6,
+#item-7:target~.item-7,
+#item-8:target~.item-8,
+#item-9:target~.item-9,
+#item-10:target~.item-10,
+#item-11:target~.item-11,
+#item-12:target~.item-12,
+#item-13:target~.item-13,
+#item-14:target~.item-14,
+#item-15:target~.item-15,
+#item-16:target~.item-16,
+#item-17:target~.item-17,
+#item-18:target~.item-18,
+#item-19:target~.item-19,
+#item-20:target~.item-20,
+#it21em-21:target~.item-21,
+#item-22:target~.item-22,
+#item-23:target~.item-23,
+#item-24:target~.item-24,
+#item-25:target~.item-25,
+#item-26:target~.item-26,
+#item-27:target~.item-27 {
+    z-index: 3;
+    opacity: 1;
+}

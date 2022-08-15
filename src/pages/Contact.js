@@ -43,15 +43,16 @@ const Contact = () => {
             
             <form ref={form}  onSubmit={sendEmail} className="contactForm">
     
-                <input type="text" name="user_name" placeholder='Nom' required className="putForm"   />
+                <input type="text" name="user_name" placeholder='Nom' required className="putForm" title="Nom" />
         
-                <input type="email" name="user_email" placeholder='Adresse mail' required className="putForm" />
+                <input type="email" name="user_email" placeholder='Adresse mail' required className="putForm" title="Email" />
                 
-                <textarea name="message" placeholder='Message' required className="msgForm" />
-                <input type="submit" value="Envoyer" className="sendForm" />
+                <textarea name="message" placeholder='Message' required className="msgForm"  title="Message" />
+                <input type="submit" value="Envoyer" className="sendForm" title="Envoyer" />
                 
             </form>
-            <p className="Pcontact2">"Les informations partagées seront utiliser uniquement dans le but de donner suite à votre message"</p>
+            <p className="Pcontact2" title="Les informations partagées seront utiliser uniquement dans le but de donner suite à votre message">"Les informations partagées seront utiliser uniquement dans le but de donner suite à votre message"</p>
+            <p className='copyright'>&copy; 2022 Clairy Miguel</p>
         </motion.div>
     );
 };              
