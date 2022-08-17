@@ -26,7 +26,7 @@ const [toggleState, setToggleState] = useState(1);
   return (
     <div className="container">
       <div className="bloc-tabs">
-         <img src={AvatarIco} alt="Présentation" title="Présentation" id="AvatarCropped "
+         <img src={AvatarIco} alt="Portrait" title="Portrait" id="AvatarCropped "
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >

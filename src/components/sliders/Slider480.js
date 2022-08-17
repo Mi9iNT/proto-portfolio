@@ -1,33 +1,5 @@
 import React from 'react';
 
-// import Slide1 from '../../assets/img/Illustrations480/Autravers.png';
-// import Slide2 from '../../assets/img/Illustrations480/bo2.png';
-// import Slide3 from '../../assets/img/Illustrations480/Conservatoire.png';
-// import Slide4 from '../../assets/img/Illustrations480/ConservatoireLight.png';
-// import Slide5 from '../../assets/img/Illustrations480/EspaceFilet2.png';
-// import Slide6 from '../../assets/img/Illustrations480/etoiles.png';
-// import Slide7 from '../../assets/img/Illustrations480/FriendlyPumpkin2.png';
-// import Slide8 from '../../assets/img/Illustrations480/fuck4.png';
-// import Slide9 from '../../assets/img/Illustrations480/iang.png';
-// import Slide10 from '../../assets/img/Illustrations480/ladefense.png';
-// import Slide11 from '../../assets/img/Illustrations480/Laminutelogo.png';
-// import Slide12 from '../../assets/img/Illustrations480/MainFuckUkraina.png';
-// import Slide13 from '../../assets/img/Illustrations480/Moi2.png';
-// import Slide14 from '../../assets/img/Illustrations480/Mix.png';
-// import Slide15 from '../../assets/img/Illustrations480/Natou2mini.png';
-// import Slide16 from '../../assets/img/Illustrations480/NatoNtetu.png';
-// import Slide17 from '../../assets/img/Illustrations480/NebuleuseRouge.png';
-// import Slide18 from '../../assets/img/Illustrations480/NTF.png';
-// import Slide19 from '../../assets/img/Illustrations480/OBOH_Avatar.png';
-// import Slide20 from '../../assets/img/Illustrations480/OBOHfinal.png';
-// import Slide21 from '../../assets/img/Illustrations480/Papillonllonllon.png';
-// import Slide22 from '../../assets/img/Illustrations480/zazon.png';
-// import Slide23 from '../../assets/img/Illustrations480/scultureenbronze.png';
-// import Slide24 from '../../assets/img/Illustrations480/snail.png';
-// import Slide25 from '../../assets/img/Illustrations480/TerreBlender.png';
-// import Slide26 from '../../assets/img/Illustrations480/PSX.png';
-// import Slide27 from '../../assets/img/Illustrations480/Moi3.png';
-
 const Slider480 = () => {
     return (
          <div class="carousel-wrapper">
@@ -57,10 +29,9 @@ const Slider480 = () => {
             <span id="item-24"></span>
             <span id="item-25"></span>
             <span id="item-26"></span>
-            <span id="item-27"></span>
 
             <div class="carousel-item item-1">
-            <a href="#item-27" class="arrow-prev arrow" title="Précédent"></a>
+            <a href="#item-26" class="arrow-prev arrow" title="Précédent"></a>
             <a href="#item-2" class="arrow-next arrow" title="Suivant"></a>
             </div>
 
@@ -115,7 +86,12 @@ const Slider480 = () => {
             </div>
 
             <div class="carousel-item item-12">
-            <a href="#item-13" class="arrow-prev arrow" title="Précédent"></a>
+            <a href="#item-11" class="arrow-prev arrow" title="Précédent"></a>
+            <a href="#item-13" class="arrow-next arrow" title="Suivant"></a>
+            </div>
+
+            <div class="carousel-item item-13">
+            <a href="#item-12" class="arrow-prev arrow" title="Précédent"></a>
             <a href="#item-14" class="arrow-next arrow" title="Suivant"></a>
             </div>
 
@@ -155,8 +131,8 @@ const Slider480 = () => {
             </div>
 
             <div class="carousel-item item-21">
-            <a href="#item-22" class="arrow-prev arrow" title="Précédent"></a>
-            <a href="#item-23" class="arrow-next arrow" title="Suivant"></a>
+            <a href="#item-20" class="arrow-prev arrow" title="Précédent"></a>
+            <a href="#item-22" class="arrow-next arrow" title="Suivant"></a>
             </div>
 
             <div class="carousel-item item-22">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import CV from '../../download/cv-Clairy_Miguel-Dev_Front_Qr.pdf';
+import CV from '../../download/cv-Clairy_Miguel-Designer_Dev_Qr.pdf';
 
 import AvatarBlanc from '../../assets/img/AvatarCropped.png';
 import Address from '../../assets/fonts/fontawesome/house-solid.svg';
