@@ -1,3 +1,33 @@
+/*
+
+Je me présente comme étant Clairy Miguel Développeur Front - End et Designer Web.
+
+J'ai réalisé cette application web dans le but d'apprendre et peaufiner mon apprentissage sur ce type de technologie.
+
+Car comme son nom l'indique il s'agit d'un Prototype Web qui est contruit autour de l'architecture de ReactJS.
+
+Application que j'ai pu apprécier créer au point de vouloir en faire mon portfolio pour y présenter ce que je peux m'amuser à réaliser tant en sites et applications qu'en contenus Web.
+
+
+Des sites Web
+Des Illustrations
+Des Vidéos
+Des Jams
+
+En vous souhaitant bien-sûr une chouette visite.
+
+ps: les feedbacks sont hautement appréciés car ils permettent avant tout de se perfectionner donc à ceux qui m'en feront 💙 sur vous
+
+Banque de CV réalisée avec Symfony
+
+Application de recherche de film réalisée avec ReactJS
+
+Intégration d'une maquette Responsive et Animation avec ReactJS réalisée en moins de deux heures
+
+*/
+
+
+
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -87,13 +117,13 @@ const [toggleState, setToggleState] = useState(1);
               <div className="ThumbContent">
                 <img className="ThumbImgSite" src={EraThumb} alt="Miniature site web en-rechercher-active" />
                 <h3 className='TitleThumb'>en-recherche-active</h3>
-                <p className="ParaThumb">Banque de CV réalisé avec Symfony</p>
+                <p className="ParaThumb">Banque de CV réalisée avec Symfony</p>
                 <a className="Linkthumb" href="https://en-recherche-active.com/" target="blank">Lien</a>
               </div>
               <div className="ThumbContent">
                 <img className="ThumbImgSite" src={UnmotThumb} alt="Miniature site web 1mot1film" />
                 <h3 className='TitleThumb'>1mot1film</h3>
-                <p className="ParaThumb">Application de recherche de film réalisé avec ReactJS</p>
+                <p className="ParaThumb">Application de recherche de film réalisée avec ReactJS</p>
                 <a className="Linkthumb" href="https://polite-faun-e327f7.netlify.app/" target="blank">Lien</a>
               </div>
               <div className="ThumbContent">

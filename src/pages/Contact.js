@@ -51,7 +51,7 @@ const Contact = () => {
                 <input type="submit" value="Envoyer" className="sendForm" title="Envoyer" />
                 
             </form>
-            <p className="Pcontact2" title="Les informations partagées seront utiliser uniquement dans le but de donner suite à votre message">"Les informations partagées seront utiliser uniquement dans le but de donner suite à votre message"</p>
+            <p className="Pcontact2" title="Les informations partagées seront utiliser uniquement dans le but de donner suite à votre message">"Les informations partagées seront utilisées uniquement dans le but de donner suite à votre message"</p>
             <p className='copyright'>&copy; 2022 Clairy Miguel</p>
         </motion.div>
     );

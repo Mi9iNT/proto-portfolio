@@ -193,9 +193,12 @@ const Home = () => {
           
             
         >
-            
-            <div className='Home' id="firstSection">
+            <header>
                 <Logo />
+            </header>
+            <main>
+              <div className='Home' id="firstSection">
+                
                 <section className='sectionTitle'>
                     <h1 className='title' ref={titleRef}>
                         <span className='letter'>P</span>
@@ -224,12 +227,17 @@ const Home = () => {
                 </div>
             </section>
             
-            </div>
-            <div className="menu-left">
+            </div>  
+            </main>
+            
+            <footer>
+                <div className="menu-left">
                 <Menu />
                 <RS />
             </div>
             <p className='copyright'>&copy; 2022 Clairy Miguel</p>
+            </footer>
+            
         </motion.div>
              
     );
